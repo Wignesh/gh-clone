@@ -9,7 +9,8 @@ import { RepositoriesPage } from './core/pages/repositories/repositories.page';
 import { RepositoryInfoPage } from './core/pages/repository-info/repository-info.page';
 import { SettingsPage } from './core/pages/settings/settings.page';
 import { ProfilePage } from './core/pages/profile/profile.page';
-
+import { ProfileDescComponent } from './core/pages/shared/profile-desc/profile-desc.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,8 +20,9 @@ import { ProfilePage } from './core/pages/profile/profile.page';
     RepositoryInfoPage,
     SettingsPage,
     ProfilePage,
+    ProfileDescComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],
   bootstrap: [AppComponent],
 })
