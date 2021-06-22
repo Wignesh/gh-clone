@@ -6,13 +6,8 @@ import { RepositoriesPage } from './core/pages/repositories/repositories.page';
 import { RepositoryInfoPage } from './core/pages/repository-info/repository-info.page';
 import { SettingsPage } from './core/pages/settings/settings.page';
 import { ProfilePage } from './core/pages/profile/profile.page';
-import { AppComponent } from './app.component';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: AppComponent,
-  },
   {
     path: 'login',
     component: LoginPage,
