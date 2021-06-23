@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NavigationEnd, Router, RouterEvent } from '@angular/router';
+import { NavigationEnd, Router, RouterEvent ,ActivatedRoute} from '@angular/router';
 import { filter } from 'rxjs/operators';
 
 @Component({
@@ -10,14 +10,19 @@ import { filter } from 'rxjs/operators';
 export class RepositoryPageHeaderComponent implements OnInit {
 
   currentURL: string = ""
+  author:string = ""
+  repositoryName:string = ""
+  basePath:string = ""
 
-  constructor(private router: Router) {
+  constructor(private router: Router,private route:ActivatedRoute) {
 
     this.currentURL = router.url
 
-    console.log(this.currentURL)
-
-
+    route.params.subscribe(params=>{
+      this.author = params["author"]
+      this.repositoryName = params["repo"]
+      this.basePath = '/repository-info/'+this.author + "/"+this.repositoryName
+    })
 
     router.events.pipe(
       filter(event => event instanceof NavigationEnd)
@@ -25,7 +30,7 @@ export class RepositoryPageHeaderComponent implements OnInit {
       .subscribe(event => {
         event = event as RouterEvent
         this.currentURL = event.url
-      });
+    });
   }
 
   ngOnInit(): void {
