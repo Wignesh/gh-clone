@@ -11,6 +11,7 @@ import { SettingsPage } from './core/pages/settings/settings.page';
 import { ProfilePage } from './core/pages/profile/profile.page';
 import { RepositoryPageHeaderComponent } from './core/pages/repository-info/repository-page-header/repository-page-header.component';
 import { RepositoryPageAboutComponent } from './core/pages/repository-info/repository-page-about/repository-page-about.component';
+import { RepositoryPageReadmeComponent } from './core/pages/repository-info/repository-page-readme/repository-page-readme.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { RepositoryPageAboutComponent } from './core/pages/repository-info/repos
     ProfilePage,
     RepositoryPageHeaderComponent,
     RepositoryPageAboutComponent,
+    RepositoryPageReadmeComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
