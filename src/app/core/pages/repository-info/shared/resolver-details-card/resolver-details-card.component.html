@@ -1,0 +1,12 @@
+<div class="resolver-card">
+    <div class="card-tittle">{{resolverDetails?.tittle}}</div>
+    <button class="label" *ngFor="let label of resolverDetails?.labels">{{label}}</button>
+
+    <div class="card-metadata">{{resolverDetails.sno}} opened 3 hours ago by {{resolverDetails?.postedBy}}</div>
+
+    <div class="metadata-bar-left">
+        <span class="1">{{resolverDetails?.linked.length}}</span>
+        <img class="2" src="{{resolverDetails?.assignee?.profileUrl}}" width="20px">
+        <span class="3">{{resolverDetails?.comments?.length}}</span>
+    </div>
+</div>

@@ -1,0 +1,83 @@
+.resolver-header-bar {
+  color: rgb(36 41 46);
+  display: flex;
+  font-size: 14px;
+  justify-content: flex-start;
+  line-height: 21px;
+  .resolver-header-1 {
+    .filter-btn {
+      background-color: rgb(250 251 252);
+      border-color: rgb(27 31 35 / 0.15);
+      border-radius: 6px 0px 0px 6px;
+      border-style: solid;
+      border-width: 1px;
+      box-shadow: rgb(27 31 35 / 0.04) 0px 1px 0px 0px;
+      display: inline-block;
+      font-family: -apple-system;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      padding: 5px 16px;
+    }
+    .search-bar {
+      background-color: rgb(250 251 252);
+      background-position: right 8px 50%;
+      border-color: rgb(225 228 232);
+      border-radius: 0px 6px 6px 0px;
+      border-style: solid;
+      border-width: 1px;
+      box-shadow: rgb(225 228 232 / 0.2) 0px 1px 0px 0px;
+      color: rgb(88 96 105);
+      display: inline-block;
+      font-family: -apple-system;
+      font-size: 14px;
+      line-height: 20px;
+      padding: 5px 12px 5px 32px;
+    }
+  }
+  .resolver-header-2 {
+    .label-btn {
+      background-color: rgb(246 248 250);
+      border-color: rgb(225 228 232);
+      border-radius: 6px 0px 0px 6px;
+      border-style: solid;
+      border-width: 1px;
+      color: rgb(36 41 46);
+      font-family: -apple-system;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      padding: 5px 16px;
+    }
+    .milestone-btn {
+      background-color: rgb(246 248 250);
+      border-color: rgb(225 228 232);
+      border-radius: 0px 6px 6px 0px;
+      border-style: solid;
+      border-width: 1px;
+      color: rgb(36 41 46);
+      font-family: -apple-system;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      margin: 0px 0px 0px -1px;
+      padding: 5px 16px;
+    }
+  }
+  .resolver-header-3 {
+    .new-resolver-btn {
+      background-color: rgb(44 153 76);
+      border-color: rgb(27 31 35 / 0.15);
+      border-radius: 6px;
+      border-style: solid;
+      border-width: 1px;
+      box-shadow: rgb(27 31 35 / 0.1) 0px 1px 0px 0px;
+      color: rgb(255 255 255);
+      font-family: -apple-system;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      padding: 5px 16px;
+    }
+  }
+}

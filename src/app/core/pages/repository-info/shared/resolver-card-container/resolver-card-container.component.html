@@ -1,0 +1,24 @@
+<div class="resolver-summary">
+    <div class="resolver-count">
+        <div class="open-count">{{openCount}} Open</div>
+        <div class="close-count">{{closedCount}} Closed</div>
+    </div>
+
+    <div class="resolver-filter-bar">
+        <button class="author-dropdown">Author</button>
+        <button class="label-dropdown">Label</button>
+        <button class="project-dropdown">Projects</button>
+        <button class="milestone-dropdown">Milestones</button>
+        <button class="review-dropdown">Reviews</button>
+        <button class="asignee-dropdown">Asignee</button>
+        <button class="sort-dropdown">Sort</button>
+    </div>
+
+    <div class="cards">
+
+        <div *ngFor="let resolverDetails of openList">
+            <app-resolver-details-card [resolverDetails]="resolverDetails">
+            </app-resolver-details-card>
+        </div>
+    </div>
+</div>
