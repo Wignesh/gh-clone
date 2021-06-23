@@ -1,7 +1,7 @@
 <div id="repo-content-root">    
-    <app-repository-code></app-repository-code>
-    <div>
-        <!--add the right pane here-->
+    <app-repository-code class="code-view" [authorName]="authorName" [repoName]="repoName"></app-repository-code>
+
+    <div class="right-panel">        
         <app-repository-page-about></app-repository-page-about>
     </div>
 </div>
