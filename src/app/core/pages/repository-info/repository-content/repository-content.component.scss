@@ -1,0 +1,12 @@
+#repo-content-root{
+    display: flex;
+    flex-direction: row;
+}
+
+.code-view{
+    flex: 3;
+}
+
+.right-panel{
+    flex: 1;
+}

@@ -1,0 +1,16 @@
+<div>
+    <div class="file-root">
+        <div *ngIf="!isFile else fileblock">
+            <div *ngFor="let entity of fileList; let i = index">
+                <a [routerLink]="[entity.path]">{{entity.name}}</a>
+            </div>
+        </div>
+        <ng-template #fileblock>
+            <div>
+                <pre>
+                {{fileContents}}
+            </pre>
+            </div>
+        </ng-template>
+    </div>
+</div>
