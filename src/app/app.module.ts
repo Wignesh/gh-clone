@@ -11,6 +11,9 @@ import { SettingsPage } from './core/pages/settings/settings.page';
 import { ProfilePage } from './core/pages/profile/profile.page';
 import { RepositoryContentComponent } from './core/pages/repository-info/repository-content/repository-content.component';
 import { RepositoryCodeComponent } from './core/pages/repository-info/repository-code/repository-code.component';
+import { RepositoryPageHeaderComponent } from './core/pages/repository-info/repository-page-header/repository-page-header.component';
+import { RepositoryPageAboutComponent } from './core/pages/repository-info/repository-page-about/repository-page-about.component';
+
 
 @NgModule({
   declarations: [
@@ -23,9 +26,12 @@ import { RepositoryCodeComponent } from './core/pages/repository-info/repository
     ProfilePage,
     RepositoryContentComponent,
     RepositoryCodeComponent,
+    RepositoryPageHeaderComponent,
+    RepositoryPageAboutComponent,
+
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }

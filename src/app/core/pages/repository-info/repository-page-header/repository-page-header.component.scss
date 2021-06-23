@@ -1,0 +1,184 @@
+.page-header{
+  margin-bottom:2rem ;
+  margin-top:1rem;
+}
+
+
+
+
+// metrics nav
+
+.metrics-nav{
+  padding:0 1.5rem;
+  margin-bottom:1rem ;
+}
+
+.repo-relative-path{
+  margin-left: 0.5rem;
+}
+
+// watch, star and fork metrics. children of repo-metrics
+.repo-fork,.repo-watch,.repo-star{
+  display: flex;
+  flex-direction: row;
+  width: 8rem;
+  margin-left:1rem;
+  margin-right:1rem;
+  border:1px solid rgb(219, 211, 211);
+  border-radius:0.5rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.repo-metric-heading{
+  padding: 0.3rem 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex:1;
+  border-right: 1px solid rgb(219, 211, 211);
+}
+
+.repo-metric-value{
+  display: flex;
+  padding: 0.25rem 0.7rem;
+  align-items: center;
+}
+
+.octicon-star,.octicon-eye,.octicon-repo-forked{
+  margin-right: 0.2rem;
+}
+
+
+//
+
+
+// repository nav
+
+.repository-nav{
+  padding:0 1.5rem;
+  border-bottom:1px solid rgb(206, 202, 202);
+}
+
+.repository-nav-item{
+  padding: 1rem 1rem;
+  display:flex;
+  display: flex;
+  align-items: center;
+  border-bottom:2px solid transparent;
+}
+
+
+.repository-nav-item{
+  svg{
+    margin-right: 0.5rem;
+    color:gray;
+  }
+
+  .issue-count{
+    padding:0.15rem 0.5rem;
+    margin:0 0.2rem ;
+    background: rgb(231, 229, 229);
+    border-radius: 50%;
+    font-size: small;
+  }
+
+  .pull-requests-count{
+    padding:0.15rem 0.5rem;
+    margin:0 0.2rem ;
+    background: rgb(231, 229, 229);
+    border-radius: 50%;
+    font-size: small;
+  }
+
+  .projects-count{
+    padding:0.15rem 0.5rem;
+    margin:0 0.2rem ;
+    background: rgb(231, 229, 229);
+    border-radius: 50%;
+    font-size: small;
+  }
+}
+
+.repository-nav-item:hover{
+  border-bottom:2px solid rgb(218, 213, 213);
+  cursor: pointer;
+}
+
+.code-item{
+  font-weight: 550;
+}
+
+.code-item:hover{
+  border-bottom: 2px solid rgb(255, 165, 0);
+}
+
+
+
+// utility
+
+.flex{
+  display: flex;
+}
+
+.flex-row{
+  flex-direction: row;
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
+.items-center{
+  align-items: center;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.justify-between{
+  justify-content: space-between;
+}
+
+.items-stretch{
+  align-items: stretch;
+}
+
+.f1{
+  font-size: 1rem;
+}
+
+.text-xl{
+  font-size: x-large;
+}
+
+.text-blue{
+  color:blue;
+}
+
+.text-gray{
+  color:gray;
+}
+
+.text-black{
+  color:black !important;
+}
+
+
+.font-bold{
+  font-weight: bold;
+}
+
+.font-semibold{
+  font-weight: 550;
+}
+
+.font-normal{
+  font-weight: normal;
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
