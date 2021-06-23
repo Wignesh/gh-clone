@@ -9,6 +9,10 @@ import { RepositoriesPage } from './core/pages/repositories/repositories.page';
 import { RepositoryInfoPage } from './core/pages/repository-info/repository-info.page';
 import { SettingsPage } from './core/pages/settings/settings.page';
 import { ProfilePage } from './core/pages/profile/profile.page';
+import { NavProfileComponent } from './core/pages/profile/components/nav-profile/nav-profile.component';
+import { PopRepoComponent } from './core/pages/profile/components/pop-repo/pop-repo.component';
+import { ProfileFooterComponent } from './core/pages/profile/components/profile-footer/profile-footer.component';
+
 
 @NgModule({
   declarations: [
@@ -19,6 +23,9 @@ import { ProfilePage } from './core/pages/profile/profile.page';
     RepositoryInfoPage,
     SettingsPage,
     ProfilePage,
+    NavProfileComponent,
+    PopRepoComponent,
+    ProfileFooterComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
