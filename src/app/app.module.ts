@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { MatMenuModule } from '@angular/material/menu';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
@@ -22,8 +23,7 @@ import { ResolverHeaderbarComponent } from './core/pages/repository-info/shared/
 import { ResolverWelcomeComponent } from './core/pages/repository-info/shared/resolver-welcome/resolver-welcome.component';
 import { ResolverDetailsCardComponent } from './core/pages/repository-info/shared/resolver-details-card/resolver-details-card.component';
 import { RepositoryPageReadmeComponent } from './core/pages/repository-info/repository-page-readme/repository-page-readme.component';
-
-
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -44,14 +44,16 @@ import { RepositoryPageReadmeComponent } from './core/pages/repository-info/repo
     ResolverHeaderbarComponent,
     ResolverWelcomeComponent,
     ResolverDetailsCardComponent,
-    RepositoryPageReadmeComponent
+    RepositoryPageReadmeComponent,
   ],
   imports: [
+    MatMenuModule,
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NoopAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
