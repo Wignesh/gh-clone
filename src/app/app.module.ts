@@ -9,10 +9,11 @@ import { RepositoriesPage } from './core/pages/repositories/repositories.page';
 import { RepositoryInfoPage } from './core/pages/repository-info/repository-info.page';
 import { SettingsPage } from './core/pages/settings/settings.page';
 import { ProfilePage } from './core/pages/profile/profile.page';
-import { NavProfileComponent } from './core/pages/profile/components/nav-profile/nav-profile.component';
+import { NavProfileComponent } from './core/pages/shared/nav-profile/nav-profile.component';
 import { PopRepoComponent } from './core/pages/profile/components/pop-repo/pop-repo.component';
 import { ProfileFooterComponent } from './core/pages/profile/components/profile-footer/profile-footer.component';
-
+import { ProfileDescComponent } from './core/pages/shared/profile-desc/profile-desc.component';
+import { ContributionBlockComponent } from './core/pages/profile/components/contribution-block/contribution-block.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,8 @@ import { ProfileFooterComponent } from './core/pages/profile/components/profile-
     NavProfileComponent,
     PopRepoComponent,
     ProfileFooterComponent,
+    ProfileDescComponent,
+    ContributionBlockComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
