@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { RepoListItemComponent } from 'src/app/components/repo-list-item/repo-list-item.component';
+import { RepoListItemComponent } from 'src/app/core/components/repo-list-item/repo-list-item.component';
 
 @Component({
   selector: 'app-repositories',

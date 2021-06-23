@@ -9,7 +9,7 @@ import { RepositoriesPage } from './core/pages/repositories/repositories.page';
 import { RepositoryInfoPage } from './core/pages/repository-info/repository-info.page';
 import { SettingsPage } from './core/pages/settings/settings.page';
 import { ProfilePage } from './core/pages/profile/profile.page';
-import { RepoListItemComponent } from './components/repo-list-item/repo-list-item.component';
+import { RepoListItemComponent } from './core/components/repo-list-item/repo-list-item.component';  
 import { RouterModule } from '@angular/router';
 
 @NgModule({
