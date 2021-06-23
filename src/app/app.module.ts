@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { LoginPage } from './core/pages/login/login.page';
 import { DashboardPage } from './core/pages/dashboard/dashboard.page';
@@ -30,7 +31,11 @@ import { RepositoryPageAboutComponent } from './core/pages/repository-info/repos
     RepositoryPageAboutComponent,
 
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    HttpClientModule,
+    AppRoutingModule
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
