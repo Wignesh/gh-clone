@@ -23,7 +23,7 @@ const routes: Routes = [
     component: RepositoriesPage,
   },
   {
-    path: 'repository-info',
+    path: 'repository-info/:author/:repo',
     component: RepositoryInfoPage,
     children:[
       {
