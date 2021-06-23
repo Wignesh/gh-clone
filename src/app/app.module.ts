@@ -9,6 +9,7 @@ import { RepositoriesPage } from './core/pages/repositories/repositories.page';
 import { RepositoryInfoPage } from './core/pages/repository-info/repository-info.page';
 import { SettingsPage } from './core/pages/settings/settings.page';
 import { ProfilePage } from './core/pages/profile/profile.page';
+import { RepositoryPageHeaderComponent } from './core/pages/repository-info/repository-page-header/repository-page-header.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { ProfilePage } from './core/pages/profile/profile.page';
     RepositoryInfoPage,
     SettingsPage,
     ProfilePage,
+    RepositoryPageHeaderComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
