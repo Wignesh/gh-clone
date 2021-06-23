@@ -15,11 +15,14 @@ import { RepositoryContentComponent } from './core/pages/repository-info/reposit
 import { RepositoryCodeComponent } from './core/pages/repository-info/repository-code/repository-code.component';
 import { RepositoryPageHeaderComponent } from './core/pages/repository-info/repository-page-header/repository-page-header.component';
 import { RepositoryPageAboutComponent } from './core/pages/repository-info/repository-page-about/repository-page-about.component';
+
 import { PullRequestsComponent } from './core/pages/repository-info/pull-requests/pull-requests.component';
 import { ResolverCardContainerComponent } from './core/pages/repository-info/shared/resolver-card-container/resolver-card-container.component';
 import { ResolverHeaderbarComponent } from './core/pages/repository-info/shared/resolver-headerbar/resolver-headerbar.component';
 import { ResolverWelcomeComponent } from './core/pages/repository-info/shared/resolver-welcome/resolver-welcome.component';
 import { ResolverDetailsCardComponent } from './core/pages/repository-info/shared/resolver-details-card/resolver-details-card.component';
+import { RepositoryPageReadmeComponent } from './core/pages/repository-info/repository-page-readme/repository-page-readme.component';
+
 
 
 @NgModule({
@@ -40,7 +43,8 @@ import { ResolverDetailsCardComponent } from './core/pages/repository-info/share
     ResolverCardContainerComponent,
     ResolverHeaderbarComponent,
     ResolverWelcomeComponent,
-    ResolverDetailsCardComponent
+    ResolverDetailsCardComponent,
+    RepositoryPageReadmeComponent
   ],
   imports: [
     BrowserModule,

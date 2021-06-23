@@ -105,14 +105,6 @@
   cursor: pointer;
 }
 
-.code-item{
-  font-weight: 550;
-}
-
-.code-item:hover{
-  border-bottom: 2px solid rgb(255, 165, 0);
-}
-
 
 
 // utility
@@ -182,3 +174,6 @@
   cursor: pointer;
 }
 
+.bb-orange{
+  border-bottom: 2px solid rgb(255, 165, 0);
+}
