@@ -10,7 +10,8 @@ import { RepositoryInfoPage } from './core/pages/repository-info/repository-info
 import { SettingsPage } from './core/pages/settings/settings.page';
 import { ProfilePage } from './core/pages/profile/profile.page';
 import { ProfileDescComponent } from './core/pages/shared/profile-desc/profile-desc.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ContributionBlockComponent } from './core/pages/profile/components/contribution-block/contribution-block.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +22,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
     SettingsPage,
     ProfilePage,
     ProfileDescComponent,
+    ContributionBlockComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],
