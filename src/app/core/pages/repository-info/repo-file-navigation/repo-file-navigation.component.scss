@@ -5,6 +5,7 @@
 
 .file-navigation-header{
   background: #0d1117;
+  width: 65vw;
 }
 
 .left-part {
@@ -111,7 +112,7 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    padding: 0.45rem 1rem;
+    padding: 0.35rem 1rem;
     border-radius: 0.3rem;
     cursor:pointer;
     &:hover{

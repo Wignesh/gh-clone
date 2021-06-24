@@ -1,3 +1,8 @@
+*{
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+  sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
 .branch-select {
   display: flex;
   padding: 0.4rem 1.2rem;
@@ -11,7 +16,7 @@
   cursor:pointer;
   &:hover {
     background: #30363d;
-    border: 1px solid #8b949e;
+    border: 1px solid #30363d;
   }
 }
 
@@ -21,32 +26,53 @@
   width:15rem;
   display:flex;
   flex-direction:column;
-  border:1px solid gray;
+  border:1px solid #30363d;
+  align-items: stretch;
+  position: relative;
 }
 
 .branch-dropdown{
+
+  background: #1C2128;
 
   .dropdown-heading{
     display:flex;
     justify-content:space-between;
     padding:0.5rem;
-    border-bottom:1px solid gray;
+    border-bottom:1px solid #30363d;
+    color:#c9d1d9;
   }
 
   input{
     height:1.5rem;
-    line-height:1.5rem;
+    padding: 0.2rem;
+    line-height:1.6rem;
     margin:0.5rem;
+    color: white;
+    background-color: #0d1117;
+    border:none;
+
+    &:focus{
+      box-shadow:5 5 #388bfd;
+    }
+
   }
 
   .branches-list{
     display:flex;
     flex-direction:column;
+    color:#c9d1d9;
+    font-weight: normal;
 
     span{
       display:flex;
       align-items:center;
       gap:0.2rem;
+
+      &:hover{
+        cursor: pointer;
+        background:#161b22;
+      }
     }
 
     span:first-of-type{
@@ -55,12 +81,12 @@
     }
 
     span{
-      border-top:1px solid gray;
+      border-top:1px solid #30363d;
       padding:0.2rem 1rem;
     }
 
     span:last-of-type{
-      border-bottom:1px solid gray;
+      border-bottom:1px solid #30363d;
     }
   }
 }
@@ -71,7 +97,7 @@
 
   span{
     padding:0.5rem;
-  padding-bottom:0;
+    padding-bottom:0;
   }
 }
 
@@ -79,26 +105,32 @@
   p{
     text-align:center;
     padding:0.5rem 0;
-    border-bottom:1px solid gray;
+    border-bottom:1px solid #30363d;
+    color: #c9d1d9;
   }
   div{
-   text-align:center;
-    padding:0.5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#58a6ff;
+    cursor: pointer;
+    padding: 0.5rem 0;
+
+    &:hover{
+      text-decoration: underline;
+    }
   }
 }
 
 
 // tabs accordion styling
 
-.branch-dropdown{
-  background: white;
-}
 
 .tabs {
   display: flex;
   flex-wrap: wrap;
   padding-top:1rem;
-  border-top:1px solid gray;
+  border-top:1px solid #30363d;
 }
 
 .tabs label:first-of-type{
@@ -109,11 +141,26 @@
   font-weight:small;
   order: 1;
   display: block;
-  padding: 0.5rem 1rem;
+  padding: 0.3rem 1rem 0.1rem 1rem;
+  border-radius: 0.3rem 0.3rem 0 0 ;
   margin-right: 0.2rem;
   cursor: pointer;
   font-weight: bold;
   transition: background ease 0.2s;
+  color:#c9d1d9;
+}
+
+.all-branches-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#58a6ff;
+  cursor: pointer;
+  padding: 0.5rem 0;
+
+  &:hover{
+    text-decoration: underline;
+  }
 }
 
 .tabs .tab {
@@ -128,6 +175,6 @@
   opacity: 0;
 }
 
-.tabs input[type="radio"]:checked + label { border:1px solid gray;border-bottom:1px solid #FFFFFF; }
+.tabs input[type="radio"]:checked + label { border:1px solid #30363d;border-bottom:1px solid transparent; }
 
 .tabs input[type="radio"]:checked + label + .tab { display: block; }
