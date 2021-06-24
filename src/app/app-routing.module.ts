@@ -10,6 +10,7 @@ import { RepositoryContentComponent } from './core/pages/repository-info/reposit
 import { RepositoryCodeComponent } from './core/pages/repository-info/repository-code/repository-code.component';
 import { IssuesComponent } from './core/pages/repository-info/issues/issues.component';
 import { PullRequestsComponent } from './core/pages/repository-info/pull-requests/pull-requests.component';
+import { CodeViewComponent } from './core/pages/repository-info/code-view/code-view.component';
 
 const routes: Routes = [
   {
@@ -42,7 +43,8 @@ const routes: Routes = [
       },
       {
         path:"**",
-        component:RepositoryCodeComponent
+        //component:RepositoryCodeComponent
+        component:CodeViewComponent
       }
     ]
   },

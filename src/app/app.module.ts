@@ -42,6 +42,7 @@ import { DashboardNewsItemForkedComponent } from './core/pages/dashboard/dashboa
 import { DashboardNewsLoadingComponent } from './core/pages/dashboard/dashboard-news-loading/dashboard-news-loading.component';
 import { DashboardNewsFeedComponent } from './core/pages/dashboard/dashboard-news-feed/dashboard-news-feed.component';
 import { DashboardNewsFeedSidebarRightComponent } from './core/pages/dashboard/dashboard-news-feed-sidebar-right/dashboard-news-feed-sidebar-right.component';
+import { CodeViewComponent } from './core/pages/repository-info/code-view/code-view.component';
 
 @NgModule({
   declarations: [
@@ -81,6 +82,7 @@ import { DashboardNewsFeedSidebarRightComponent } from './core/pages/dashboard/d
     DashboardNewsLoadingComponent,
     DashboardNewsFeedComponent,
     DashboardNewsFeedSidebarRightComponent,
+    CodeViewComponent,
   ],
   imports: [
     BrowserModule,
