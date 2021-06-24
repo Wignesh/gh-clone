@@ -1,12 +1,13 @@
 <div class="resolver-card">
     <div class="resolver-icon">
-        <span class="iconify icon-1" data-icon="octicon:issue-opened-16" data-inline="false"></span>
+        <span class="iconify icon-1" attr.data-icon={{icons[rtype]?.open}} data-inline="false"></span>
     </div>
     <div class="resolver-details-main">
         <div class="card-title">{{resolverDetails?.tittle}}
-            <button class="label" *ngFor="let label of resolverDetails?.labels">{{label}}</button>
+            <button class="label" *ngFor="let labelindex of resolverDetails?.labels"
+                [style.background-color]="labels[labelindex]?.color">{{labels[labelindex]?.name}}</button>
         </div>
-        <div class="card-metadata">{{resolverDetails.sno}} opened 3 hours ago by {{resolverDetails?.postedBy}}</div>
+        <div class="card-metadata">#{{resolverDetails.sno}} opened 3 hours ago by {{resolverDetails?.postedBy}}</div>
     </div>
     <div class="metadata-bar-left">
         <div class="comp-1">{{resolverDetails?.linked.length}}

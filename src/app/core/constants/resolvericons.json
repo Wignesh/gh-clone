@@ -1,0 +1,13 @@
+  {
+     
+    "issues": {
+      "open": "octicon:issue-opened-16",
+      "closed": "octicon:check-24"
+    },
+    "pr": {
+      "open": "octicon:git-pull-request-24",
+      "closed": "octicon:git-pull-request-closed-24",
+      "merged":"octicon:git-merge-24"
+    }
+  
+}

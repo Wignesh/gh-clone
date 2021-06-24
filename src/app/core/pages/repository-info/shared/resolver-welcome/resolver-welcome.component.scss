@@ -24,11 +24,16 @@
     text-align: center;
   }
   .dismiss-dropdown {
-    color: rgb(36 41 46);
-    display: inline-block;
-    font-family: -apple-system;
-    font-size: 14px;
-    line-height: 21px;
-    text-align: left;
+    .dismiss-dropdown-btn {
+      color: rgb(36 41 46);
+      display: inline-block;
+      font-family: -apple-system;
+      font-size: 14px;
+      line-height: 21px;
+      text-align: left;
+    }
+    .dismiss-dropdown-elements {
+      display: none;
+    }
   }
 }

@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import * as resolverData from '../../../../constants/resolver.json';
+import * as resolverIcons from '../../../../constants/resolvericons.json';
 
 @Component({
   selector: 'app-resolver-card-container',
@@ -13,6 +14,8 @@ export class ResolverCardContainerComponent implements OnInit {
   closedCount: number = 0;
   openList: any[] = [];
   rdata: { [index: string]: any } = resolverData;
+
+  icons: { [index: string]: any } = resolverIcons;
   constructor() {}
 
   ngOnInit(): void {
