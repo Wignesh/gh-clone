@@ -1,0 +1,51 @@
+<div class="branch-select" id="branch-select-dropdown" (click)="toggleDropDownVisibility()" >
+  <svg style="fill:gray" aria-hidden="true" viewBox="0 0 16 16" version="1.1" data-view-component="true"
+    height="16" width="16">
+    <path fill-rule="evenodd"
+      d="M11.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122V6A2.5 2.5 0 0110 8.5H6a1 1 0 00-1 1v1.128a2.251 2.251 0 11-1.5 0V5.372a2.25 2.25 0 111.5 0v1.836A2.492 2.492 0 016 7h4a1 1 0 001-1v-.628A2.25 2.25 0 019.5 3.25zM4.25 12a.75.75 0 100 1.5.75.75 0 000-1.5zM3.5 3.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0z">
+    </path>
+  </svg>
+  <span>master</span>
+  <svg xmlns="http://www.w3.org/2000/svg" style="position: relative;top:0.18rem;" width="8" height="8" fill="currentColor" class="bi bi-caret-down-fill"
+    viewBox="0 0 16 16">
+    <path
+      d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+  </svg>
+</div>
+
+
+<div class="branch-dropdown" id="branch-dropdown-popper" [ngStyle]="{'display':dropdownDisplayed?'block':'none'}">
+  <div class="flex justify-between dropdown-heading">
+    <span class="title">Switch branches/tags</span>
+    <span (click)="removeDropDownFromDOM()" style="cursor: pointer;" >x</span>
+  </div>
+  <input type="text" />
+
+  <div class="tabs branch-tag-switch" >
+
+    <input type="radio" name="tabs" id="tabone" checked="checked">
+    <label for="tabone">branches</label>
+    <div class="tab">
+      <div class="branches-list">
+        <span>
+          <svg aria-hidden="true" viewBox="0 0 16 16" version="1.1" data-view-component="true" height="16" width="16" class="octicon octicon-check SelectMenu-icon SelectMenu-icon--check">
+            <path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path>
+          </svg>
+          master</span>
+        <span>sibi</span>
+        <span>aishwarya</span>
+        <span>deepak</span>
+        <span>yashwanth</span>
+      </div>
+
+      <div>view all branches</div>
+    </div>
+
+    <input type="radio" name="tabs" id="tabtwo">
+    <label for="tabtwo">tags</label>
+    <div class="tab tags-tab">
+      <p>Nothing to show</p>
+      <div>view all tags</div>
+    </div>
+  </div>
+</div>

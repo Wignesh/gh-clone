@@ -50,7 +50,7 @@ export class LanguagesUsedIndicatorComponent implements OnInit {
   constructor() {
 
     this.languagesUsed = this.languagesUsed.map((langDetails:any)=>{
-      langDetails = {...langDetails,color:randomColor( {luminosity: 'dark'})}
+      langDetails = {...langDetails,color:randomColor( {luminosity: 'light'})}
       return langDetails
     })
 

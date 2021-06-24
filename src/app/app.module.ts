@@ -24,6 +24,7 @@ import { ResolverDetailsCardComponent } from './core/pages/repository-info/share
 import { RepositoryPageReadmeComponent } from './core/pages/repository-info/repository-page-readme/repository-page-readme.component';
 import { LanguagesUsedIndicatorComponent } from './core/pages/repository-info/languages-used-indicator/languages-used-indicator.component';
 import { RepoFileNavigationComponent } from './core/pages/repository-info/repo-file-navigation/repo-file-navigation.component';
+import { RepoBranchesDropdownComponent } from './core/pages/repository-info/repo-file-navigation/repo-branches-dropdown/repo-branches-dropdown.component';
 
 
 
@@ -48,7 +49,8 @@ import { RepoFileNavigationComponent } from './core/pages/repository-info/repo-f
     ResolverDetailsCardComponent,
     RepositoryPageReadmeComponent,
     LanguagesUsedIndicatorComponent,
-    RepoFileNavigationComponent
+    RepoFileNavigationComponent,
+    RepoBranchesDropdownComponent
   ],
   imports: [
     BrowserModule,
