@@ -1,6 +1,9 @@
 <div id="repo-content-root flex flex-col">
     <div class="flex">
-      <app-repository-code class="code-view" [authorName]="authorName" [repoName]="repoName"></app-repository-code>
+      <div class="file-tree">
+        <app-repo-file-navigation></app-repo-file-navigation>
+        <app-repository-code class="code-view" [authorName]="authorName" [repoName]="repoName"></app-repository-code>
+      </div>
 
       <div class="right-panel">
           <app-repository-page-about></app-repository-page-about>

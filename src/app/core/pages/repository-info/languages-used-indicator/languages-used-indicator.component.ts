@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import randomColor from 'randomcolor'
+import randomColor from 'randomcolor';
 
 interface langDetails{
   language:string,
