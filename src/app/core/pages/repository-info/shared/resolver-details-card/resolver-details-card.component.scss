@@ -20,6 +20,7 @@ $common-font: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
     }
     .resolver-details-main {
       margin-left: 0.4rem;
+      position: relative;
       .card-title {
         font-size: 16px;
         font-weight: 600;
@@ -43,7 +44,6 @@ $common-font: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
       }
       .card-metadata {
         line-height: 18px;
-        font-size: 0.8em;
         color: $color-text-secondary;
         font-size: 12px;
       }
@@ -83,4 +83,10 @@ $common-font: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
   &:hover {
     background-color: $color-bg-tertiary;
   }
+}
+
+.chumma {
+  z-index: 2;
+  position: absolute;
+  bottom: 12vh;
 }

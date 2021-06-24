@@ -10,6 +10,8 @@ export class ResolverDetailsCardComponent implements OnInit {
   @Input() resolverDetails: any;
   @Input() rtype = '';
 
+  displayDetails: boolean = false;
+
   resolverData = resolverData;
   labels: any;
   icons: { [index: string]: any } = resolverIcons;

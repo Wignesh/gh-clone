@@ -1,12 +1,24 @@
   {
      
     "issues": {
-      "open": "octicon:issue-opened-16",
-      "closed": "octicon:check-24"
+      "open":{
+        "icon": "octicon:issue-opened-16",
+        "color":"#56d364"
+      },
+      "closed":{
+        "icon": "octicon:check-24",
+        "color":"#f85149"
+      }
     },
     "pr": {
-      "open": "octicon:git-pull-request-24",
-      "closed": "octicon:git-pull-request-closed-24",
+      "open":{
+        "icon":"octicon:git-pull-request-24",
+        "color":"#56d364"
+      } ,
+      "closed":{
+        "icon":"octicon:git-pull-request-closed-24",
+        "color":"#56d364"
+      } ,
       "merged":"octicon:git-merge-24"
     }
   

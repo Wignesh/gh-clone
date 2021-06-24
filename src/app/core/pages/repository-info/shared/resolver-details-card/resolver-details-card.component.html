@@ -1,9 +1,17 @@
 <div class="resolver-card">
     <div class="container-right">
         <div class="resolver-icon">
-            <span class="iconify icon-1" attr.data-icon={{icons[rtype]?.open}} data-inline="false"></span>
+            <span class="iconify icon-1" attr.data-icon={{icons[rtype]?.open?.icon}}
+                [style.color]="icons[rtype]?.open?.color" data-inline="false"></span>
         </div>
-        <div class="resolver-details-main">
+        <div class="resolver-details-main" (mouseover)="displayDetails=true" (mouseout)="displayDetails=false">
+            <ng-template [ngIf]="displayDetails">
+                <div class="chumma">
+                    <app-resolver-details-popup [resolverDetails]="resolverDetails" [ricon]="icons[rtype]?.open?.icon"
+                        [riconcolor]="icons[rtype]?.open?.color">
+                    </app-resolver-details-popup>
+                </div>
+            </ng-template>
             <div class="card-title">{{resolverDetails?.tittle}}
                 <button class="label" *ngFor="let labelindex of resolverDetails?.labels"
                     [style.background-color]="labels[labelindex]?.color">{{labels[labelindex]?.name}}</button>

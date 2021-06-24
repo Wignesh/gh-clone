@@ -2,11 +2,12 @@
     <div class="resolver-toolbar">
         <div class="resolver-count">
             <div class="open-count  active-btn">
-                <span class="iconify icon-1" attr.data-icon={{this.icons[this.rtype].open}} data-inline="false"></span>
+                <span class="iconify icon-1" attr.data-icon={{this.icons[this.rtype]?.open?.icon}}
+                    data-inline="false"></span>
                 {{openCount}} Open
             </div>
             <div class="close-count icon-1">
-                <span class="iconify" attr.data-icon={{this.icons[this.rtype].closed}} data-inline="false"></span>
+                <span class="iconify" attr.data-icon={{this.icons[this.rtype].closed?.icon}} data-inline="false"></span>
                 {{closedCount}}
                 Closed
             </div>
