@@ -11,20 +11,20 @@
     font-size: 14px;
     line-height: 1.5;
     .news-details {
-      border-bottom: 1px solid $color-border-primary !important;
-      border-color: $color-border-secondary !important;
+      border-bottom: 1px solid $color-border-primary;
+      border-color: $color-border-secondary;
       .container {
-        align-items: baseline !important;
-        padding-top: 16px !important;
-        padding-bottom: 16px !important;
-        display: flex !important;
+        align-items: baseline;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        display: flex;
         .user {
-          margin-right: 8px !important;
+          margin-right: 8px;
           .user-link {
             background-color: transparent;
             color: $color-text-link;
             text-decoration: none;
-            display: inline-block !important;
+            display: inline-block;
             .user-avatar {
               width: 32px;
               aspect-ratio: auto 32 / 32;
@@ -37,14 +37,14 @@
               background-color: $color-avatar-bg;
               flex-shrink: 0;
               box-shadow: 0 0 0 1px $color-avatar-border;
-              border-radius: 50% !important;
+              border-radius: 50%;
             }
           }
         }
         .news-card {
-          flex-direction: column !important;
-          flex: 1 !important;
-          display: flex !important;
+          flex-direction: column;
+          flex: 1;
+          display: flex;
           .news-title {
             .container {
               .user-link {
@@ -56,10 +56,10 @@
                 word-wrap: break-word;
                 background-color: transparent;
                 color: $color-text-primary;
-                font-weight: 600 !important;
-                text-decoration: none !important;
-                word-break: break-all !important;
-                display: inline-block !important;
+                font-weight: 600;
+                text-decoration: none;
+                word-break: break-all;
+                display: inline-block;
                 &:hover {
                   color: $color-text-link !important;
                 }
@@ -70,8 +70,8 @@
                   Segoe UI Emoji;
                 font-size: 14px;
                 line-height: 1.5;
-                color: $color-text-primary !important;
-                text-decoration: none !important;
+                color: $color-text-primary;
+                text-decoration: none;
                 margin-left: 6px;
                 .repo-link {
                   font-family: -apple-system, BlinkMacSystemFont, Segoe UI,
@@ -80,11 +80,11 @@
                   font-size: 14px;
                   line-height: 1.5;
                   background-color: transparent;
-                  color: $color-text-primary !important;
-                  font-weight: 600 !important;
-                  text-decoration: none !important;
-                  word-break: break-all !important;
-                  display: inline-block !important;
+                  color: $color-text-primary;
+                  font-weight: 600;
+                  text-decoration: none;
+                  word-break: break-all;
+                  display: inline-block;
                   &:hover {
                     color: $color-text-link !important;
                   }
@@ -94,10 +94,10 @@
                     Helvetica, Arial, sans-serif, Apple Color Emoji,
                     Segoe UI Emoji;
                   line-height: 1.5;
-                  color: $color-text-tertiary !important;
-                  margin-left: 4px !important;
-                  font-size: 12px !important;
-                  white-space: nowrap !important;
+                  color: $color-text-tertiary;
+                  margin-left: 4px;
+                  font-size: 12px;
+                  white-space: nowrap;
                 }
               }
             }
@@ -107,8 +107,8 @@
               background-color: $color-bg-primary;
               border: 1px solid $color-border-primary;
               border-radius: 6px;
-              margin-top: 8px !important;
-              padding: 16px !important;
+              margin-top: 8px;
+              padding: 16px;
             }
           }
         }
@@ -149,19 +149,19 @@
     padding-left: 0;
     margin-top: 0;
     margin-bottom: 0;
-    padding-top: 4px !important;
-    list-style: none !important;
+    padding-top: 4px;
+    list-style: none;
     .commit-item {
       font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
         sans-serif, Apple Color Emoji, Segoe UI Emoji;
       font-size: 14px;
       line-height: 1.5;
       color: $color-text-primary;
-      list-style: none !important;
+      list-style: none;
       box-sizing: border-box;
-      align-items: baseline !important;
-      margin: 0 !important;
-      display: flex !important;
+      align-items: baseline;
+      margin: 0;
+      display: flex;
       list-style-type: none;
 
       .commit-user {
@@ -171,20 +171,20 @@
         line-height: 1.5;
         color: $color-text-primary;
         word-wrap: break-word;
-        list-style: none !important;
+        list-style: none;
         list-style-type: none;
         box-sizing: border-box;
         img {
           font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
             Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
-          list-style: none !important;
+          list-style: none;
           list-style-type: none;
           width: 16px;
           aspect-ratio: auto 16 / 16;
           height: 16px;
           border-style: none;
-          margin-right: 4px !important;
-          border-radius: 50% !important;
+          margin-right: 4px;
+          border-radius: 50%;
           margin: 0 1px 0 0;
           vertical-align: middle;
           background-color: $color-bg-primary;
@@ -195,7 +195,7 @@
         a {
           line-height: 1.5;
           word-wrap: break-word;
-          list-style: none !important;
+          list-style: none;
           list-style-type: none;
           font-family: ui-monospace, SFMono-Regular, SF Mono, Consolas,
             Liberation Mono, Menlo, monospace;
@@ -204,7 +204,7 @@
           background-color: transparent;
           color: $color-text-link;
           text-decoration: none;
-          margin-right: 4px !important;
+          margin-right: 4px;
           &:hover {
             text-decoration: underline;
           }
@@ -215,12 +215,12 @@
           Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
         font-size: 14px;
         color: $color-text-primary;
-        line-height: 1.25 !important;
+        line-height: 1.25;
         hyphens: auto;
         blockquote {
           font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
             Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
-          line-height: 1.25 !important;
+          line-height: 1.25;
           hyphens: auto;
           display: inline;
           font-size: 13px;
