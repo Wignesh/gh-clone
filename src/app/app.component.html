@@ -1,4 +1,4 @@
-<ul>
+<!-- <ul>
     <li>
         <a href="">
             <svg class="octicon octicon-mark-github v-align-middle" height="32" viewBox="0 0 16 16" version="1.1"
@@ -27,5 +27,6 @@
     <li>
         <a routerLink="/settings">Settings</a>
     </li>
-</ul>
+</ul> -->
+<app-nav *ngIf="!hasValidRoute()"></app-nav>
 <router-outlet></router-outlet>
