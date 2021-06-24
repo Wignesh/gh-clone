@@ -23,6 +23,7 @@ import { ResolverWelcomeComponent } from './core/pages/repository-info/shared/re
 import { ResolverDetailsCardComponent } from './core/pages/repository-info/shared/resolver-details-card/resolver-details-card.component';
 import { RepositoryPageReadmeComponent } from './core/pages/repository-info/repository-page-readme/repository-page-readme.component';
 import { LanguagesUsedIndicatorComponent } from './core/pages/repository-info/languages-used-indicator/languages-used-indicator.component';
+import { RepoFileNavigationComponent } from './core/pages/repository-info/repo-file-navigation/repo-file-navigation.component';
 
 
 
@@ -46,7 +47,8 @@ import { LanguagesUsedIndicatorComponent } from './core/pages/repository-info/la
     ResolverWelcomeComponent,
     ResolverDetailsCardComponent,
     RepositoryPageReadmeComponent,
-    LanguagesUsedIndicatorComponent
+    LanguagesUsedIndicatorComponent,
+    RepoFileNavigationComponent
   ],
   imports: [
     BrowserModule,
