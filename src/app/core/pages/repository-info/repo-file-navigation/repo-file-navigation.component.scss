@@ -1,0 +1,97 @@
+
+
+.left-part{
+  display: flex;
+  align-items: center;
+  gap:1rem;
+
+  .branch-select{
+    display: flex;
+    padding:0.3rem 1rem;
+    gap:0.4rem;
+    align-items: center;
+    background-color: #F3F4F6;
+    border:1px solid #D3D5D6;
+    border-radius:0.3rem;
+    font-weight: 500;
+  }
+
+  .branches-metadata{
+    display: flex;
+    align-items: center;
+    gap:0.2rem;
+  }
+
+  .tags-metadata{
+    display: flex;
+    align-items: center;
+    gap:0.2rem;
+  }
+
+}
+
+
+.right-part{
+  display: flex;
+  gap:1rem;
+  align-items: center;
+
+
+  .goto-file-btn{
+    background-color: #F3F4F6;
+    border:1px solid #D3D5D6;
+    padding:0.3rem 1.0rem;
+    border-radius:0.3rem;
+  }
+
+  .add-file-btn{
+    display: flex;
+    gap:0.2rem;
+    align-items: center;
+    background-color: #F3F4F6;
+    border:1px solid #D3D5D6;
+    padding:0.3rem 1.0rem;
+    border-radius:0.3rem;
+  }
+
+
+  .code-download-btn{
+    color:white;
+    background:#2C974B;
+    display: flex;
+    align-items: center;
+    gap:0.5rem;
+    padding:0.4rem 1.0rem;
+    border-radius:0.3rem;
+  }
+
+}
+
+
+
+
+// utility
+
+.flex{
+  display: flex;
+}
+
+.items-center{
+  align-items: center;
+}
+
+.gap-1{
+  gap:1rem;
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+.text-gray{
+  color: gray;
+}
+
+.justify-between{
+  justify-content: space-between;
+}
