@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-contribution-block',
@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContributionBlockComponent implements OnInit {
 
+  @ViewChild('hiddentimeline') timeline:any;
   constructor() { }
 
   ngOnInit(): void {
+  }
+  showhiddentimeline()
+  {
+    this.timeline.nativeElement.style.display="block"
   }
 
 }

@@ -1,8 +1,13 @@
+*
+{
+    background-color:#191e25;
+    color:    #adbac7;
+}
+
 .profileblock
 {
-    color:  #24292e;
+    
     display:    inline  ;
-    padding: 16px 0px;
     font-size:    14px;
     line-height:    21px;
 
@@ -12,12 +17,11 @@
 }
 .profileimg
 {
-    width:70%;
-    height:70%;
+    width:100%;
+    height:100%;
     border-radius: 50%;display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
 }
 .namediv
 {
@@ -25,6 +29,21 @@
     text-align: left;
     margin:0px 0px 8px;
     padding:20px;
+}
+
+.previewprof
+{
+    display: block;
+}
+.resume
+{
+    width: 100%;
+    text-align: left;
+    margin:0px 0px 8px;
+    padding:20px;
+    ;
+    font-size:20px;
+    line-height:32.5px;
 }
 .profdetails
 {
@@ -37,7 +56,7 @@
     padding:10px;
     width: 100%;
     text-align: left;
-    color:  #24292e;
+    ;
     font-size:    14px;
     line-height:    21px;
     margin:0px 0px 8px;
@@ -45,20 +64,19 @@
 }
 .profname
 {
-    color:#24292e;
     font-size:26px;
     font-weight:600;
     line-height:32.5px;
 }
 .username
 {
-    color:#586069;
+    
     font-size:20px;
     font-weight:300;
     line-height:24px;
 }
 .profbtn{
-    color:#24292e;
+    
     display:flex;
     font-size:14px;
     line-height:21px;
@@ -69,14 +87,14 @@
 .profeditbtn
 {
     align-items:flex-start;
-    background-color:#fafbfc;
-    border-color:#1b1f23;
+    border-color:#444c56;
+    
     border-radius:6px;
     width:100%;
     border-style:solid;
     border-width:1px;
     box-shadow:#1b1f23 0px 1px 0px 0px,;
-    color:#24292e;
+
     font-family:-apple-system;
     font-size:14px;
     font-weight:500;
@@ -88,11 +106,15 @@
 {
     display: flex;
     width: 100%;
+    margin:0px 0px 8px;
     text-align: center;
 }
 .profachieve
 {
-    color:#24292e;
+    border-color:#ebedef;
+    border-style:solid none none;
+    border-width:1px 0px 0px;
+    
     font-family:-apple-system;
     font-weight:600;
     line-height:24px;
@@ -104,11 +126,11 @@
 
 .profachimg
 {
-    color:#0366d6;
+    
     display:inline;
     font-size:14px;
     line-height:21px;
-    width: 33%;
+    width: 33%;color:#0366d6;
     height: 33%;
     padding:5px;
 }
@@ -117,17 +139,117 @@
     align-items:flex-start;
     padding:5%;
     width:100%;
-    background-color:#fafbfc;
+     ;
     border-color:#1b1f23;
     border-radius:6px;
     border-style:solid;
     border-width:1px;
     box-shadow:#1b1f23 0px 1px 0px 0px,;
-    color:#24292e;
+    
     font-family:-apple-system;
     font-size:14px;
     font-weight:500;
     line-height:20px;
     padding:5px 16px;
+    text-align:center;
+}
+
+
+
+.editprof
+{
+    display: none;
+}
+
+
+.probadge
+{
+    border-color:#8256d0;
+    border-radius:24px;
+    border-style:solid;
+    border-width:1px;
+    color:#986ee2;
+    display:inline-block;
+    font-size:12px;
+    font-weight:500;
+    line-height:18px;
+    padding:0px 7px;
+    text-align:left;
+    text-transform:uppercase;
+}
+
+.editinput
+{
+    align-items: center;
+    background-position:
+    right 8px 50%;
+    border-color:    #373e47;
+    border-radius:    6px;
+    border-style:    solid;
+    border-width:    1px;
+    box-shadow:    #000000 0px 0px 0px 0px;
+    font-family:    -apple-system;
+    font-size:    12px;
+    line-height:    20px;
+    margin:    0px 0px 0px 8px;
+    padding:    3px 12px;
+}
+textarea{
+    resize: vertical;
+    width: 80%;
+    padding:100px;
+}
+.editinputdiv
+{
+    align-items:center;
+    display:flex;
+    font-size:14px;
+    line-height:21px;
+    margin:15px 0px 0px;
+    padding-left: 10px;
+}
+
+.editbadgediv
+{
+    font-size:14px;
+    line-height:21px;
+    margin:0px 0px 15px;
+    padding:0px 0px 0px 20px;
+}
+
+.editbtns
+{
+    align-items:flex-start;
+    background-color:#347d39;
+    border-color:#46954a;
+    border-radius:6px;
+    border-style:solid;
+    border-width:1px;
+    box-shadow:#000000 0px 0px 0px 0px;
+    color:#ffffff;
+    display:inline-block;
+    font-family:-apple-system;
+    font-size:12px;
+    font-weight:500;
+    line-height:20px;
+    padding:3px 12px;
+    text-align:center;
+}
+.editbtnc
+{
+    align-items:flex-start;
+    background-color:#373e47;
+    border-color:    #444c56;
+    border-radius:6px;
+    border-style:solid;
+    border-width:1px;
+    box-shadow:#000000 0px 0px 0px 0px;
+    color:#ffffff;
+    display:inline-block;
+    font-family:-apple-system;
+    font-size:12px;
+    font-weight:500;
+    line-height:20px;
+    padding:3px 12px;
     text-align:center;
 }
