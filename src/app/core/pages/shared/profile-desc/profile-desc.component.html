@@ -1,0 +1,96 @@
+<div class="profileblock">
+    <div class="imgdiv">
+    <img class="profileimg" src="https://cdn.i-scmp.com/sites/default/files/d8/images/methode/2019/03/14/a0998edc-43db-11e9-b5dc-9921d5eb8a6d_image_hires_141150.JPG">
+    </div>
+    <div class="previewprof" #previewprof>
+        <div class="namediv">
+            <span class="profname">{{profile.profname}}</span><br/>
+            <span class="username">{{profile.username}}</span><br/>
+        </div>
+         <div class="resume">
+            {{profile.description}}
+        </div>
+        <div></div>
+        <div class="profbtn">
+            <button (click)="editproffunc()"  class="profeditbtn" value="Edit Profile">Edit Profile</button>
+        </div>
+        <div class="profdetails">
+            <div class="follows">
+                <div>
+                <i class="fas fa-users"></i>
+                <a> {{profile.followers}} follower  </a>
+                </div>
+                <a style="font-size:larger;"> . </a>
+                <div>
+                <a>  {{profile.following}} following  </a>    
+                </div>
+                .
+                <div>
+                <i class="fas fa-star"></i>
+                <a> {{ profile.stars}} </a>
+                </div>
+            </div>
+            <div class="descdiv">
+                <span><i class="fas fa-book-reader"></i> {{profile.company}} </span><br/>
+                <span><i class="far fa-envelope"></i> {{profile.email}} </span><br/>
+                <span><i class="fas fa-link"></i> {{ profile.website}}</span><br/>
+                <span><i class="fab fa-twitter-square"></i>{{profile.twitter}} </span><br/>
+                <span><i class="fas fa-flag"></i> {{profile.location}} </span><br/>
+            </div>
+        </div>
+    </div>
+    <div class="editprof" #editprof>
+        <div>
+            <form (submit)="saveedit()">
+                <div class="editbadgediv">
+                    <input type="checkbox">
+                    <label>
+                        Display
+                        <span class="probadge">pro</span>
+                        badge
+                    </label>
+                </div>  
+                <textarea class="editinput" name="description" [(ngModel)]="editdescription">{{profile.description}}</textarea>
+                <div class="editinputdiv">
+                    <i class="fas fa-building"></i>
+                    <input class="editinput"name="company" [(ngModel)]="editcompany" type="text" placeholder="company">
+                </div>
+                <div class="editinputdiv">
+                    <i class="fas fa-map-marker"></i>
+                    <input class="editinput" name="location" [(ngModel)]="editlocation" type="text" placeholder="location">
+                </div>
+                <div class="editinputdiv">
+                    <i class="fas fa-envelope"></i>
+                    <input class="editinput" name="email" [(ngModel)]="editemail" type="email" placeholder="email">
+                </div>
+                <div class="editinputdiv">
+                    <i class="fas fa-link"></i>
+                    <input class="editinput" name="website" [(ngModel)]="editwebsite" type="website" placeholder="website">
+                </div>
+                <div class="editinputdiv">
+                    <i class="fab fa-twitter"></i>
+                    <input class="editinput" mame="twitter" [(ngModel)]="edittwitter" type="text" placeholder="twitter username">
+                </div>
+                <br/>
+                <div style="display: flex;">
+                <button  type="submit" class="editbtns">Save</button>
+                
+                <button (click)="canceledit()" class="editbtnc" >Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="profachieve">
+        <div><h2> Achievements </h2></div>
+        <img class="profachimg" src="./assets/images/achievement-badge1.png">
+        <!-- <img class="profachimg" src="./assets/images/achievement-badge2.png"> -->
+        <img class="profachimg" src="./assets/images/achievement-badge3.png">
+    </div>
+    <div class="profachieve" >
+        <h2> Highlights</h2>
+        <div>
+            <i class="fas fa-star"></i>
+        <span  class="probadge"> PRO</span>
+        </div>  
+    </div>
+</div>

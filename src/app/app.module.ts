@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
@@ -11,11 +11,18 @@ import { RepositoryInfoPage } from './core/pages/repository-info/repository-info
 import { SettingsPage } from './core/pages/settings/settings.page';
 import { IssuesComponent } from './core/pages/repository-info/issues/issues.component';
 import { ProfilePage } from './core/pages/profile/profile.page';
+import { RepoListItemComponent } from './core/pages/shared/repo-list-item/repo-list-item.component';  
+import { RouterModule } from '@angular/router';
+import { NavProfileComponent } from './core/pages/profile/components/nav-profile/nav-profile.component';
+import { PopRepoComponent } from './core/pages/profile/components/pop-repo/pop-repo.component';
+import { ProfileFooterComponent } from './core/pages/profile/components/profile-footer/profile-footer.component';
+import { ProfileDescComponent } from './core/pages/shared/profile-desc/profile-desc.component';
+import { ContributionBlockComponent } from './core/pages/profile/components/contribution-block/contribution-block.component';
+import { RepoListSearchFormComponent } from './core/components/repo-list-search-form/repo-list-search-form.component';
 import { RepositoryContentComponent } from './core/pages/repository-info/repository-content/repository-content.component';
 import { RepositoryCodeComponent } from './core/pages/repository-info/repository-code/repository-code.component';
 import { RepositoryPageHeaderComponent } from './core/pages/repository-info/repository-page-header/repository-page-header.component';
 import { RepositoryPageAboutComponent } from './core/pages/repository-info/repository-page-about/repository-page-about.component';
-
 import { PullRequestsComponent } from './core/pages/repository-info/pull-requests/pull-requests.component';
 import { ResolverCardContainerComponent } from './core/pages/repository-info/shared/resolver-card-container/resolver-card-container.component';
 import { ResolverHeaderbarComponent } from './core/pages/repository-info/shared/resolver-headerbar/resolver-headerbar.component';
@@ -39,6 +46,7 @@ import { DashboardNewsItemForkedComponent } from './core/pages/dashboard/dashboa
 import { DashboardNewsLoadingComponent } from './core/pages/dashboard/dashboard-news-loading/dashboard-news-loading.component';
 import { DashboardNewsFeedComponent } from './core/pages/dashboard/dashboard-news-feed/dashboard-news-feed.component';
 import { DashboardNewsFeedSidebarRightComponent } from './core/pages/dashboard/dashboard-news-feed-sidebar-right/dashboard-news-feed-sidebar-right.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -49,6 +57,13 @@ import { DashboardNewsFeedSidebarRightComponent } from './core/pages/dashboard/d
     RepositoryInfoPage,
     SettingsPage,
     ProfilePage,
+    RepoListItemComponent,
+    NavProfileComponent,
+    PopRepoComponent,
+    ProfileFooterComponent,
+    ProfileDescComponent,
+    ContributionBlockComponent,
+    RepoListSearchFormComponent,
     RepositoryContentComponent,
     RepositoryCodeComponent,
     RepositoryPageHeaderComponent,
@@ -78,11 +93,8 @@ import { DashboardNewsFeedSidebarRightComponent } from './core/pages/dashboard/d
     DashboardNewsFeedComponent,
     DashboardNewsFeedSidebarRightComponent,
   ],
-  imports: [
-    BrowserModule,
-    HttpClientModule,
-    AppRoutingModule,
-  ],
+  imports: [BrowserModule, AppRoutingModule, RouterModule, FormsModule, HttpClientModule],
+ 
   providers: [],
   bootstrap: [AppComponent],
 })
