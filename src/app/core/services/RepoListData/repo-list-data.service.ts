@@ -7,42 +7,48 @@ export class RepoListDataService {
 
   repos = [
     {
-      title: 'Todo',
+      title: 'object_detector',
+      author:'droidLight',
       readme: 'This is a webpage built using angular, which allows a user to add notes and Todo items',
       language: 'typescript',
       tags: ['angular', 'typescript', 'html'],
       lastupdated: '5 days ago'
     },
     {
-      title: 'Image Detection',
+      title: 'Go-TheAlgorithms',
+      author:'Wignesh',
       readme: 'Machine learning project built with python and convolutional neural network to learn image detection',
       language: 'Python',
       tags: ['python', 'jupyter Notebook', 'CNN'],
       lastupdated: '25 days ago'
     },
     {
-      title: 'Random movie recommendation',
+      title: 'suggest-a-random-movie',
+      author:'Abishek-Balasubramaniam',
       readme: 'Movie suggestion website built using django and MySQL database',
       language: 'python',
       tags: ['python', 'Django', 'MySQL', 'HTML'],
       lastupdated: '3 months ago'
     },
     {
-      title: 'Python projects',
+      title: 'Colosseum_2k19',
+      author: 'droidLight',
       readme: 'This repository contains all Python Projects.',
       language: 'python',
       tags: ['python', 'python GUI', 'python-webapp'],
       lastupdated: 'Updated on Apr 27'
     },
     {
-      title: 'Data structures and Algorithms',
-      readme: 'All Data Structures Implementation in C. All famous Algorithms implementation in C. Dynamic Programming Algorithms.',
+      title: 'Tanjore-Disaster-Management',
+      author: 'droidLight',
+      readme: 'This is the Project made for Disaster Management in Tanjore,Tamil Nadu.',
       language: 'c',
       tags: ['tree', 'stack', 'heap'],
       lastupdated: 'updated on Mar 29'
     },
     {
-      title: 'C++_tutorial',
+      title: 'Todo-Notes-and-Contacts',
+      author:'Abishek-bala',
       readme: 'This repository contains all my cpp tutorial projects',
       language: 'c++',
       tags: ['c++'],

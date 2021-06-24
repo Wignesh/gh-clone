@@ -9,6 +9,7 @@ export class RepoListItemComponent implements OnInit {
 
   @Input() repo =  {
     title: '',
+    author:'',
     readme: '',
     language: '',
     tags: [''],

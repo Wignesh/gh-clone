@@ -5,6 +5,7 @@
 div.container
 {
     padding-top: 20px;
+    width: 100%;
 }
 hr{
     width : 85%;
@@ -12,10 +13,10 @@ hr{
     margin-right : 10%;
 }
 .left{
-    margin-left : 8%;
+    margin-left : 4%;
 }
 .right{
-    margin-right : 4%;
+    margin-right : 2%;
 }
 .left li, .right li{
     float : left;

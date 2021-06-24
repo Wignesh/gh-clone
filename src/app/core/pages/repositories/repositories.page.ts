@@ -20,6 +20,7 @@ export class RepositoriesPage implements OnInit {
 
   repos =  [{
     title: '',
+    author:'',
     readme: '',
     language: '',
     tags: [''],

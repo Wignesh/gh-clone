@@ -23,7 +23,7 @@
         <span>Getting started with repos</span>
     </div> -->
     <div class="repoCards" *ngFor = "let repo of repos">
-        <a href="#">{{ repo.title }}</a><br>
+        <a routerLink="/repository-info/{{repo.author}}/{{repo.title}}">{{ repo.title }}</a><br>
         <span>{{ repo.readme }}</span>
     </div>
 </div>
