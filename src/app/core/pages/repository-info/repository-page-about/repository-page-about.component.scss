@@ -8,6 +8,8 @@
   sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 }
 
+// link styling
+
 
 .title{
   color:#c9d1d9;
@@ -27,6 +29,10 @@
     text-decoration: none;
     font-weight: 500;
     color:#58a6ff;
+    cursor: pointer;
+    &:hover{
+      text-decoration: underline;
+    }
   }
 }
 
@@ -149,6 +155,9 @@
     color:#58a6ff;
     cursor: pointer;
     font-size: small;
+    &:hover{
+      text-decoration: underline;
+    }
   }
 }
 
@@ -194,6 +203,9 @@
       font-size: small;
       width: 8rem;
       margin-left: 1rem;
+      &:hover{
+        text-decoration: underline;
+      }
     }
   }
 }
@@ -229,6 +241,9 @@
     color:#58a6ff;
     cursor: pointer;
     font-size: small;
+    &:hover{
+      text-decoration: underline;
+    }
   }
 }
 
@@ -255,6 +270,14 @@
     color:#c9d1d9;
     svg{
       fill:#c9d1d9;
+    }
+
+    .env-name{
+      cursor: pointer;
+      &:hover{
+        text-decoration: underline;
+        color: #58a6ff;
+      }
     }
 
     .active-tag {
