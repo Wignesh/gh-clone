@@ -1,14 +1,13 @@
 .repo-card{
     height:175px;
+    width: 155%;
     border-top: 0.5px solid #21262D;
     border-bottom:0.5px solid #21262D; 
     color:#586069;
     font-family: sans-serif;
   }
   
-a{
-  text-decoration: none;
-}
+
 
 a:hover{
   text-decoration: underline;
@@ -48,7 +47,10 @@ a:hover{
   .repo-title > *{
     font-size:150%;
     margin-bottom:10px;
-    color:#0366D6;
+  }
+
+  .repo-title{
+    color : #2f91ff;
   }
   
   .align-self-center{
@@ -117,4 +119,9 @@ a:hover{
   .fa-star{
     color: #8b949e;
     margin: 0 4px 0 0;
+  }
+
+  a{
+    text-decoration: none;
+    color : #2f91ff;
   }

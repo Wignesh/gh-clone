@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavProfileComponent implements OnInit {
   isOverview:boolean = true;
+  isRepo:boolean = false;
   constructor() { }
 
   ngOnInit(): void {

@@ -1,5 +1,5 @@
 <!-- <img src="./assets/images/Repositories.png" alt=""> -->
-<div class="bg-dark">
+<div class="bg-dark color-white repo-list-page">
     <app-nav-profile></app-nav-profile>
     <div class="d-flex">
         <div id="profile">
@@ -7,14 +7,16 @@
         </div>
         
     
-        <div class="d-inline repo-list mr-10" id="repo-list">
-            <app-repo-list-search-form></app-repo-list-search-form>
-            <div  *ngFor="let repo of repos">
+        <div class="d-inline repo-list ml-50" id="repo-list">
+            <div class="repo-form">
+                <app-repo-list-search-form></app-repo-list-search-form>
+            </div>
+            
+            <div class="repo-list"  *ngFor="let repo of repos">
                 <app-repo-list-item [repo]="repo"></app-repo-list-item>
             </div>
         
         </div>
         
     </div>
-    
 </div>

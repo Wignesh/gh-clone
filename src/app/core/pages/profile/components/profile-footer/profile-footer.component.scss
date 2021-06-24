@@ -1,18 +1,26 @@
+*
+{
+    color:#adbac7;
+}   
+div.container
+{
+    padding-top: 20px;
+}
 hr{
-    width : 80%;
+    width : 85%;
     margin-left : 8%;
-    margin-right : 8%;
+    margin-right : 10%;
 }
 .left{
     margin-left : 8%;
 }
 .right{
-    margin-right : 10%;
+    margin-right : 4%;
 }
 .left li, .right li{
     float : left;
     list-style-type: none;
-    padding: 2.5rem 2.5rem 0rem 0rem;
+    padding: 2.5rem 3rem 3rem 0rem;
 }
 
 .left li a, .right li a{
@@ -27,6 +35,6 @@ hr{
 .git i{
     margin-top : 2rem;
     font-size : 26px;
-    margin-left : 2.8rem;
+    margin-left : 3rem;
     color: #8b949e;
 }
