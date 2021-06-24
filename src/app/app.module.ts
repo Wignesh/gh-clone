@@ -9,8 +9,10 @@ import { RepositoriesPage } from './core/pages/repositories/repositories.page';
 import { RepositoryInfoPage } from './core/pages/repository-info/repository-info.page';
 import { SettingsPage } from './core/pages/settings/settings.page';
 import { ProfilePage } from './core/pages/profile/profile.page';
-import { RepoListItemComponent } from './core/components/repo-list-item/repo-list-item.component';  
+import { RepoListItemComponent } from './core/pages/shared/repo-list-item/repo-list-item.component';  
 import { RouterModule } from '@angular/router';
+
+import { ProfileDescComponent } from './core/pages/shared/profile-desc/profile-desc.component';
 
 @NgModule({
   declarations: [
@@ -22,8 +24,10 @@ import { RouterModule } from '@angular/router';
     SettingsPage,
     ProfilePage,
     RepoListItemComponent,
+    ProfileDescComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, RouterModule],
+    
   providers: [],
   bootstrap: [AppComponent],
 })
