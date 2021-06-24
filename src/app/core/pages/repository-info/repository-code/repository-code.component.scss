@@ -1,0 +1,204 @@
+//attributes
+$common-font: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+  sans-serif, Apple Color Emoji, Segoe UI Emoji;
+$text-hover-color:#58a6ff;
+$text-color-secondary:#8b949e;
+$text-color-primary:#c9d1d9;
+$box-border-color:#30363d;
+$file-border-color:#21262d;
+$dir-icon-color:#6e7681;
+$file-icon-color:#484f58;
+$cross-color:#f85149;
+
+.box {
+  border: 1px solid $box-border-color;
+  border-radius: 6px;
+}
+
+.file-row {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-color: $file-border-color;
+  border-style: solid none none;
+  border-width: 1px 0px 0px;
+  font-size: 14px;
+  line-height: 21px;
+  margin: -1px 0px 0px;
+  padding: 8px 16px;
+}
+.file-row:hover {
+  background-color: #161b22;
+}
+
+.entity-name {
+  color: $text-color-primary;
+  display: inline;
+  font-family: $common-font;
+  font-size: 14px;
+  line-height: 21px;
+  text-decoration: none;
+}
+.entity-name:hover {
+  color: $text-hover-color;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.name-wrapper {
+  flex: 3;
+  margin-right: 64px;
+  margin-left: 4px;
+}
+
+.commit-text {
+  color: $text-color-secondary;
+  display: inline;
+  font-family: $common-font;
+  font-size: 14px;
+  line-height: 21px;
+}
+.commit-text:hover {
+  color: $text-hover-color;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.commit-text-wrapper {
+  flex: 6;
+}
+
+.commit-time {
+  font-family: $common-font;
+  color: $text-color-secondary;
+  font-size: 14px;
+  line-height: 21px;
+}
+.time-wrapper {
+  flex: 1;
+}
+
+.icon {
+  display: inline;
+  margin: 0px 8px;
+  font-size: 14px;
+  line-height: 21px;
+}
+.icon-dir {
+  color:$dir-icon-color;
+  fill: $dir-icon-color;
+}
+
+.icon-file {
+  color: $file-icon-color;
+  fill: $file-icon-color;
+}
+
+//latest commit bar
+.latest-action {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #0d1117;
+  border-color: #30363d;
+  border-radius: 6px 6px 0px 0px;
+  border-style: solid;
+  border-width: 1px;
+  color: $text-color-primary;
+  font-size: 14px;
+  line-height: 21px;
+  margin: -1px -1px 0px;
+  padding: 16px;
+}
+.latest-action >.commit-text{
+  color: $text-color-primary;
+  font-size: 14px;
+  line-height: 21px;
+}
+.circular-avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  font-size: 14px;
+  line-height: 14px;
+  margin: 0px 8px;
+}
+
+.profile-name {
+  color: $text-color-primary;
+  display: inline;
+  font-family: $common-font;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  margin: 0px 8px;
+}
+.profile-name:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.cross-icon {
+  color: $cross-color;
+  display: inline;
+  fill: $cross-color;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.commits {
+  font-size: 14px;
+  line-height: 21px;
+  font-family: $common-font;
+  margin: 0px 4px;
+}
+.commit-icon {
+  font-size: 14px;
+  line-height: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  fill: $text-color-primary;
+  margin: 0px 4px 0px 8px;
+}
+.commit-num {
+  font-size: 14px;
+  line-height: 21px;
+  font-family: $common-font;
+  font-weight: 600;
+}
+.commit-id {
+  color: #586069;
+  font-family: $common-font ui-monospace;
+  font-size: 12px;
+  line-height: 18px;
+  margin: 0px 0px 0px 8px;
+}
+.commit-id:hover {
+  color: $text-hover-color;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.commit-cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-center;
+}
+
+.commit-cont:hover {
+  color: $text-hover-color;
+  fill: $text-hover-color;
+  cursor: pointer;
+}
+.latest-time {
+  margin: 0px 8px;
+}
+.latest-time:hover {
+  color: $text-hover-color;
+  cursor: pointer;
+  text-decoration: underline;
+  cursor: pointer;
+}

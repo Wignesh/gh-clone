@@ -1,12 +1,21 @@
 <div class="resolver-card">
-    <div class="card-tittle">{{resolverDetails?.tittle}}</div>
-    <button class="label" *ngFor="let label of resolverDetails?.labels">{{label}}</button>
-
-    <div class="card-metadata">{{resolverDetails.sno}} opened 3 hours ago by {{resolverDetails?.postedBy}}</div>
-
+    <div class="resolver-icon">
+        <span class="iconify icon-1" data-icon="octicon:issue-opened-16" data-inline="false"></span>
+    </div>
+    <div class="resolver-details-main">
+        <div class="card-title">{{resolverDetails?.tittle}}
+            <button class="label" *ngFor="let label of resolverDetails?.labels">{{label}}</button>
+        </div>
+        <div class="card-metadata">{{resolverDetails.sno}} opened 3 hours ago by {{resolverDetails?.postedBy}}</div>
+    </div>
     <div class="metadata-bar-left">
-        <span class="1">{{resolverDetails?.linked.length}}</span>
-        <img class="2" src="{{resolverDetails?.assignee?.profileUrl}}" width="20px">
-        <span class="3">{{resolverDetails?.comments?.length}}</span>
+        <div class="comp-1">{{resolverDetails?.linked.length}}
+            <span class="iconify" data-icon="octicon:git-pull-request-24" data-inline="false"></span>
+        </div>
+        <img class="comp-2" src="{{resolverDetails?.assignee?.profileUrl}}" width="20px">
+        <div class="comp-3">
+            <span class="iconify" data-icon="octicon:comment-16" data-inline="false"></span>
+            {{resolverDetails?.comments?.length}}
+        </div>
     </div>
 </div>

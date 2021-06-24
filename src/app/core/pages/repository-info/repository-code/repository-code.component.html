@@ -1,16 +1,82 @@
-<div>
-    <div class="file-root">
-        <div *ngIf="!isFile else fileblock">
-            <div *ngFor="let entity of fileList; let i = index">
-                <a [routerLink]="[entity.path]">{{entity.name}}</a>
+<div id="code-root">
+
+    <div class="box">
+        <div class="latest-action">
+            <img class="circular-avatar" src="https://droidlight.github.io/assets/img/profile.png">
+            <a class="profile-name">crisbeto</a>
+            <div class="commit-text-wrapper"><a class="commit-text">build: fix wrong variable reference</a></div>
+
+
+            <div class="cross-icon">
+                <svg aria-label="3 / 15 checks OK" class="octicon octicon-x" viewBox="0 0 16 16" version="1.1"
+                    width="16" height="16" role="img">
+                    <path fill-rule="evenodd"
+                        d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z">
+                    </path>
+                </svg>
+            </div>
+            <span class="commit-id">353146</span>
+            <span class="latest-time commit-time">3 hours ago</span>
+
+            <div class="commit-cont">
+                <div class="commit-icon">
+                    <svg aria-hidden="true" viewBox="0 0 16 16" version="1.1" data-view-component="true" height="16"
+                        width="16" class="octicon octicon-history text-gray">
+                        <path fill-rule="evenodd"
+                            d="M1.643 3.143L.427 1.927A.25.25 0 000 2.104V5.75c0 .138.112.25.25.25h3.646a.25.25 0 00.177-.427L2.715 4.215a6.5 6.5 0 11-1.18 4.458.75.75 0 10-1.493.154 8.001 8.001 0 101.6-5.684zM7.75 4a.75.75 0 01.75.75v2.992l2.028.812a.75.75 0 01-.557 1.392l-2.5-1A.75.75 0 017 8.25v-3.5A.75.75 0 017.75 4z">
+                        </path>
+                    </svg>
+                </div>
+                <span class="commit-num">8663</span>
+                <span class="commits">commits</span>
             </div>
         </div>
-        <ng-template #fileblock>
-            <div>
-                <pre>
-                {{fileContents}}
-            </pre>
+
+        <div class="file-structure">
+            <div *ngIf="!isFile else fileblock">
+                <div *ngFor="let entity of fileList; let i = index">
+
+                    <div class="file-row">
+
+                        <!--dir icon-->
+                        <div *ngIf="entity.type=='dir' else fileicon">
+                            <svg aria-label="Directory" aria-hidden="true" viewBox="0 0 16 16" version="1.1"
+                                data-view-component="true" height="16" width="16" class="icon icon-dir">
+                                <path fill-rule="evenodd"
+                                    d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3h-6.5a.25.25 0 01-.2-.1l-.9-1.2c-.33-.44-.85-.7-1.4-.7h-3.5z">
+                                </path>
+                            </svg>
+                        </div>
+
+                        <!--file icon-->
+                        <ng-template #fileicon>
+                            <svg aria-label="File" aria-hidden="true" viewBox="0 0 16 16" version="1.1"
+                                data-view-component="true" height="16" width="16" class="icon icon-file">
+                                <path fill-rule="evenodd"
+                                    d="M3.75 1.5a.25.25 0 00-.25.25v11.5c0 .138.112.25.25.25h8.5a.25.25 0 00.25-.25V6H9.75A1.75 1.75 0 018 4.25V1.5H3.75zm5.75.56v2.19c0 .138.112.25.25.25h2.19L9.5 2.06zM2 1.75C2 .784 2.784 0 3.75 0h5.086c.464 0 .909.184 1.237.513l3.414 3.414c.329.328.513.773.513 1.237v8.086A1.75 1.75 0 0112.25 15h-8.5A1.75 1.75 0 012 13.25V1.75z">
+                                </path>
+                            </svg>
+                        </ng-template>
+
+                        <!--file/dir name-->
+                        <span class="name-wrapper"><a class="entity-name"
+                                [routerLink]="[entity.path]">{{entity.name}}</a></span>
+                        <span class="commit-text-wrapper">
+                            <a class="commit-text">build: do not update shared dev-infra package in snapshotjobs</a>
+                        </span>
+                        <div class="time-wrapper"><span class="commit-time">5 days ago</span></div>
+                    </div>
+
+                </div>
             </div>
-        </ng-template>
+            <ng-template #fileblock>
+                <div>
+                    <pre>
+                    {{fileContents}}
+                </pre>
+                </div>
+            </ng-template>
+        </div>
     </div>
+
 </div>

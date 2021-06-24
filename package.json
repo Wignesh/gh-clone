@@ -9,6 +9,7 @@
     "test": "ng test"
   },
   "private": true,
+  "postinstall": "ngcc",
   "dependencies": {
     "@angular/animations": "~12.0.0",
     "@angular/common": "~12.0.0",

@@ -1,4 +1,9 @@
-img {
-  width: 100%;
-}
+@import "../../styles/common/constants";
 
+.main {
+  .main-container {
+    background-color: $color-bg-canvas-inset !important;
+    display: flex !important;
+    min-height: 100vh;
+  }
+}
