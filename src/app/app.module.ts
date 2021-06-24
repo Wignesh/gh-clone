@@ -9,6 +9,7 @@ import { RepositoriesPage } from './core/pages/repositories/repositories.page';
 import { RepositoryInfoPage } from './core/pages/repository-info/repository-info.page';
 import { SettingsPage } from './core/pages/settings/settings.page';
 import { ProfilePage } from './core/pages/profile/profile.page';
+import { DashboardSidebarComponent } from './core/pages/dashboard/dashboard-sidebar/dashboard-sidebar.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { ProfilePage } from './core/pages/profile/profile.page';
     RepositoryInfoPage,
     SettingsPage,
     ProfilePage,
+    DashboardSidebarComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
