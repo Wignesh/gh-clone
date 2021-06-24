@@ -1,32 +1,19 @@
-<div class="resolver-container">
-    <div class="resolver-toolbar">
-        <div class="resolver-count">
-            <div class="open-count  active-btn">
-                <span class="iconify icon-1" data-icon="octicon:issue-opened-16" data-inline="false"></span>
-                {{openCount}} Open
-            </div>
-            <div class="close-count icon-1">
-                <span class="iconify" data-icon="octicon:check-24" data-inline="false"></span> {{closedCount}} Closed
-            </div>
-        </div>
-
-        <div class="resolver-filter-bar">
-            <button class="author-dropdown">Author <span class="iconify" data-icon="octicon:triangle-down-16"
-                    data-inline="false"></span></button>
-            <button class="label-dropdown">Label <span class="iconify" data-icon="octicon:triangle-down-16"
-                    data-inline="false"></span> </button>
-            <button class="project-dropdown">Projects <span class="iconify" data-icon="octicon:triangle-down-16"
-                    data-inline="false"></span> </button>
-            <button class="milestone-dropdown">Milestones <span class="iconify" data-icon="octicon:triangle-down-16"
-                    data-inline="false"></span> </button>
-            <button class="review-dropdown">Reviews <span class="iconify" data-icon="octicon:triangle-down-16"
-                    data-inline="false"></span> </button>
-            <button class="asignee-dropdown">Asignee <span class="iconify" data-icon="octicon:triangle-down-16"
-                    data-inline="false"></span> </button>
-            <button class="sort-dropdown">Sort <span class="iconify" data-icon="octicon:triangle-down-16"
-                    data-inline="false"></span> </button>
-        </div>
+<div class="resolver-summary">
+    <div class="resolver-count">
+        <div class="open-count">{{openCount}} Open</div>
+        <div class="close-count">{{closedCount}} Closed</div>
     </div>
+
+    <div class="resolver-filter-bar">
+        <button class="author-dropdown">Author</button>
+        <button class="label-dropdown">Label</button>
+        <button class="project-dropdown">Projects</button>
+        <button class="milestone-dropdown">Milestones</button>
+        <button class="review-dropdown">Reviews</button>
+        <button class="asignee-dropdown">Asignee</button>
+        <button class="sort-dropdown">Sort</button>
+    </div>
+
     <div class="cards">
 
         <div *ngFor="let resolverDetails of openList">
