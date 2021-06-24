@@ -1,11 +1,23 @@
 <div class="resolver-header-bar">
     <div class="resolver-header-1">
-        <button class="filter-btn">Filters</button>
-        <input type="search" class="search-bar" />
+        <button class="filter-btn">Filters
+            <span class="iconify" data-icon="octicon:triangle-down-16" data-inline="false"></span>
+        </button>
+        <span class="iconify" data-icon="octicon:search-24" data-inline="false"></span><input type="search"
+            class="search-bar">
+
     </div>
     <div class="resolver-header-2">
-        <button class="label-btn">Label</button>
-        <button class="milestone-btn">Milestones</button>
+        <button class="label-btn">
+            <span class="iconify" data-icon="octicon:tag-24" data-inline="false"></span>
+            Label
+            <div class="count">30</div>
+        </button>
+        <button class="milestone-btn">
+            <span class="iconify" data-icon="octicon:milestone-24" data-inline="false"></span>
+            Milestones
+            <div class="count">8</div>
+        </button>
     </div>
     <div class="resolver-header-3">
         <button class="new-resolver-btn">new {{rtype}}</button>
