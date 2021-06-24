@@ -22,6 +22,7 @@ import { ResolverHeaderbarComponent } from './core/pages/repository-info/shared/
 import { ResolverWelcomeComponent } from './core/pages/repository-info/shared/resolver-welcome/resolver-welcome.component';
 import { ResolverDetailsCardComponent } from './core/pages/repository-info/shared/resolver-details-card/resolver-details-card.component';
 import { RepositoryPageReadmeComponent } from './core/pages/repository-info/repository-page-readme/repository-page-readme.component';
+import { LanguagesUsedIndicatorComponent } from './core/pages/repository-info/languages-used-indicator/languages-used-indicator.component';
 
 
 
@@ -44,7 +45,8 @@ import { RepositoryPageReadmeComponent } from './core/pages/repository-info/repo
     ResolverHeaderbarComponent,
     ResolverWelcomeComponent,
     ResolverDetailsCardComponent,
-    RepositoryPageReadmeComponent
+    RepositoryPageReadmeComponent,
+    LanguagesUsedIndicatorComponent
   ],
   imports: [
     BrowserModule,
