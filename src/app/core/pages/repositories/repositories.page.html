@@ -1,1 +1,16 @@
-<img src="./assets/images/Repositories.png" alt="">
+<!-- <img src="./assets/images/Repositories.png" alt=""> -->
+<app-nav-profile></app-nav-profile>
+<div class="d-flex">
+    <div id="profile">
+        <app-profile-desc></app-profile-desc>
+    </div>
+    
+
+    <div class="d-inline repo-list" id="repo-list">
+        <div  *ngFor="let repo of repos">
+            <app-repo-list-item [repo]="repo"></app-repo-list-item>
+        </div>
+    
+    </div>
+    
+</div>
