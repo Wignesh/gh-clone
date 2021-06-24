@@ -1,0 +1,127 @@
+.repo-card{
+    height:175px;
+    width: 180%;
+    border-top: 0.5px solid #21262D;
+    border-bottom:0.5px solid #21262D; 
+    color:#586069;
+    font-family: sans-serif;
+  }
+  
+
+
+a:hover{
+  text-decoration: underline;
+}
+
+  .mt-10{
+    margin-top:10px;
+  }
+  
+  #language-color{
+    width: 10px;
+    height:10px;
+    background-color: #aaa;
+    border-radius: 50%;
+    margin-right:5px
+  }
+  
+  #tag{
+    padding:4px 10px;
+    border-radius:16px;
+    background:#121d2f;
+    color:#58A6FF;
+    margin: 4px 1.5px 4px 0px;
+    display:inline;
+    font-size:12px;
+  }
+  
+  .repo-card-details{
+    padding: 24px 0;
+  }
+  
+  
+  #tags{
+    margin-top:20px;
+  }
+  
+  .repo-title > *{
+    font-size:150%;
+    margin-bottom:10px;
+  }
+
+  .repo-title{
+    color : #2f91ff;
+  }
+  
+  .align-self-center{
+    align-self:center;
+  }
+  
+  #last-updated{
+    margin-left:10px;
+    font-size:12px;
+  }
+  
+  .d-inline{
+    display:inline;
+  }
+  
+  .readme, .languages{
+    font-size:14px;
+    margin-top:auto;
+    margin:5px 0;
+  }
+  
+  .flex{
+    display:flex;
+  }
+  
+  .align-items-center{
+    align-items:center;
+  }
+  
+  .ml-auto{
+    margin-left:auto;
+  }
+  
+  .justify-self-end{
+    display:flex;
+    flex-direction:column;
+    align-items:right;
+  }
+  
+  .mr-5{
+    margin-right:5px;
+  }
+  
+  .mt-5{
+    margin-top:5px;
+  }
+
+  #star-button{
+    height:28px;
+    width:67px;
+    background-color:#30363d;
+    border-color: #30363d;
+    border-radius: 6px;
+    border-style:solid;
+    border-width:1px;
+    color: #c9d1d9;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight:500;
+    line-height:20px;
+    padding: 3px 12px;
+    display: flex;
+    align-items: center;
+  }
+
+  .fa-star{
+    color: #8b949e;
+    margin: 0 4px 0 0;
+  }
+
+  a{
+    text-decoration: none;
+    color : #2f91ff;
+  }

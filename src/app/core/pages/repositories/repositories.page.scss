@@ -1,3 +1,41 @@
-img {
-  width: 100%;
+.d-flex{
+  display: flex;
+}
+
+.d-inline{
+  width: 30%;
+}
+
+
+.repo-list{
+  width: 60%;
+}
+
+.mr-10{
+  margin-right: 70px;
+}
+
+.ml-50{
+  margin-left: 50px;
+}
+#profile{
+  width: 333px;
+  color: #ADBAC7;
+}
+
+.bg-dark{ 
+  background-color:#0D1117;
+}
+
+.color-white{
+  color:white;
+}
+
+.repo-form{
+  width: 115%;
+}
+
+.repo-list-page{
+  margin: 0 20px 0 50px;
+  margin-right: 5%;
 }

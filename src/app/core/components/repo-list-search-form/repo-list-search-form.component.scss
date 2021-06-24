@@ -1,0 +1,83 @@
+.h-65{
+    height:65px;
+    background-color:#0D1117;
+  }
+  
+  #type:after{
+    font-size:20px;
+  }
+  form{
+    width:100%;
+  }
+  .align-items-center{
+    align-items:center;
+  }
+  
+  .d-flex{
+    display:flex;
+  }
+  
+  #sort, #type, #language, #repo-search, #new-button{
+    background-color:#282E33;
+    border-color: #21262D;
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: #000000 0px 1px 0px 0px;
+    color: #C9D1D9;
+    font-family: sans-serif;
+    padding: 5px 12px;
+    height: 32px;
+  }
+  
+  
+  #type{
+    width:10%;
+  }
+  
+  #new-button{
+    width: 10%;
+    background-color:#2EA44F;
+    color:white;
+    font-size: 80%;
+  }
+  
+  #language{
+    width:12%;
+  }
+  
+  #sort{
+    width:10%;
+  }
+  
+  
+  #repo-search{
+    width:45%;
+    color:#21262D;
+    background-color:#0D1117;
+  }
+
+  
+  #type, #language, #sort{
+    margin: 0 2px;
+  }
+
+  .mlr-2{
+    margin:0 15px;
+  }
+  
+  .d-inline{
+    display: inline;
+  }
+
+  .new-button-text{
+    vertical-align: middle;
+    display: inline;
+    margin-left: 2px;
+  }
+
+  svg{
+    vertical-align: middle;
+    display: inline;
+    margin: 0%  ;
+  }

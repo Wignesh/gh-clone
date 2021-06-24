@@ -1,0 +1,47 @@
+.resolver-card {
+  display: flex;
+  border-bottom: 2px solid rgb(246 248 250);
+  padding: 1.2rem;
+  .resolver-icon {
+  }
+  .resolver-details-main {
+    .card-title {
+      font-size: 1rem;
+      font-weight: 500;
+      margin: 0.4rem;
+      .label {
+        border-radius: 0.85rem;
+        background-color: violet;
+        border: none;
+        padding: 0.2rem 0.3rem;
+        margin: 0.2rem;
+        font-weight: 550;
+        font-size: 0.7rem;
+      }
+    }
+    .card-metadata {
+      line-height: 18px;
+      font-size: 0.8em;
+      color: rgb(88 96 105);
+    }
+  }
+  .metadata-bar-left {
+    margin-left: auto;
+    display: flex;
+    .comp-1,
+    .com-2,
+    .comp-3 {
+      margin-left: 3.2rem;
+    }
+
+    .comp-2 {
+      margin-left: 3.2rem;
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+    }
+  }
+  &:hover {
+    background-color: #f6f8fa;
+  }
+}
