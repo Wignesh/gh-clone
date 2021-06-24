@@ -1,12 +1,12 @@
 <div class="resolver-container">
     <div class="resolver-toolbar">
         <div class="resolver-count">
-            <div class="open-count  active-btn">
+            <div class="open-count  active-btn" [routerLink]="[]" [queryParams]="{ query: 'open'}">
                 <span class="iconify icon-1" attr.data-icon={{this.icons[this.rtype]?.open?.icon}}
                     data-inline="false"></span>
                 {{openCount}} Open
             </div>
-            <div class="close-count icon-1">
+            <div class="close-count icon-1" [routerLink]="[]" [queryParams]="{ query: 'closed'}">
                 <span class="iconify" attr.data-icon={{this.icons[this.rtype].closed?.icon}} data-inline="false"></span>
                 {{closedCount}}
                 Closed
@@ -33,8 +33,8 @@
     </div>
     <div class="cards">
 
-        <div *ngFor="let resolverDetails of openList">
-            <app-resolver-details-card [rtype]="rtype" [resolverDetails]="resolverDetails">
+        <div *ngFor="let resolverDetails of rList">
+            <app-resolver-details-card [rtype]="rtype" [resolverDetails]="resolverDetails" [rresult]="rresult">
             </app-resolver-details-card>
         </div>
     </div>

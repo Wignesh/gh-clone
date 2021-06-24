@@ -17,7 +17,7 @@
       } ,
       "closed":{
         "icon":"octicon:git-pull-request-closed-24",
-        "color":"#56d364"
+        "color":"#f85149"
       } ,
       "merged":"octicon:git-merge-24"
     }

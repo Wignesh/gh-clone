@@ -1,7 +1,7 @@
 
  {
     "issues": {
-      "openlist": [
+      "open": [
         {
           "sno": 1,
           "tittle": "Spacing Issue",
@@ -56,7 +56,7 @@
         }
 
       ],
-      "closedlist" : [
+      "closed" : [
         {
           "sno": 1,
           "tittle": "Spacing Issue",
@@ -87,7 +87,7 @@
     },
 
     "pr": {
-      "openlist": [
+      "open": [
         {
           "sno": 1,
           "tittle": "Spacing Issue",
@@ -115,7 +115,7 @@
           "linked": [1, 2]
         }
       ],
-      "closedlist" : [
+      "closed" : [
         {
           "sno": 1,
           "tittle": "Spacing Issue",

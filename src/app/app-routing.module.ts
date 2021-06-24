@@ -27,24 +27,24 @@ const routes: Routes = [
   {
     path: 'repository-info/:author/:repo',
     component: RepositoryInfoPage,
-    children:[
+    children: [
       {
-        path:"issues",
-        component:IssuesComponent
+        path: 'issues',
+        component: IssuesComponent,
       },
       {
-        path:"pullrequest",
-        component:PullRequestsComponent
+        path: 'pullrequest',
+        component: PullRequestsComponent,
       },
       {
-        path:"",
-        component:RepositoryContentComponent
+        path: '',
+        component: RepositoryContentComponent,
       },
       {
-        path:"**",
-        component:RepositoryCodeComponent
-      }
-    ]
+        path: '**',
+        component: RepositoryCodeComponent,
+      },
+    ],
   },
   {
     path: 'settings',

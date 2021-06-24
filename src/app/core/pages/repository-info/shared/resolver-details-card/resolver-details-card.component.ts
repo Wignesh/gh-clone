@@ -9,7 +9,7 @@ import * as resolverIcons from '../../../../constants/resolvericons.json';
 export class ResolverDetailsCardComponent implements OnInit {
   @Input() resolverDetails: any;
   @Input() rtype = '';
-
+  @Input() rresult = 'open';
   displayDetails: boolean = false;
 
   resolverData = resolverData;
@@ -20,6 +20,5 @@ export class ResolverDetailsCardComponent implements OnInit {
 
   ngOnInit(): void {
     this.labels = this.resolverData.labellist;
-    console.log(this.icons[this.rtype].open);
   }
 }
