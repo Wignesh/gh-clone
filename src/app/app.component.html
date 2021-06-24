@@ -28,4 +28,5 @@
         <a routerLink="/settings">Settings</a>
     </li>
 </ul>
+<app-nav *ngIf="!hasValidRoute()"></app-nav>
 <router-outlet></router-outlet>

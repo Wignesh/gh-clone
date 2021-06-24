@@ -1,0 +1,87 @@
+#repo-content-root{
+    display: flex;
+    flex-direction: row;
+}
+
+.code-view{
+    flex: 3;
+}
+
+.right-panel{
+    flex: 1;
+}
+
+.file-tree{
+  width:100%;
+  padding:0 1rem;
+  margin-left:3rem;
+}
+
+
+// utility
+
+.flex{
+  display: flex;
+}
+
+.flex-row{
+  flex-direction: row;
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
+.items-center{
+  align-items: center;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.justify-between{
+  justify-content: space-between;
+}
+
+.items-stretch{
+  align-items: stretch;
+}
+
+.f1{
+  font-size: 1rem;
+}
+
+.text-xl{
+  font-size: x-large;
+}
+
+.text-blue{
+  color:blue;
+}
+
+.text-gray{
+  color:gray;
+}
+
+.text-black{
+  color:black !important;
+}
+
+
+.font-bold{
+  font-weight: bold;
+}
+
+.font-semibold{
+  font-weight: 550;
+}
+
+.font-normal{
+  font-weight: normal;
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+

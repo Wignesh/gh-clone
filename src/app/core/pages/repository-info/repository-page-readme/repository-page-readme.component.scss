@@ -1,0 +1,201 @@
+.repo-readme{
+padding:1rem;
+margin:5rem;
+}
+
+
+.readme-header{
+  border:1px solid gray;
+  border-bottom:none;
+  padding:1rem 0.5rem;
+}
+
+.readme-header{
+  svg{
+    margin:0 1rem;
+  }
+}
+
+.readme-body{
+  padding:1rem 2rem;
+  border:1px solid gray;
+}
+
+.readme-body-header{
+  font-size: xx-large;
+  font-weight: 500;
+  padding-bottom:1rem;
+  border-bottom:1px solid gray;
+}
+
+.readme-team-description{
+  font-size: larger;
+  margin:1rem 0;
+}
+
+// table styling
+
+.npm-packages-table{
+  border-right:1px solid gray;
+  border-top:1px solid gray;
+}
+
+.npm-packages-table{
+
+  thead{
+    font-size: larger;
+    font-weight: 600;
+  }
+
+td{
+      border-bottom:1px solid gray;
+      border-left:1px solid gray;
+      padding:1rem;
+      font-size: larger;
+  }
+
+  // td{
+  //   border:1px solid black;
+  // }
+}
+
+
+.readme-quick-links{
+  margin: 0.5erm 0 1rem 0;
+  font-size: larger;
+
+  .quick-links-header{
+    margin: 1rem 0;
+    font-weight: bold;
+  }
+
+
+  div{
+    gap:1rem;
+  }
+}
+
+.getting-started{
+  margin-top:2rem;
+}
+
+.sub-header{
+  font-size: x-large;
+  font-weight: bold;
+  padding-bottom:0.2rem ;
+  border-bottom:1px solid gray;
+}
+
+.sub-description{
+  margin-top:1rem;
+  font-size: larger;
+}
+
+.contribution-guidelines{
+  margin:2rem 0;
+}
+
+
+.road-map{
+  margin:2rem 0;
+}
+
+.road-map-desc{
+  padding:1rem 3rem;
+  font-size: larger;
+
+  .sub-list{
+    padding:0.5rem 0 0.5rem 2rem;
+  }
+}
+
+.screens-support-desc{
+  font-size: larger;
+}
+
+
+
+// utility
+
+.flex{
+  display: flex;
+}
+
+.flex-row{
+  flex-direction: row;
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
+.items-center{
+  align-items: center;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.justify-between{
+  justify-content: space-between;
+}
+
+.items-stretch{
+  align-items: stretch;
+}
+
+.f1{
+  font-size: 1rem;
+}
+
+.text-xl{
+  font-size: x-large;
+}
+
+.text-blue{
+  color:blue;
+}
+
+.text-gray{
+  color:gray;
+}
+
+.text-black{
+  color:black !important;
+}
+
+
+.font-bold{
+  font-weight: bold;
+}
+
+.font-semibold{
+  font-weight: 550;
+}
+
+.font-normal{
+  font-weight: normal;
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+.mt1{
+  margin-top: 1rem;
+}
+
+.mv1{
+  margin: 1rem 0;
+}
+
+.pl2{
+  padding-left:2rem;
+}
+
+
+
+
+
+

@@ -1,0 +1,79 @@
+@import "../../../styles/common/constants";
+
+.dashboard-footer {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 32px !important;
+  margin-bottom: 32px !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  display: flex !important;
+  width: 100%;
+  max-width: none;
+  .footer-left {
+    width: 33.33333%;
+    margin-right: 32px !important;
+    a {
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+        sans-serif, Apple Color Emoji, Segoe UI Emoji;
+      font-size: 14px;
+      background-color: transparent;
+      text-decoration: none !important;
+      display: flex !important;
+      color: $color-footer-invertocat-octicon;
+      div {
+        &:nth-child(1) {
+          .octicon {
+            height: 24;
+            width: 24;
+            vertical-align: text-bottom;
+            fill: currentColor;
+            float: left !important;
+            margin-right: 8px !important;
+            display: block !important;
+          }
+        }
+        &:nth-child(2) {
+          span {
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
+              Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+            color: $color-text-tertiary !important;
+            font-size: 12px !important;
+          }
+        }
+      }
+    }
+  }
+  .footer-right {
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    flex: auto !important;
+    display: flex !important;
+    ul {
+      margin-top: 0;
+      margin-bottom: 0;
+      width: 25%;
+      padding-left: 24px !important;
+      list-style: none !important;
+      li {
+        list-style: none !important;
+        margin-bottom: 4px !important;
+        a {
+          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
+            Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+          line-height: 1.5;
+          word-wrap: break-word;
+          font-size: 12px !important;
+          list-style: none !important;
+          background-color: transparent;
+          text-decoration: none;
+          color: $color-text-secondary !important;
+          &:hover {
+            color: $color-text-link !important;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
