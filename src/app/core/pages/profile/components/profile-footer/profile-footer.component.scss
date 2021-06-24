@@ -1,0 +1,32 @@
+hr{
+    width : 80%;
+    margin-left : 8%;
+    margin-right : 8%;
+}
+.left{
+    margin-left : 8%;
+}
+.right{
+    margin-right : 10%;
+}
+.left li, .right li{
+    float : left;
+    list-style-type: none;
+    padding: 2.5rem 2.5rem 0rem 0rem;
+}
+
+.left li a, .right li a{
+    text-decoration: none;
+    color : #2f91ff;
+}
+
+.right{
+    float : right;
+}
+
+.git i{
+    margin-top : 2rem;
+    font-size : 26px;
+    margin-left : 2.8rem;
+    color: #8b949e;
+}
