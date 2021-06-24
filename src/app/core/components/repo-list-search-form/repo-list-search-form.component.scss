@@ -36,10 +36,10 @@
   }
   
   #new-button{
-    width:8%;
+    width: 10%;
     background-color:#2EA44F;
     color:white;
-    font-weight: bold;
+    font-size: 80%;
   }
   
   #language{
@@ -47,7 +47,7 @@
   }
   
   #sort{
-    width:12%;
+    width:10%;
   }
   
   
@@ -70,4 +70,14 @@
     display: inline;
   }
 
-  
+  .new-button-text{
+    vertical-align: middle;
+    display: inline;
+    margin-left: 2px;
+  }
+
+  svg{
+    vertical-align: middle;
+    display: inline;
+    margin: 0%  ;
+  }
