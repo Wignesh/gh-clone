@@ -3,7 +3,7 @@
         <div class="news-details">
             <div class="container">
                 <span class="user">
-                    <a href="" class="user-link">
+                    <a class="user-link">
                         <img class="user-avatar" src="{{news.data.user_avatar}}" width="32" height="32"
                             alt="@{{news.data.user}}">
                     </a>
@@ -11,9 +11,10 @@
                 <div class="news-card">
                     <div class="news-title">
                         <div class="container">
-                            <a href="" class="user-link">{{news.data.user}}</a>
-                            <span class="user-action"> released <a href="" class="repo-link">v{{news.data.version}}</a>
-                                of <a href="" class="repo-link">{{news.data.repo}}</a>
+                            <a class="user-link">{{news.data.user}}</a>
+                            <span class="user-action"> released <a class="repo-link">v{{news.data.version}}</a>
+                                of <a routerLink="/repository-info/{{news.data.repo}}"
+                                    class="repo-link">{{news.data.repo}}</a>
                                 <span class="news-time">{{news.data.date}}</span>
                             </span>
                         </div>
@@ -23,19 +24,21 @@
                             <div class="release-repo-info">
                                 <div class="repo">
                                     <div class="repo-avatar">
-                                        <a href="">
+                                        <a routerLink="/repository-info/{{news.data.repo}}">
                                             <img src="{{news.data.user_avatar}}" alt="@{{news.data.user}}" size="16"
                                                 height="16" width="16">
                                         </a>
                                     </div>
                                     <div class="repo-links">
-                                        <a href="">{{news.data.repo.split("/")[0]}}</a> / <a
-                                            href="">{{news.data.repo.split("/")[1]}}</a>
+                                        <a
+                                            routerLink="/repository-info/{{news.data.repo}}">{{news.data.repo.split("/")[0]}}</a>
+                                        / <a
+                                            routerLink="/repository-info/{{news.data.repo}}">{{news.data.repo.split("/")[1]}}</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="release-version">
-                                <a href="">{{news.data.version}}</a>
+                                <a>{{news.data.version}}</a>
                             </div>
                             <div class="release-notes">
                                 <p>{{news.data.release_notes.p}}</p>
@@ -44,7 +47,7 @@
                                         {{li}}
                                     </li>
                                 </ul>
-                                <a href="" class="read-more">Read more</a>
+                                <a routerLink="/repository-info/{{news.data.repo}}" class="read-more">Read more</a>
                             </div>
                             <div class="reactions">
                                 <div class="reactions-container">

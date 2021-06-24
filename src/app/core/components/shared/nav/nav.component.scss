@@ -7,6 +7,7 @@ header {
   font-size: 14px;
   line-height: 21px;
   padding: 16px 32px;
+  overflow: hidden;
   div {
     &:nth-child(1) {
       align-items: center;
@@ -202,42 +203,46 @@ header {
           align-items: center;
           flex-wrap: nowrap;
           align-self: stretch;
-          details {
-            display: block;
-            summary {
-              display: list-item;
-              cursor: pointer;
-              white-space: nowrap;
-              list-style: none;
-              opacity: 1;
-              img {
+          a {
+            text-decoration: none;
+            color: $color-text-white;
+            details {
+              display: block;
+              summary {
+                display: list-item;
+                cursor: pointer;
                 white-space: nowrap;
                 list-style: none;
-                height: 24px;
-                aspect-ratio: auto 24 / 24;
-                width: 24px;
-                border-style: none;
-                display: inline-block;
-                overflow: hidden;
-                vertical-align: middle;
-                flex-shrink: 0;
-                border-radius: 50% !important;
-              }
-              span {
                 opacity: 1;
-                display: inline-block;
-                vertical-align: middle;
-                content: "";
-                border-top-style: solid;
-                margin-left: 4px;
-                border-top-width: 4px;
-                border-right: 4px solid transparent;
-                border-bottom: 0 solid transparent;
-                border-left: 4px solid transparent;
-              }
-              &:hover {
+                img {
+                  white-space: nowrap;
+                  list-style: none;
+                  height: 24px;
+                  aspect-ratio: auto 24 / 24;
+                  width: 24px;
+                  border-style: none;
+                  display: inline-block;
+                  overflow: hidden;
+                  vertical-align: middle;
+                  flex-shrink: 0;
+                  border-radius: 50% !important;
+                }
                 span {
-                  opacity: 0.7;
+                  opacity: 1;
+                  display: inline-block;
+                  vertical-align: middle;
+                  content: "";
+                  border-top-style: solid;
+                  margin-left: 4px;
+                  border-top-width: 4px;
+                  border-right: 4px solid transparent;
+                  border-bottom: 0 solid transparent;
+                  border-left: 4px solid transparent;
+                }
+                &:hover {
+                  span {
+                    opacity: 0.7;
+                  }
                 }
               }
             }

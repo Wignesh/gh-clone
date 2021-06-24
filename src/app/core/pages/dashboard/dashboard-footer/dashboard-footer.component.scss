@@ -3,23 +3,23 @@
 .dashboard-footer {
   margin-right: auto;
   margin-left: auto;
-  margin-top: 32px !important;
-  margin-bottom: 32px !important;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-  display: flex !important;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
   width: 100%;
   max-width: none;
   .footer-left {
     width: 33.33333%;
-    margin-right: 32px !important;
+    margin-right: 32px;
     a {
       font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
         sans-serif, Apple Color Emoji, Segoe UI Emoji;
       font-size: 14px;
       background-color: transparent;
-      text-decoration: none !important;
-      display: flex !important;
+      text-decoration: none;
+      display: flex;
       color: $color-footer-invertocat-octicon;
       div {
         &:nth-child(1) {
@@ -28,46 +28,46 @@
             width: 24;
             vertical-align: text-bottom;
             fill: currentColor;
-            float: left !important;
-            margin-right: 8px !important;
-            display: block !important;
+            float: left;
+            margin-right: 8px;
+            display: block;
           }
         }
         &:nth-child(2) {
           span {
             font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
               Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
-            color: $color-text-tertiary !important;
-            font-size: 12px !important;
+            color: $color-text-tertiary;
+            font-size: 12px;
           }
         }
       }
     }
   }
   .footer-right {
-    flex-direction: row !important;
-    justify-content: flex-start !important;
-    flex: auto !important;
-    display: flex !important;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex: auto;
+    display: flex;
     ul {
       margin-top: 0;
       margin-bottom: 0;
       width: 25%;
-      padding-left: 24px !important;
-      list-style: none !important;
+      padding-left: 24px;
+      list-style: none;
       li {
-        list-style: none !important;
-        margin-bottom: 4px !important;
+        list-style: none;
+        margin-bottom: 4px;
         a {
           font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
             Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
           line-height: 1.5;
           word-wrap: break-word;
-          font-size: 12px !important;
-          list-style: none !important;
+          font-size: 12px;
+          list-style: none;
           background-color: transparent;
           text-decoration: none;
-          color: $color-text-secondary !important;
+          color: $color-text-secondary;
           &:hover {
             color: $color-text-link !important;
             text-decoration: underline;
