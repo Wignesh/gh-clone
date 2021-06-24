@@ -1,25 +1,28 @@
+*
+{
+    color:#adbac7;
+}   
 .contribution
 {
     width: 100%;
     float:right;
-    padding : 30px 120px 100px 100px;
     margin:0px 0px 0px 50px;
+    padding-right: 100px;
 }
 .contribution-img{
-    width:98%;
-    margin-left : 2%;
+    width:95%;
+    margin-left : 2rem;
 }
 .contribution-act
 {
-    width:96%;
+    width:92%;
     display: flex;
     flex-direction: row;
-    margin-left : 3%;
+    margin-left : 3rem;
 }
 .contribdate
 {
-    background-color:#ffffff;
-    color:#24292e;
+    color:#adbac7;
     display:inline;
     font-size:12px;
     font-weight:600;
@@ -35,7 +38,7 @@
 }
 .timelineitem
 {
-    color:#24292e;
+    color:#adbac7;
     display:flex;
     flex-direction: column;
     font-size:14px;
@@ -46,10 +49,11 @@
 
 .timelineitem-head
 {
-    color:#24292e;
+    color:#adbac7;
     display:inline;
     line-height:20px;
     text-align:left;
+    border: 1px #797272;
 }
 .timelineitem-head:hover
 {
@@ -75,12 +79,9 @@
     width:20%;
     display: flex;
     flex-direction: column;
-    background-color:#ffffff;
-    color:#24292e;
+    color:#adbac7;
     font-size:14px;
     line-height:21px;
-    position: sticky;
-    top:0;
     padding:0px 0px 0px 32px;
 }
 .yearbtnblue
@@ -97,9 +98,9 @@
 }
 .yearbtn
 {
-    background-color:#f6f8fa;
+    background-color:#191e25 ;
+    color:#adbac7;
     border-radius:6px;
-    color:#586069;
     font-family:-apple-system;
     font-size:12px;
     line-height:18px;
@@ -107,16 +108,36 @@
     padding:8px 16px;
     text-align:left;
 }
-
+.hiddentimeline
+{
+    display: none;
+}
 .timelinebtn
 {
     align-items:flex-start;
-    background-color:#ffffff;
-    border-color:#e1e4e8;
+    background-color:    #22272e;
+    border-color:    #444c56;
     border-radius:6px;
     border-style:solid;
     border-width:1px;
-    box-shadow:#1b1f23 0px 1px 0px 0px;
+    color:#0366d6;
+    display:inline-block;
+    font-family:-apple-system;
+    font-size:12px;
+    font-weight:600;
+    line-height:20px;
+    padding:8px 6px;
+    text-align:center;
+    margin-bottom: 3rem;
+}
+.timelinebtn:hover
+{
+    align-items:flex-start;
+    background-color:    #22272e;
+    border-color:    #444c56;
+    border-radius:6px;
+    border-style:solid;
+    border-width:1px;
     color:#0366d6;
     display:inline-block;
     font-family:-apple-system;

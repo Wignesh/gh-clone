@@ -1,20 +1,19 @@
 .container{
     width : 100%;
     height : auto;
-    margin-left : auto;
-    padding-left : 125px;
     font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
 }
 
 .cards{
-    width : 100%;
+    width : 90%;
     display: flex;
     flex-direction : row;
     flex-wrap: wrap;
+    margin-left : 3rem;
 }
 
 .repoCards{
-    width : 42%;
+    width : 45%;
     height : auto;
     border : 1px solid #30363d;
     border-radius: 0.2rem;
