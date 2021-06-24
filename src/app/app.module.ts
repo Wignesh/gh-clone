@@ -24,6 +24,8 @@ import { ResolverWelcomeComponent } from './core/pages/repository-info/shared/re
 import { ResolverDetailsCardComponent } from './core/pages/repository-info/shared/resolver-details-card/resolver-details-card.component';
 import { RepositoryPageReadmeComponent } from './core/pages/repository-info/repository-page-readme/repository-page-readme.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { LanguagesUsedIndicatorComponent } from './core/pages/repository-info/languages-used-indicator/languages-used-indicator.component';
+
 
 @NgModule({
   declarations: [
@@ -45,6 +47,7 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
     ResolverWelcomeComponent,
     ResolverDetailsCardComponent,
     RepositoryPageReadmeComponent,
+    LanguagesUsedIndicatorComponent
   ],
   imports: [
     MatMenuModule,

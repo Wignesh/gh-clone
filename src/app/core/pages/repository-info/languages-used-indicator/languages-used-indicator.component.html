@@ -1,0 +1,15 @@
+<div class="lang-usage-indicator">
+
+  <div class="flex oned-pie-chart">
+    <div style="height: 0.5rem;" *ngFor="let langDetails of languagesUsed" [ngStyle]="{'background':langDetails.color,'width':langDetails.percent}"></div>
+  </div>
+
+  <div class="lang-details">
+    <div *ngFor="let langDetails of languagesUsed">
+      <svg [ngStyle]="{'color':langDetails.color,'fill':langDetails.color}" style="margin-right:0.4rem" xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-circle"><circle cx="12" cy="12" r="10"/></svg>
+      <span>{{langDetails.language}}</span>
+      <span style="margin-left: 0.4rem;">{{langDetails.percent}}</span>
+    </div>
+  </div>
+
+</div>
