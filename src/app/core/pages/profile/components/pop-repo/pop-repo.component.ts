@@ -12,6 +12,7 @@ export class PopRepoComponent implements OnInit {
 
   repos =  [{
     title: '',
+    author:'',
     readme: '',
     language: '',
     tags: [''],
