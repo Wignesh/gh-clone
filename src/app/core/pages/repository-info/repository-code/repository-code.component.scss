@@ -1,38 +1,38 @@
-//attributes
 $common-font: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
   sans-serif, Apple Color Emoji, Segoe UI Emoji;
-$text-hover-color:#58a6ff;
-$text-color-secondary:#8b949e;
-$text-color-primary:#c9d1d9;
-$box-border-color:#30363d;
-$file-border-color:#21262d;
-$dir-icon-color:#6e7681;
-$file-icon-color:#484f58;
-$cross-color:#f85149;
+$hover-color:#0366d6;
 
 .box {
-  border: 1px solid $box-border-color;
+  background-color: #ffffff;
+  border: 1px solid #e1e4e8;
   border-radius: 6px;
+}
+
+.file-structure {
+  color: #24292e;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .file-row {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  border-color: $file-border-color;
+  border-color: #ebedef;
   border-style: solid none none;
   border-width: 1px 0px 0px;
+  color: #24292e;
   font-size: 14px;
   line-height: 21px;
   margin: -1px 0px 0px;
   padding: 8px 16px;
 }
 .file-row:hover {
-  background-color: #161b22;
+  background-color: #f6f8fa;
 }
 
 .entity-name {
-  color: $text-color-primary;
+  color: #24292e;
   display: inline;
   font-family: $common-font;
   font-size: 14px;
@@ -40,7 +40,7 @@ $cross-color:#f85149;
   text-decoration: none;
 }
 .entity-name:hover {
-  color: $text-hover-color;
+  color:$hover-color;
   text-decoration: underline;
 }
 .name-wrapper {
@@ -50,14 +50,14 @@ $cross-color:#f85149;
 }
 
 .commit-text {
-  color: $text-color-secondary;
+  color: #24292e;
   display: inline;
   font-family: $common-font;
   font-size: 14px;
   line-height: 21px;
 }
 .commit-text:hover {
-  color: $text-hover-color;
+  color: $hover-color;
   text-decoration: underline;
 }
 .commit-text-wrapper {
@@ -66,7 +66,7 @@ $cross-color:#f85149;
 
 .commit-time {
   font-family: $common-font;
-  color: $text-color-secondary;
+  color: #6a737d;
   font-size: 14px;
   line-height: 21px;
 }
@@ -81,13 +81,13 @@ $cross-color:#f85149;
   line-height: 21px;
 }
 .icon-dir {
-  color:$dir-icon-color;
-  fill: $dir-icon-color;
+  color: #79b8ff;
+  fill: #79b8ff;
 }
 
 .icon-file {
-  color: $file-icon-color;
-  fill: $file-icon-color;
+  color: #959da5;
+  fill: #959da5;
 }
 
 //latest commit bar
@@ -95,22 +95,18 @@ $cross-color:#f85149;
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: #0d1117;
-  border-color: #30363d;
+  background-color: #f1f8ff;
+  border-color: #c8e1ff;
   border-radius: 6px 6px 0px 0px;
   border-style: solid;
   border-width: 1px;
-  color: $text-color-primary;
+  color: #24292e;
   font-size: 14px;
   line-height: 21px;
   margin: -1px -1px 0px;
   padding: 16px;
 }
-.latest-action >.commit-text{
-  color: $text-color-primary;
-  font-size: 14px;
-  line-height: 21px;
-}
+
 .circular-avatar {
   width: 24px;
   height: 24px;
@@ -121,7 +117,7 @@ $cross-color:#f85149;
 }
 
 .profile-name {
-  color: $text-color-primary;
+  color: #24292e;
   display: inline;
   font-family: $common-font;
   font-size: 14px;
@@ -134,9 +130,9 @@ $cross-color:#f85149;
 }
 
 .cross-icon {
-  color: $cross-color;
+  color: #cb2431;
   display: inline;
-  fill: $cross-color;
+  fill: #cb2431;
   font-size: 14px;
   line-height: 21px;
   text-align: left;
@@ -157,7 +153,6 @@ $cross-color:#f85149;
   justify-content: center;
   align-items: center;
   text-align: left;
-  fill: $text-color-primary;
   margin: 0px 4px 0px 8px;
 }
 .commit-num {
@@ -173,27 +168,27 @@ $cross-color:#f85149;
   line-height: 18px;
   margin: 0px 0px 0px 8px;
 }
-.commit-id:hover {
-  color: $text-hover-color;
+.commit-id:hover{
+  color: $hover-color;
   cursor: pointer;
   text-decoration: underline;
 }
-.commit-cont {
+.commit-cont{
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-center;
 }
 
-.commit-cont:hover {
-  color: $text-hover-color;
-  fill: $text-hover-color;
+.commit-cont:hover{
+  color:$hover-color;
+  fill: $hover-color;
 }
 .latest-time {
   margin: 0px 8px;
 }
-.latest-time:hover {
-  color: $text-hover-color;
+.latest-time:hover{
+  color: $hover-color;
   cursor: pointer;
   text-decoration: underline;
 }
