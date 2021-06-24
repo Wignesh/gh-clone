@@ -1,8 +1,8 @@
 <div class="container">
-    <section style="float : left; font-size : 18px; padding : 1.5rem 0rem 0.3rem 0.3rem;">Popular repositories</section>
-    <section style="float : right; margin-right: 18%; color: #6a947b; font-size : 18px; padding : 1.5rem 0rem 0.3rem 0.3rem;">Customize your pins</section>
+    <section style="float : left; color : #c9d1d9; font-size : 16px; padding : 1.5rem 0rem 0.3rem 0.3rem;">Popular repositories</section>
+    <section style="float : right; margin-right: 14%; color: #8b949e; font-size : 13px; padding : 1.5rem 0rem 0.3rem 0.3rem;">Customize your pins</section>
 <div class="cards">
-    <div class="repoCards">
+    <!-- <div class="repoCards">
         <a href = "http://localhost:4200/repository-details/authNam/title/">Sample</a><br><br>
         <span>Getting started with repos</span>
     </div>
@@ -21,6 +21,10 @@
     <div class="repoCards">
         <a href = "#">Movie-Ticket-Booking</a><br><br>
         <span>Getting started with repos</span>
+    </div> -->
+    <div class="repoCards" *ngFor = "let repo of repos">
+        <a href="#">{{ repo.title }}</a><br>
+        <span>{{ repo.readme }}</span>
     </div>
 </div>
 </div>
