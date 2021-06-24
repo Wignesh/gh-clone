@@ -16,6 +16,7 @@ import { PopRepoComponent } from './core/pages/profile/components/pop-repo/pop-r
 import { ProfileFooterComponent } from './core/pages/profile/components/profile-footer/profile-footer.component';
 import { ProfileDescComponent } from './core/pages/shared/profile-desc/profile-desc.component';
 import { ContributionBlockComponent } from './core/pages/profile/components/contribution-block/contribution-block.component';
+import { RepoListSearchFormComponent } from './core/components/repo-list-search-form/repo-list-search-form.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { ContributionBlockComponent } from './core/pages/profile/components/cont
     ProfileFooterComponent,
     ProfileDescComponent,
     ContributionBlockComponent,
+    RepoListSearchFormComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, RouterModule],
     
