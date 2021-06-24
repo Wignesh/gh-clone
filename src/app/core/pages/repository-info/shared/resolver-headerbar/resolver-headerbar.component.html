@@ -3,23 +3,25 @@
         <button class="filter-btn">Filters
             <span class="iconify" data-icon="octicon:triangle-down-16" data-inline="false"></span>
         </button>
-        <span class="iconify" data-icon="octicon:search-24" data-inline="false"></span><input type="search"
-            class="search-bar">
+        <div class="search-bar">
+            <span class="iconify search-icon" data-icon="octicon:search-24" data-inline="false"></span><input
+                type="text" class="search-input" placeholder="Search all issues">
+        </div>
 
     </div>
     <div class="resolver-header-2">
         <button class="label-btn">
             <span class="iconify" data-icon="octicon:tag-24" data-inline="false"></span>
             Label
-            <div class="count">30</div>
+            <span class="count">30</span>
         </button>
         <button class="milestone-btn">
             <span class="iconify" data-icon="octicon:milestone-24" data-inline="false"></span>
             Milestones
-            <div class="count">8</div>
+            <span class="count">8</span>
         </button>
     </div>
     <div class="resolver-header-3">
-        <button class="new-resolver-btn">new {{rtype}}</button>
+        <button class="new-resolver-btn">New {{rtype}}</button>
     </div>
 </div>
