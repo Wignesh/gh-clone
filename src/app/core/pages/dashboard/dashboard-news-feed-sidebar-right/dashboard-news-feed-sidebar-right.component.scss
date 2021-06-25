@@ -1,7 +1,7 @@
 @import "../../../styles/common/constants";
 
 .repo-language-cpp {
-  background-color: #f34b7d;
+  background-color: #f34b7d !important;
 }
 
 .repo-language-go {
@@ -13,23 +13,17 @@
 }
 
 .aside-right {
-  display: block;
-  // position: absolute;
-  // width: 33.33333%;
-  // border-bottom: 1px solid $color-border-primary !important;
-  margin-top: 32px !important;
-  max-width: 350px;
-  padding-right: 24px !important;
-  padding-left: 24px !important;
+  // width: 100%;
+  // border-bottom: 1px solid $color-border-primary;
   .octoverse-survey {
     .notice {
       form {
         background-color: $color-bg-primary;
         border: 1px solid $color-border-primary;
-        border-radius: 6px !important;
-        position: relative !important;
-        margin-bottom: 24px !important;
-        padding: 16px !important;
+        border-radius: 6px;
+        position: relative;
+        margin-bottom: 24px;
+        padding: 16px;
         h3 {
           .octicon {
             height: 16;
@@ -38,18 +32,18 @@
             display: inline-block;
             vertical-align: text-bottom;
             fill: currentColor;
-            color: $color-text-tertiary !important;
-            margin-right: 4px !important;
+            color: $color-text-tertiary;
+            margin-right: 4px;
           }
           span {
             font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
               Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
             line-height: 1.5;
             color: $color-text-primary;
-            font-size: 16px !important;
-            font-weight: 600 !important;
+            font-size: 16px;
+            font-weight: 600;
             box-sizing: border-box;
-            margin-left: 4px !important;
+            margin-left: 4px;
           }
         }
         p {
@@ -58,9 +52,9 @@
           line-height: 1.5;
           color: $color-text-primary;
           word-wrap: break-word;
-          margin-top: 16px !important;
-          margin-bottom: 16px !important;
-          font-size: 12px !important;
+          margin-top: 16px;
+          margin-bottom: 16px;
+          font-size: 12px;
         }
         .take-survey-btn {
           font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
@@ -90,8 +84,8 @@
           }
         }
         .close-notice-container {
-          position: absolute !important;
-          padding: 4px !important;
+          position: absolute;
+          padding: 4px;
           top: 2px;
           right: 6px;
           .close-notice-button {
@@ -123,27 +117,27 @@
       sans-serif, Apple Color Emoji, Segoe UI Emoji;
     line-height: 1.5;
     color: $color-text-primary;
-    margin-bottom: 4px !important;
-    font-size: 14px !important;
-    font-weight: 600 !important;
+    margin-bottom: 4px;
+    font-size: 14px;
+    font-weight: 600;
   }
   .suggested-repo {
     border-bottom: 1px solid $color-border-primary;
-    border-color: $color-border-secondary !important;
-    margin-top: 8px !important;
-    margin-bottom: 8px !important;
-    padding-top: 8px !important;
-    padding-bottom: 8px !important;
+    border-color: $color-border-secondary;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     .suggested-repo-link {
       font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
         sans-serif, Apple Color Emoji, Segoe UI Emoji;
       line-height: 1.5;
       background-color: transparent;
-      color: $color-text-primary !important;
-      font-size: 12px !important;
-      font-weight: 600 !important;
-      text-decoration: none !important;
-      display: inline-block !important;
+      color: $color-text-primary;
+      font-size: 12px;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-block;
       &:hover {
         color: $color-text-link !important;
       }
@@ -152,12 +146,12 @@
       font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
         sans-serif, Apple Color Emoji, Segoe UI Emoji;
       line-height: 1.5;
-      color: $color-text-secondary !important;
-      margin-bottom: 8px !important;
-      font-size: 12px !important;
+      color: $color-text-secondary;
+      margin-bottom: 8px;
+      font-size: 12px;
     }
     .suggested-repo-language {
-      margin-right: 8px !important;
+      margin-right: 8px;
       .suggested-repo-language-container {
         .suggested-repo-language-color {
           position: relative;
@@ -173,9 +167,9 @@
           font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
             Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
           line-height: 1.5;
-          color: $color-text-secondary !important;
-          font-size: 12px !important;
-          font-weight: 400 !important;
+          color: $color-text-secondary;
+          font-size: 12px;
+          font-weight: 400;
         }
       }
     }
@@ -183,11 +177,11 @@
       font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
         sans-serif, Apple Color Emoji, Segoe UI Emoji;
       line-height: 1.5;
-      color: $color-text-secondary !important;
-      font-size: 12px !important;
-      font-weight: 400 !important;
+      color: $color-text-secondary;
+      font-size: 12px;
+      font-weight: 400;
       .octicon {
-        color: $color-text-secondary !important;
+        color: $color-text-secondary;
         height: 16;
         width: 16;
         display: inline-block;
@@ -201,11 +195,11 @@
       sans-serif, Apple Color Emoji, Segoe UI Emoji;
     line-height: 1.5;
     background-color: transparent;
-    color: $color-text-secondary !important;
-    margin-bottom: 16px !important;
-    font-size: 12px !important;
-    text-decoration: none !important;
-    display: block !important;
+    color: $color-text-secondary;
+    margin-bottom: 16px;
+    font-size: 12px;
+    text-decoration: none;
+    display: block;
     &:hover {
       color: $color-text-link !important;
     }

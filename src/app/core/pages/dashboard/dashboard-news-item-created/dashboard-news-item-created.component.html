@@ -3,7 +3,7 @@
         <div class="news-details">
             <div class="container">
                 <span class="user">
-                    <a href="" class="user-link">
+                    <a class="user-link">
                         <img class="user-avatar" src="{{news.data.user_avatar}}" width="32" height="32"
                             alt="@{{news.data.user}}">
                     </a>
@@ -11,9 +11,10 @@
                 <div class="news-card">
                     <div class="news-title">
                         <div class="container">
-                            <a href="" class="user-link">{{news.data.user}}</a>
+                            <a class="user-link">{{news.data.user}}</a>
                             <span class="user-action"> created a repository
-                                <a href="" class="repo-link">{{news.data.repo}}</a>
+                                <a routerLink="/repository-info/{{news.data.repo}}"
+                                    class="repo-link">{{news.data.repo}}</a>
                                 <span class="news-time">{{news.data.date}}</span>
                             </span>
                         </div>
@@ -21,7 +22,7 @@
                     <div class="news-card-body">
                         <div class="news-card-body-content">
                             <div class="created-repo-info">
-                                <a href="">{{news.data.repo}}</a>
+                                <a routerLink="/repository-info/{{news.data.repo}}">{{news.data.repo}}</a>
                                 <div class="created-rep-star-container">
                                     <form>
                                         <button type="button" class="star-button">
