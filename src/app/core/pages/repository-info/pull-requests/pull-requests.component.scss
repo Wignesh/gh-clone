@@ -1,4 +1,43 @@
+@import "../../../styles/common/constants";
+
+$common-font: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+  sans-serif, Apple Color Emoji, Segoe UI Emoji;
+
 .pr-container {
-  margin: 0px 7.3rem;
+  margin: 0px 24px;
   padding: 0px 2rem;
+  .welcome-component {
+    margin: 2vw 0vw;
+  }
+  .toolbar-component {
+    margin: 2vw 0vw;
+  }
+  .rcard-container {
+    margin: 2vw 0vw;
+  }
+  .pro-tip {
+    margin: 2vw 0vw;
+    text-align: center;
+    font-size: 14px;
+    color: $color-text-secondary;
+    .highlight-text {
+      font-weight: 600;
+      color: $color-text-primary;
+    }
+    .iconify {
+      color: $color-text-secondary;
+    }
+  }
+}
+a {
+  color: $color-text-link;
+  text-decoration: none;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+* {
+  font-family: $common-font;
+  line-height: 21px;
 }

@@ -1,0 +1,69 @@
+@import "../../../../styles/common/constants";
+
+$common-font: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+  sans-serif, Apple Color Emoji, Segoe UI Emoji;
+
+* {
+  font-family: $common-font;
+  line-height: 21px;
+}
+
+.details-popup {
+  padding: 16px;
+  width: 20vw;
+  border-radius: 6px;
+
+  background-color: $color-bg-tertiary;
+  color: $color-text-primary;
+  border: 1px solid $color-border-primary;
+  .repo-details {
+    font-size: 12px;
+    color: $color-text-secondary;
+  }
+  .r-details {
+    display: flex;
+    margin-top: 1vw;
+    .icon-class {
+      .iconify {
+        font-size: 14px;
+      }
+    }
+    .details-content {
+      margin-left: 0.5vw;
+      margin-top: -0.3vw;
+      .r-title {
+        font-size: 14px;
+        font-weight: 600;
+      }
+      .r-sno {
+        color: $color-text-secondary;
+        font-size: 14px;
+      }
+      .description {
+        font-size: 12px;
+        color: $color-text-secondary;
+        width: 12vw;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+      .button-container {
+        .label {
+          border-radius: 24px;
+          background-color: violet;
+          border: 1px solid rgb(210 195 249 / 0.3);
+          padding: 0 7px;
+          color: white;
+          margin: 0.2rem;
+          font-weight: 500;
+          font-size: 12px;
+          text-align: center;
+          vertical-align: middle;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

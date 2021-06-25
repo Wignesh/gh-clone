@@ -1,22 +1,23 @@
-#repo-content-root{
-    display: flex;
-    flex-direction: row;
+.repo-content-root{
+  margin: 32px;
+}
+.left-pane{
+  width: 68vw;
+  margin: 0px 8px 0px;
+  padding: 0px 8px 0px 32px;
+  justify-content: flex-start;
 }
 
-.code-view{
-    flex: 3;
+.right-pane{
+  margin: 0px 51px 0px 12px;
 }
-
-.right-panel{
-    flex: 1;
+.code-container{
+  margin: 16px 0px 18px 0px;
+  width: 65vw;
 }
-
-.file-tree{
-  width:100%;
-  padding:0 1rem;
-  margin-left:3rem;
+.readme-container{
+  width: 67.5vw;
 }
-
 
 // utility
 

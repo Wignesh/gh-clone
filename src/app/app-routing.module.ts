@@ -7,11 +7,12 @@ import { RepositoryInfoPage } from './core/pages/repository-info/repository-info
 import { SettingsPage } from './core/pages/settings/settings.page';
 import { ProfilePage } from './core/pages/profile/profile.page';
 import { RepositoryContentComponent } from './core/pages/repository-info/repository-content/repository-content.component';
-import { RepositoryCodeComponent } from './core/pages/repository-info/repository-code/repository-code.component';
 import { IssuesComponent } from './core/pages/repository-info/issues/issues.component';
 import { PullRequestsComponent } from './core/pages/repository-info/pull-requests/pull-requests.component';
+import { CodeViewComponent } from './core/pages/repository-info/code-view/code-view.component';
 import { AuthGuard } from './core/pages/login/auth.guard';
 import { AccessGuard } from './core/pages/access.guard';
+import { WorkInProgressComponent } from './core/pages/shared/work-in-progress/work-in-progress.component';
 
 const routes: Routes = [
   {
@@ -47,14 +48,30 @@ const routes: Routes = [
         component: PullRequestsComponent,
       },
       {
+        path: 'actions',
+        component: WorkInProgressComponent,
+      }, {
+        path: 'projects',
+        component: WorkInProgressComponent,
+      }, {
+        path: 'wiki',
+        component: WorkInProgressComponent,
+      }, {
+        path: 'security',
+        component: WorkInProgressComponent,
+      }, {
+        path: 'insights',
+        component: WorkInProgressComponent,
+      },
+      {
         path: '',
         component: RepositoryContentComponent,
       },
       {
-        path: '**',
-        component: RepositoryCodeComponent,
-      },
-    ],
+        path: "**",
+        component: CodeViewComponent
+      }
+    ]
   },
   {
     path: 'settings',
@@ -73,4 +90,4 @@ const routes: Routes = [
   exports: [RouterModule],
   providers: [AuthGuard],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

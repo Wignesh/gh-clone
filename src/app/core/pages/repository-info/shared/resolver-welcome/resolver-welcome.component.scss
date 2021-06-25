@@ -1,34 +1,45 @@
-.welcome-message-container {
-  border-color: rgb(235 237 239);
-  border-radius: 6px;
-  border-style: solid;
-  border-width: 1px;
-  color: rgb(36 41 46);
+$common-font: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+  sans-serif, Apple Color Emoji, Segoe UI Emoji;
+$text-color: #c9d1d9;
+$link-color: #58a6ff;
+$border-color: #21262d;
+
+* {
+  font-family: $common-font;
   font-size: 14px;
   line-height: 21px;
+  color: $text-color;
+}
+a {
+  color: $link-color;
+  text-decoration: none;
+}
+.welcome-message-container {
+  border: 1px solid $border-color;
+  border-radius: 6px;
   padding: 24px;
   text-align: center;
-  .welcome-message-header {
-    color: rgb(36 41 46);
-    font-family: -apple-system;
-    font-weight: 600;
-    line-height: 24px;
-    margin: 0px 0px 8px;
-    text-align: center;
-  }
-  .welcome-message {
-    color: rgb(36 41 46);
-    font-family: -apple-system;
-    font-size: 14px;
-    line-height: 21px;
-    text-align: center;
+  display: flex;
+  .message-container {
+    margin-left: 30%;
+    .welcome-message-header {
+      font-weight: 600;
+      margin: 0px 0px 8px;
+      text-align: center;
+      font-size: 16px;
+    }
+    .welcome-message {
+      text-align: center;
+    }
   }
   .dismiss-dropdown {
-    color: rgb(36 41 46);
-    display: inline-block;
-    font-family: -apple-system;
-    font-size: 14px;
-    line-height: 21px;
-    text-align: left;
+    margin-left: auto;
+    .dismiss-dropdown-btn {
+      cursor: pointer;
+      color: $text-color;
+    }
+    .dismiss-dropdown-elements {
+      display: none;
+    }
   }
 }
