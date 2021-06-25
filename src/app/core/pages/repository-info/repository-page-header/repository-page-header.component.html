@@ -101,7 +101,7 @@
       <span class="pull-requests-count">336</span>
     </div>
 
-    <div class="repository-nav-item actions-item"
+    <div class="repository-nav-item actions-item" [routerLink]="basePath+'/actions'"
       [ngClass]="{'active-nav-item':currentURL==basePath+'/actions'}">
       <svg class="octicon octicon-play UnderlineNav-octicon d-none d-sm-inline" fill="currentColor" viewBox="0 0 16 16"
         version="1.1" width="16" height="16" aria-hidden="true">
@@ -112,7 +112,7 @@
       <span class="repo-nav-item-heading">Actions</span>
     </div>
 
-    <div class="repository-nav-item projects-item"
+    <div class="repository-nav-item projects-item" [routerLink]="basePath+'/projects'"
       [ngClass]="{'active-nav-item':currentURL==basePath+'/projects'}">
       <svg class="octicon octicon-project UnderlineNav-octicon d-none d-sm-inline" fill="currentColor"
         viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
@@ -124,7 +124,7 @@
       <span class="projects-count">7</span>
     </div>
 
-    <div class="repository-nav-item wiki-item" [ngClass]="{'active-nav-item':currentURL==basePath+'/wiki'}">
+    <div class="repository-nav-item wiki-item" [routerLink]="basePath+'/wiki'" [ngClass]="{'active-nav-item':currentURL==basePath+'/wiki'}">
       <svg class="octicon octicon-book UnderlineNav-octicon d-none d-sm-inline" fill="currentColor" viewBox="0 0 16 16"
         version="1.1" width="16" height="16" aria-hidden="true">
         <path fill-rule="evenodd"
@@ -134,7 +134,7 @@
       <span class="repo-nav-item-heading">Wiki</span>
     </div>
 
-    <div class="repository-nav-item security-item"
+    <div class="repository-nav-item security-item" [routerLink]="basePath+'/security'"
       [ngClass]="{'active-nav-item':currentURL==basePath+'/security'}">
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
         class="bi bi-shield-exclamation" viewBox="0 0 16 16">
@@ -146,7 +146,7 @@
       Security
     </div>
 
-    <div class="repository-nav-item insights-item"
+    <div class="repository-nav-item insights-item" [routerLink]="basePath+'/insights'"
       [ngClass]="{'active-nav-item':currentURL==basePath+'/insights'}">
       <svg class="octicon octicon-graph UnderlineNav-octicon d-none d-sm-inline" fill="currentColor" viewBox="0 0 16 16"
         version="1.1" width="16" height="16" aria-hidden="true">

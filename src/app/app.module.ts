@@ -53,6 +53,7 @@ import { RepoCodeDownloadDropdownComponent } from './core/pages/repository-info/
 import { ResolverDetailsPopupComponent } from './core/pages/repository-info/shared/resolver-details-popup/resolver-details-popup.component';
 
 import { HttpClientModule } from '@angular/common/http';
+import { WorkInProgressComponent } from './core/pages/shared/work-in-progress/work-in-progress.component';
 
 @NgModule({
   declarations: [
@@ -102,6 +103,7 @@ import { HttpClientModule } from '@angular/common/http';
     CodeViewComponent,
     ResolverDetailsPopupComponent,
     RepoCodeDownloadDropdownComponent,
+    WorkInProgressComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, RouterModule, FormsModule, HttpClientModule],
  
