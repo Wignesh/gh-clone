@@ -1,7 +1,4 @@
-*
-{
-    color:#adbac7;
-}   
+   
 .contribution
 {
     width: 100%;
@@ -19,6 +16,11 @@
     display: flex;
     flex-direction: row;
     margin-left : 3rem;
+}
+.contribtitle
+{
+   font-size: 16px;
+
 }
 .contribdate
 {
@@ -128,7 +130,7 @@
     line-height:20px;
     padding:8px 6px;
     text-align:center;
-    margin-bottom: 3rem;
+    margin-bottom: 6rem;
 }
 .timelinebtn:hover
 {
