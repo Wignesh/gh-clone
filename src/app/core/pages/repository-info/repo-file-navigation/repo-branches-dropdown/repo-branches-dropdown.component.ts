@@ -58,10 +58,10 @@ export class RepoBranchesDropdownComponent implements OnInit,OnChanges {
 
   dismissOnClickingOutsideBoundary(){
     document.querySelector("body")?.addEventListener('click',(evt)=>{
-      const {clientX,clientY} = evt
+      const {pageX,pageY} = evt
 
-      const dropdownIsClicked = this.checkIfDropdownIsClicked(clientX,clientY)
-      const buttonIsClicked = this.checkIfButtonIsClicked(clientX,clientY)
+      const dropdownIsClicked = this.checkIfDropdownIsClicked(pageX,pageY)
+      const buttonIsClicked = this.checkIfButtonIsClicked(pageX,pageY)
 
       if(dropdownIsClicked || buttonIsClicked ){
         return
