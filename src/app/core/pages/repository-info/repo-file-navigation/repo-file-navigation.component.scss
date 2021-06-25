@@ -153,6 +153,12 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
+  
+  #path-cont {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    flex-wrap: nowrap;
+  }
 
   #root-path {
     color: #58a6ff;
@@ -177,7 +183,7 @@
   cursor: pointer;
   fill: #8b949e;
 
-  .icon{
+  .icon {
     display: flex;
     justify-content: center;
     align-items: center;

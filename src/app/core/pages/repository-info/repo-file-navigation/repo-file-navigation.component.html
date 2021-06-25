@@ -31,10 +31,12 @@
 
     <!-- file path -->
     <div *ngIf="!isRootPage" class="file-path flex">
-      <div id="root-path">gh-clone</div>
+      <div id="root-path">{{repoName}}</div>
       <div class="path-sep">/</div>
-      <div class="dir">src</div>
-      <div class="path-sep">/</div>
+      <div id="path-cont" class="flex" *ngFor="let name of urlList">
+        <div class="dir">{{name}}</div>
+        <div class="path-sep">/</div>
+      </div>
     </div>
   </div>
 
