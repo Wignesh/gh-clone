@@ -7,7 +7,6 @@ import { RepositoryInfoPage } from './core/pages/repository-info/repository-info
 import { SettingsPage } from './core/pages/settings/settings.page';
 import { ProfilePage } from './core/pages/profile/profile.page';
 import { RepositoryContentComponent } from './core/pages/repository-info/repository-content/repository-content.component';
-import { RepositoryCodeComponent } from './core/pages/repository-info/repository-code/repository-code.component';
 import { IssuesComponent } from './core/pages/repository-info/issues/issues.component';
 import { PullRequestsComponent } from './core/pages/repository-info/pull-requests/pull-requests.component';
 import { CodeViewComponent } from './core/pages/repository-info/code-view/code-view.component';
@@ -28,22 +27,21 @@ const routes: Routes = [
   {
     path: 'repository-info/:author/:repo',
     component: RepositoryInfoPage,
-    children:[
+    children: [
       {
-        path:"issues",
-        component:IssuesComponent
+        path: 'issues',
+        component: IssuesComponent,
       },
       {
-        path:"pullrequest",
-        component:PullRequestsComponent
+        path: 'pullrequest',
+        component: PullRequestsComponent,
       },
       {
-        path:"",
-        component:RepositoryContentComponent
+        path: '',
+        component: RepositoryContentComponent,
       },
       {
         path:"**",
-        //component:RepositoryCodeComponent
         component:CodeViewComponent
       }
     ]

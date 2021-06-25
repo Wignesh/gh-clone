@@ -1,13 +1,13 @@
 
  {
     "issues": {
-      "openlist": [
+      "open": [
         {
           "sno": 1,
           "tittle": "Spacing Issue",
           "postedBy": "NotAishwarya",
           "description": "This is the description for spacing issue",
-          "labels": ["Js", "CSS", "onemore"],
+          "labels": [3,4,5],
           "assignee": {
               "name":"Bellatrix",
               "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBStQ1KR3SY_FRqVLZVMZ6oppEAnNLPkb6Dw&usqp=CAU"
@@ -17,10 +17,36 @@
         },
         {
           "sno": 1,
-          "tittle": "Issue with @angular/material",
+          "tittle": "Second Issue",
           "postedBy": "NotAishwarya",
           "description": "This is the description for spacing issue",
-          "labels": ["Js", "CSS", "onemore"],
+         "labels": [19,9,8],
+          "assignee": {
+              "name":"Bellatrix",
+              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBStQ1KR3SY_FRqVLZVMZ6oppEAnNLPkb6Dw&usqp=CAU"
+          },
+          "comments": ["Got it", "Doesn't seem like a spacing issue"],
+          "linked": [1, 2]
+        },
+        {
+          "sno": 1,
+          "tittle": "Spacing Issue",
+          "postedBy": "NotAishwarya",
+          "description": "This is the description for spacing issue",
+          "labels": [4,5,12],
+          "assignee": {
+              "name":"Bellatrix",
+              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBStQ1KR3SY_FRqVLZVMZ6oppEAnNLPkb6Dw&usqp=CAU"
+          },
+          "comments": ["Got it", "Doesn't seem like a spacing issue"],
+          "linked": [1, 2]
+        },
+        {
+          "sno": 1,
+          "tittle": "Spacing Issue",
+          "postedBy": "NotAishwarya",
+          "description": "This is the description for spacing issue",
+          "labels": [3,2,1],
           "assignee": {
               "name":"Bellatrix",
               "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBStQ1KR3SY_FRqVLZVMZ6oppEAnNLPkb6Dw&usqp=CAU"
@@ -28,15 +54,16 @@
           "comments": ["Got it", "Doesn't seem like a spacing issue"],
           "linked": [1, 2]
         }
+
       ],
-      "closedlist" : [
+      "closed" : [
         {
           "sno": 1,
           "tittle": "Spacing Issue",
           "postedBy": "NotAishwarya",
           "description": "This is the description for spacing issue",
-          "labels": ["Js", "CSS", "onemore"],
-            "assignee": {
+          "labels": [4,5,12],
+          "assignee": {
               "name":"Bellatrix",
               "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBStQ1KR3SY_FRqVLZVMZ6oppEAnNLPkb6Dw&usqp=CAU"
           },
@@ -44,11 +71,11 @@
           "linked": [1, 2]
         },
         {
-          "sno": 2,
+          "sno": 1,
           "tittle": "Spacing Issue",
           "postedBy": "NotAishwarya",
           "description": "This is the description for spacing issue",
-          "labels": ["Js", "CSS", "onemore"],
+          "labels": [3,2,1],
           "assignee": {
               "name":"Bellatrix",
               "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBStQ1KR3SY_FRqVLZVMZ6oppEAnNLPkb6Dw&usqp=CAU"
@@ -60,13 +87,26 @@
     },
 
     "pr": {
-      "openlist": [
+      "open": [
         {
           "sno": 1,
           "tittle": "Spacing Issue",
           "postedBy": "NotAishwarya",
           "description": "This is the description for spacing issue",
-          "labels": ["Js", "CSS", "onemore"],
+          "labels": [5,6,15],
+          "assignee": {
+              "name":"Bellatrix",
+              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBStQ1KR3SY_FRqVLZVMZ6oppEAnNLPkb6Dw&usqp=CAU"
+          },
+          "comments": ["Got it", "Doesn't seem like a spacing issue"],
+          "linked": [1, 2]
+        },
+        {
+          "sno": 1,
+          "tittle": "Spacing Issue",
+          "postedBy": "NotAishwarya",
+          "description": "This is the description for spacing issue",
+          "labels": [4,1,7],
           "assignee": {
               "name":"Bellatrix",
               "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBStQ1KR3SY_FRqVLZVMZ6oppEAnNLPkb6Dw&usqp=CAU"
@@ -75,26 +115,13 @@
           "linked": [1, 2]
         }
       ],
-      "closedlist" : [
+      "closed" : [
         {
           "sno": 1,
           "tittle": "Spacing Issue",
           "postedBy": "NotAishwarya",
           "description": "This is the description for spacing issue",
-          "labels": ["Js", "CSS", "onemore"],
-            "assignee": {
-              "name":"Bellatrix",
-              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBStQ1KR3SY_FRqVLZVMZ6oppEAnNLPkb6Dw&usqp=CAU"
-          },
-          "comments": ["Got it", "Doesn't seem like a spacing issue"],
-          "linked": [1, 2]
-        },
-        {
-          "sno": 2,
-          "tittle": "Spacing Issue",
-          "postedBy": "NotAishwarya",
-          "description": "This is the description for spacing issue",
-          "labels": ["Js", "CSS", "onemore"],
+           "labels": [4,1,7],
           "assignee": {
               "name":"Bellatrix",
               "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBStQ1KR3SY_FRqVLZVMZ6oppEAnNLPkb6Dw&usqp=CAU"
@@ -103,5 +130,28 @@
           "linked": [1, 2]
         }
       ]
-    }
+    },
+
+    "labellist" : [{"name" :"Javascript", "color" : "red"},
+       {"name" :"CSS" , "color" : "blue"},
+       {"name" :"PR", "color" : "green"},
+       {"name" :"android", "color" : "yellow"},
+       {"name" :"a11y", "color" : "violet"},
+       {"name" :"good first issue", "color" : "gray"},
+       {"name" :"feature", "color" : "orange"},
+       {"name" :"docs", "color" : "silver"},
+       {"name" :"blocked", "color" : "red"},
+       {"name" :"G", "color" : "blue"},
+       {"name" :"needs investigation", "color" : "green"},
+       {"name" :"needs clarification", "color" : "yellow"},
+       {"name" :"safari", "color" : "orange"},
+       {"name" :"ios", "color" : "violet"},
+      {"name" : "regression", "color" : "gray"},
+       {"name" :"P1", "color" : "purple"},
+       {"name" :"P2", "color" : "green"},
+       {"name" :"P5", "color" : "yellow"},
+       {"name" :"P3", "color" : "violet"},
+      {"name" : "P4", "color" : "violet"},
+       {"name" : "troubleshooting", "color" : "red"}
+      ]
   }

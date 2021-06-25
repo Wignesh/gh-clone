@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-
+import * as resolverData from '../../../../constants/resolver.json';
+import * as resolverIcons from '../../../../constants/resolvericons.json';
 @Component({
   selector: 'app-resolver-details-card',
   templateUrl: './resolver-details-card.component.html',
@@ -7,10 +8,17 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ResolverDetailsCardComponent implements OnInit {
   @Input() resolverDetails: any;
+  @Input() rtype = '';
+  @Input() rresult = 'open';
+  displayDetails: boolean = false;
+
+  resolverData = resolverData;
+  labels: any;
+  icons: { [index: string]: any } = resolverIcons;
 
   constructor() {}
 
   ngOnInit(): void {
-    console.log(this.resolverDetails.assignee);
+    this.labels = this.resolverData.labellist;
   }
 }

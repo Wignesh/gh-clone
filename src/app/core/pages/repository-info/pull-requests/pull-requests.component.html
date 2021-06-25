@@ -1,7 +1,16 @@
 <div class="pr-container">
-    <app-resolver-welcome></app-resolver-welcome>
-    <br>
-    <app-resolver-headerbar [rtype]="'pul request'"></app-resolver-headerbar>
-    <br>
-    <app-resolver-card-container [rtype]="'pr'"></app-resolver-card-container>
+    <div class="welcome-component">
+        <app-resolver-welcome></app-resolver-welcome>
+    </div>
+    <div class="toolbar-component">
+        <app-resolver-headerbar [rtype]="'pull request'"></app-resolver-headerbar>
+    </div>
+    <div class="rcard-container">
+        <app-resolver-card-container [rtype]="'pr'"></app-resolver-card-container>
+    </div>
+    <div class="pro-tip">
+        <span class="iconify" data-icon="octicon:light-bulb-24" data-inline="false"></span>
+        <span class="highlight-text"> ProTip! </span> Ears burning? Get @NotAishwarya mentions with
+        <a>mentions:NotAishwarya.</a>
+    </div>
 </div>

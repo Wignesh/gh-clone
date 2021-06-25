@@ -43,6 +43,7 @@ import { DashboardNewsLoadingComponent } from './core/pages/dashboard/dashboard-
 import { DashboardNewsFeedComponent } from './core/pages/dashboard/dashboard-news-feed/dashboard-news-feed.component';
 import { DashboardNewsFeedSidebarRightComponent } from './core/pages/dashboard/dashboard-news-feed-sidebar-right/dashboard-news-feed-sidebar-right.component';
 import { CodeViewComponent } from './core/pages/repository-info/code-view/code-view.component';
+import { ResolverDetailsPopupComponent } from './core/pages/repository-info/shared/resolver-details-popup/resolver-details-popup.component';
 
 @NgModule({
   declarations: [
@@ -83,6 +84,7 @@ import { CodeViewComponent } from './core/pages/repository-info/code-view/code-v
     DashboardNewsFeedComponent,
     DashboardNewsFeedSidebarRightComponent,
     CodeViewComponent,
+    ResolverDetailsPopupComponent,
   ],
   imports: [
     BrowserModule,

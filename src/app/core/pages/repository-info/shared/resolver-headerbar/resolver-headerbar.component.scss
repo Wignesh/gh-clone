@@ -1,21 +1,34 @@
+@import "../../../../styles/common/constants";
+
+$common-font: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+  sans-serif, Apple Color Emoji, Segoe UI Emoji;
+
 * {
-  color: rgb(36 41 46);
   font-weight: 550;
-  line-height: 1rem;
+  line-height: 20px;
+  font-size: 14px;
+  font-family: $common-font;
 }
 .resolver-header-bar {
   display: flex;
   justify-content: space-between;
   .resolver-header-1 {
-    flex-basis: 67%;
+    flex-basis: 63%;
     .filter-btn {
-      background-color: rgb(250 251 252);
+      color: $color-btn-text;
       border-radius: 6px 0px 0px 6px;
-      border: 1px solid rgb(27 31 35 / 0.15);
-      box-shadow: rgb(27 31 35 / 0.04) 0px 1px 0px 0px;
+      border: 1px solid $color-btn-border;
+      background-color: $color-btn-bg;
+      box-shadow: $color-btn-shadow 0px 1px 0px 0px;
       display: inline-block;
-      padding: 0.3rem 0.3rem;
-      width: 10%;
+      padding: 0.35rem 0.3rem;
+      width: 11%;
+      text-align: center;
+      &:hover {
+        border: 1px solid $color-btn-hover-border;
+        box-shadow: $color-btn-outline-hover-shadow 0px 1px 0px 0px;
+        background-color: $color-btn-hover-bg;
+      }
     }
     .search-bar {
       width: 86%;
@@ -23,63 +36,78 @@
       .search-input {
         width: 100%;
         height: 100%;
-        border: none;
-        background-color: rgb(250 251 252);
+        background-color: $color-input-contrast-bg;
         background-position: right 8px 50%;
         border-radius: 0px 6px 6px 0px;
-        border: 1px solid rgb(225 228 232);
-        box-shadow: rgb(225 228 232 / 0.2) 0px 1px 0px 0px;
-        color: rgb(88 96 105);
-        padding: 0.362rem 3rem 0.3rem 1.7rem;
+        border: 1px solid $color-input-border;
+        box-shadow: $color-input-shadow 0px 1px 0px 0px;
+        //padding: 0.362rem 3rem 0.3rem 1.7rem;
+        padding: 0.4rem 2rem;
       }
       .search-input:focus {
-        box-shadow: 0 0 0.4rem #b3d1f3;
-        outline: none;
-        border: 1px solid #0869d7;
+        box-shadow: 0 0 0 3.5px $color-btn-outline-selected-bg;
+        border: 1px solid $color-btn-outline-selected-border;
       }
 
       .search-icon {
         position: absolute;
         z-index: 2;
-        margin: 5px;
+        margin: 8px;
+        font-size: 14px;
+        color: rgb(139 148 158);
       }
     }
   }
   .resolver-header-2 {
     .label-btn {
-      background-color: rgb(246 248 250);
       border-radius: 6px 0px 0px 6px;
-      border: 1px solid rgb(225 228 232);
+      border: 1px solid $color-btn-border;
+      box-shadow: $color-btn-shadow 0px 1px 0px 0px;
+      background-color: $color-bg-canvas;
+      color: $color-counter-text;
       padding: 0.3rem 0.8rem;
+      &:hover {
+        background-color: $color-bg-tertiary;
+      }
     }
     .milestone-btn {
-      background-color: rgb(246 248 250);
       border-radius: 0px 6px 6px 0px;
-      border: 1px solid rgb(225 228 232);
-      margin: 0px 0px 0px -1px;
+      border: 1px solid $color-btn-border;
+      box-shadow: $color-btn-shadow 0px 1px 0px 0px;
+      background-color: $color-bg-canvas;
       padding: 0.3rem 0.8rem;
+      align-items: center;
+      color: $color-counter-text;
+      &:hover {
+        background-color: $color-bg-tertiary;
+      }
     }
     .iconify {
       margin: 2px;
+      display: inline-block;
+      vertical-align: middle;
+      color: #c9d1d9;
     }
     .count {
-      background-color: rgb(209 213 218 / 0.5);
+      background-color: $color-counter-bg;
       text-align: center;
+      font-size: 12px;
       border-radius: 24px;
       padding: 0rem 0.7rem;
-      font-size: 0.6m;
     }
   }
   .resolver-header-3 {
     .new-resolver-btn {
-      background-color: rgb(44 153 76);
-      border-color: rgb(27 31 35 / 0.15);
+      background-color: $color-btn-primary-bg;
+      border: 1px solid $color-btn-primary-border;
       border-radius: 6px;
-      border-style: solid;
-      border-width: 1px;
       box-shadow: rgb(27 31 35 / 0.1) 0px 1px 0px 0px;
       color: rgb(255 255 255);
       padding: 0.3rem 0.8rem;
+      &:hover {
+        background-color: $color-btn-primary-hover-bg;
+        border: 1px solid $color-btn-primary-hover-border;
+      }
     }
   }
 }
