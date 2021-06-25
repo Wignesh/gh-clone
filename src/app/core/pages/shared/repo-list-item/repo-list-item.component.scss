@@ -1,6 +1,6 @@
 .repo-card{
     height:175px;
-    width: 180%;
+    width: 183%;
     border-top: 0.5px solid #21262D;
     border-bottom:0.5px solid #21262D; 
     color:#586069;
@@ -116,6 +116,10 @@ a:hover{
     align-items: center;
   }
 
+  #star-button:hover{
+    border-color: #8b949e;;
+  }
+
   .fa-star{
     color: #8b949e;
     margin: 0 4px 0 0;
@@ -125,3 +129,37 @@ a:hover{
     text-decoration: none;
     color : #2f91ff;
   }
+
+
+  #repo-list-graph .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #8b949e;
+    font-size: 11px;
+    margin-left: 10%;
+    color: #c9d1d9;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+  }
+
+
+  
+  #repo-list-graph:hover .tooltiptext {
+    animation-duration: 3s;
+    visibility: visible;
+  }
+
+  #repo-list-graph{
+    flex-direction: column;
+    height: 10px;
+    margin-bottom: 10%;
+  }
+  
+

@@ -9,9 +9,9 @@ export class RepoListDataService {
     {
       title: 'object_detector',
       author:'droidLight',
-      readme: 'This is a webpage built using angular, which allows a user to add notes and Todo items',
-      language: 'typescript',
-      tags: ['angular', 'typescript', 'html'],
+      readme: 'Object detaction software built using convolutional neural network as a pert of a workshop.',
+      language: 'Typescript',
+      tags: ['python', 'jupyter Notebook', 'CNN'],
       lastupdated: '5 days ago'
     },
     {
@@ -26,15 +26,15 @@ export class RepoListDataService {
       title: 'suggest-a-random-movie',
       author:'Abishek-Balasubramaniam',
       readme: 'Movie suggestion website built using django and MySQL database',
-      language: 'python',
+      language: 'Python',
       tags: ['python', 'Django', 'MySQL', 'HTML'],
       lastupdated: '3 months ago'
     },
     {
       title: 'Colosseum_2k19',
       author: 'droidLight',
-      readme: 'This repository contains all Python Projects.',
-      language: 'python',
+      readme: 'This repository contains project files of website built for for colloseum cultural event in my college',
+      language: 'Python',
       tags: ['python', 'python GUI', 'python-webapp'],
       lastupdated: 'Updated on Apr 27'
     },
@@ -42,16 +42,16 @@ export class RepoListDataService {
       title: 'Tanjore-Disaster-Management',
       author: 'droidLight',
       readme: 'This is the Project made for Disaster Management in Tanjore,Tamil Nadu.',
-      language: 'c',
-      tags: ['tree', 'stack', 'heap'],
+      language: 'C',
+      tags: ['python', 'jupyter Notebook', 'CNN'],
       lastupdated: 'updated on Mar 29'
     },
     {
       title: 'Todo-Notes-and-Contacts',
       author:'Abishek-bala',
-      readme: 'This repository contains all my cpp tutorial projects',
-      language: 'c++',
-      tags: ['c++'],
+      readme: 'This is a webpage built using angular, which allows a user to add notes and Todo items',
+      language: 'Typescript',
+      tags: ['angular', 'typescript', 'html'],
       lastupdated: '5 days ago'
     },
   ]
@@ -61,4 +61,19 @@ export class RepoListDataService {
   getrepos(){
     return this.repos;
   }
+
+  
+  isOverview: boolean = true;
+  isRepository: boolean = false;
+
+  loadRepo(){
+    this.isRepository = true;
+    this.isOverview = false; 
+  }
+
+  loadOverview(){
+    this.isRepository=false;
+    this.isOverview=true;
+  }
+
 }
