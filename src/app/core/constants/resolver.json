@@ -4,7 +4,7 @@
       "open": [
         {
           "sno": 2300,
-          "tittle": "bug(datepicker): Currently selected month and day are highlighted when browsing a different year",
+          "tittle": "build: remove unnecessary env.sh logic for circlec",
           "postedBy": "NotAishwarya",
           "description": "Reproduction Feel free to close this if this is intended behavior",
           "labels": [6,5,1],
@@ -18,7 +18,7 @@
         {
           "sno": 2301,
           "tittle": "mat-expansion-panel keeps contents of collapsed panels in DOM",
-          "postedBy": "SibiNehru",
+          "postedBy": "SibiN",
           "description": "I found this while debugging rendering performance in my app. I have a large section ",
          "labels": [3,2,1],
           "assignee": {
@@ -95,7 +95,7 @@
         },
          {
           "sno": 2300,
-          "tittle": "bug(datepicker): Currently selected month and day are highlighted when browsing a different year",
+          "tittle": "bug(datepicker): Selected month and day are highlighted when browsing a different year",
           "postedBy": "NotAishwarya",
           "description": "Reproduction Feel free to close this if this is intended behavior",
           "labels": [6,5,1],
@@ -109,7 +109,7 @@
         {
           "sno": 2301,
           "tittle": "mat-expansion-panel keeps contents of collapsed panels in DOM",
-          "postedBy": "SibiNehru",
+          "postedBy": "SibiN",
           "description": "I found this while debugging rendering performance in my app. I have a large section ",
          "labels": [3,2,1],
           "assignee": {
@@ -260,7 +260,7 @@
         {
           "sno": 1973,
           "tittle": "build: remove unnecessary env.sh logic for circlec",
-          "postedBy": "SibiNehru",
+          "postedBy": "SibiN",
           "description": "In the past, when the checkout_and_rebase command has been ported from angular/angula",
            "labels": [12,13],
           "assignee": {
@@ -390,7 +390,7 @@
         {
           "sno": 1973,
           "tittle": "build: remove unnecessary env.sh logic for circlec",
-          "postedBy": "SibiNehru",
+          "postedBy": "SibiN",
           "description": "In the past, when the checkout_and_rebase command has been ported from angular/angula",
            "labels": [12,13],
           "assignee": {
