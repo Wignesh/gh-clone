@@ -3,10 +3,10 @@
     "issues": {
       "open": [
         {
-          "sno": 1,
-          "tittle": "Spacing Issue",
+          "sno": 2300,
+          "tittle": "bug(datepicker): Currently selected month and day are highlighted when browsing a different year",
           "postedBy": "NotAishwarya",
-          "description": "This is the description for spacing issue",
+          "description": "Reproduction Feel free to close this if this is intended behavior",
           "labels": [3,4,5],
           "assignee": {
               "name":"Bellatrix",
@@ -132,26 +132,26 @@
       ]
     },
 
-    "labellist" : [{"name" :"Javascript", "color" : "red"},
-       {"name" :"CSS" , "color" : "blue"},
-       {"name" :"PR", "color" : "green"},
-       {"name" :"android", "color" : "yellow"},
-       {"name" :"a11y", "color" : "violet"},
-       {"name" :"good first issue", "color" : "gray"},
-       {"name" :"feature", "color" : "orange"},
-       {"name" :"docs", "color" : "silver"},
-       {"name" :"blocked", "color" : "red"},
-       {"name" :"G", "color" : "blue"},
-       {"name" :"needs investigation", "color" : "green"},
-       {"name" :"needs clarification", "color" : "yellow"},
-       {"name" :"safari", "color" : "orange"},
-       {"name" :"ios", "color" : "violet"},
-      {"name" : "regression", "color" : "gray"},
-       {"name" :"P1", "color" : "purple"},
-       {"name" :"P2", "color" : "green"},
-       {"name" :"P5", "color" : "yellow"},
-       {"name" :"P3", "color" : "violet"},
-      {"name" : "P4", "color" : "violet"},
-       {"name" : "troubleshooting", "color" : "red"}
+    "labellist" : [{"name" :"Javascript", "color" : "#D4C5F92E", "tcolor" : "#DACFFA"},
+       {"name" :"CSS" , "color" : "#EDEDED2E", "tcolor" : "#DACFFA"},
+       {"name" :"PR", "color" : "#5319E72E", "tcolor" : "#DACFFA"},
+       {"name" :"android", "color" : "yellow", "tcolor" : "#DACFFA"},
+       {"name" :"a11y", "color" : "violet", "tcolor" : "#DACFFA"},
+       {"name" :"good first issue", "color" : "gray", "tcolor" : "#DACFFA"},
+       {"name" :"feature", "color" : "orange", "tcolor" : "#DACFFA"},
+       {"name" :"docs", "color" : "silver", "tcolor" : "#DACFFA"},
+       {"name" :"blocked", "color" : "red", "tcolor" : "#DACFFA"},
+       {"name" :"G", "color" : "blue", "tcolor" : "#DACFFA"},
+       {"name" :"needs investigation", "color" : "green", "tcolor" : "#DACFFA"},
+       {"name" :"needs clarification", "color" : "yellow", "tcolor" : "#DACFFA"},
+       {"name" :"safari", "color" : "orange", "tcolor" : "#DACFFA"},
+       {"name" :"ios", "color" : "violet", "tcolor" : "#DACFFA"},
+      {"name" : "regression", "color" : "gray", "tcolor" : "#DACFFA"},
+       {"name" :"P1", "color" : "purple", "tcolor" : "#DACFFA"},
+       {"name" :"P2", "color" : "green", "tcolor" : "#DACFFA"},
+       {"name" :"P5", "color" : "yellow", "tcolor" : "#DACFFA"},
+       {"name" :"P3", "color" : "violet", "tcolor" : "#DACFFA"},
+      {"name" : "P4", "color" : "violet", "tcolor" : "#DACFFA"},
+       {"name" : "troubleshooting", "color" : "red", "tcolor" : "#DACFFA"}
       ]
   }
