@@ -45,6 +45,7 @@ import { DashboardNewsFeedSidebarRightComponent } from './core/pages/dashboard/d
 import { CodeViewComponent } from './core/pages/repository-info/code-view/code-view.component';
 import { ResolverDetailsPopupComponent } from './core/pages/repository-info/shared/resolver-details-popup/resolver-details-popup.component';
 import { RepoCodeDownloadDropdownComponent } from './core/pages/repository-info/repo-file-navigation/repo-code-download-dropdown/repo-code-download-dropdown.component';
+import { IssuesFilterDropdownComponent } from './core/pages/repository-info/issues/issues-filter-dropdown/issues-filter-dropdown.component';
 
 @NgModule({
   declarations: [
@@ -87,6 +88,7 @@ import { RepoCodeDownloadDropdownComponent } from './core/pages/repository-info/
     CodeViewComponent,
     ResolverDetailsPopupComponent,
     RepoCodeDownloadDropdownComponent,
+    IssuesFilterDropdownComponent,
   ],
   imports: [
     BrowserModule,
