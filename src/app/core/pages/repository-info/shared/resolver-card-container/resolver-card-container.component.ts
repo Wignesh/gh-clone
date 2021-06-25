@@ -30,4 +30,8 @@ export class ResolverCardContainerComponent implements OnInit {
     this.openCount = (this.openCount = this.rdata[this.rtype])?.open?.length;
     this.closedCount = this.rdata[this.rtype]?.closed?.length;
   }
+
+  isActive(btype: string) {
+    return this.rresult == btype;
+  }
 }

@@ -4,10 +4,75 @@
       "open": [
         {
           "sno": 2300,
-          "tittle": "bug(datepicker): Currently selected month and day are highlighted when browsing a different year",
+          "tittle": "build: remove unnecessary env.sh logic for circlec",
           "postedBy": "NotAishwarya",
           "description": "Reproduction Feel free to close this if this is intended behavior",
-          "labels": [3,4,5],
+          "labels": [6,5,1],
+          "assignee": {
+              "name":"Bellatrix",
+              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBStQ1KR3SY_FRqVLZVMZ6oppEAnNLPkb6Dw&usqp=CAU"
+          },
+          "comments": ["No point","one comment","Got it", "Doesn't seem like a spacing issue", "Some random"],
+          "linked": [1]
+        },
+        {
+          "sno": 2301,
+          "tittle": "mat-expansion-panel keeps contents of collapsed panels in DOM",
+          "postedBy": "SibiN",
+          "description": "I found this while debugging rendering performance in my app. I have a large section ",
+         "labels": [3,2,1],
+          "assignee": {
+              "name":"Bellatrix",
+              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQEfe4jZpM05qPqzKdz7rlObs3odx45NzOgA&usqp=CAU"
+          },
+          "comments": ["No point","one comment"],
+          "linked": [1, 2, 4,5]
+        },
+        {
+          "sno": 2302,
+          "tittle": "feat(migrations): reuse CDK migrations for our libraries ",
+          "postedBy": "DeepakTamalli",
+          "description": "Feature Description Concerning the internal migration framework in src/cdk/schematics",
+          "labels": [5,6],
+          "assignee": {
+              "name":"Bellatrix",
+              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTH9JLYJTawS28e1tNCegMDgyvm9fuzrMT5A&usqp=CAU"
+          },
+          "comments": ["Doesn't seem like a spacing issue"],
+          "linked": [1, 2]
+        },
+        {
+          "sno": 2303,
+          "tittle": "bug(matIcon): not inline well in Dialog Title",
+          "postedBy": "Wignesh",
+          "description": "Reproduction Use StackBlitz to reproduce your issue: https://stackblitz.com/edit/comp…",
+          "labels": [4],
+          "assignee": {
+              "name":"Bellatrix",
+              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBStQ1KR3SY_FRqVLZVMZ6oppEAnNLPkb6Dw&usqp=CAU"
+          },
+          "comments": ["Got it", "Doesn't seem like a spacing issue"],
+          "linked": [1, 2]
+        },
+         {
+          "sno": 2236,
+          "tittle": "CDK Platform always return true for ANDROID for all platform",
+          "postedBy": "AjithRaj",
+          "description": "console.log('PLATFORMS'); console.log(this.platform.ANDROID)",
+          "labels": [18,12],
+          "assignee": {
+              "name":"Bellatrix",
+              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQEfe4jZpM05qPqzKdz7rlObs3odx45NzOgA&usqp=CAU"
+          },
+          "comments": ["Got it", "Doesn't seem like a spacing issue","a","b","c"],
+          "linked": [1, 2, 4,5,6,7]
+        },
+        {
+          "sno": 2237,
+          "tittle": "add BLUR to MatCheckbox",
+          "postedBy": "YashwanthC",
+          "description": "MatCheckbox has only FOCUS method, not BLUR. I want to control from keyboard the focu…",
+          "labels": [9,10, 11],
           "assignee": {
               "name":"Bellatrix",
               "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBStQ1KR3SY_FRqVLZVMZ6oppEAnNLPkb6Dw&usqp=CAU"
@@ -16,53 +81,131 @@
           "linked": [1, 2]
         },
         {
-          "sno": 1,
-          "tittle": "Second Issue",
-          "postedBy": "NotAishwarya",
-          "description": "This is the description for spacing issue",
-         "labels": [19,9,8],
-          "assignee": {
-              "name":"Bellatrix",
-              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBStQ1KR3SY_FRqVLZVMZ6oppEAnNLPkb6Dw&usqp=CAU"
-          },
-          "comments": ["Got it", "Doesn't seem like a spacing issue"],
-          "linked": [1, 2]
-        },
-        {
-          "sno": 1,
-          "tittle": "Spacing Issue",
-          "postedBy": "NotAishwarya",
-          "description": "This is the description for spacing issue",
-          "labels": [4,5,12],
-          "assignee": {
-              "name":"Bellatrix",
-              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBStQ1KR3SY_FRqVLZVMZ6oppEAnNLPkb6Dw&usqp=CAU"
-          },
-          "comments": ["Got it", "Doesn't seem like a spacing issue"],
-          "linked": [1, 2]
-        },
-        {
-          "sno": 1,
-          "tittle": "Spacing Issue",
-          "postedBy": "NotAishwarya",
-          "description": "This is the description for spacing issue",
+          "sno": 2237,
+          "tittle": "Sticky column force table to re-render itself",
+          "postedBy": "Abishek",
+          "description": "🐞 bug report Affected Package The issue is caused by package",
           "labels": [3,2,1],
           "assignee": {
               "name":"Bellatrix",
               "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBStQ1KR3SY_FRqVLZVMZ6oppEAnNLPkb6Dw&usqp=CAU"
           },
+          "comments": [ "Doesn't seem like a spacing issue"],
+          "linked": [1, 2, 3,4]
+        },
+         {
+          "sno": 2300,
+          "tittle": "bug(datepicker): Selected month and day are highlighted when browsing a different year",
+          "postedBy": "NotAishwarya",
+          "description": "Reproduction Feel free to close this if this is intended behavior",
+          "labels": [6,5,1],
+          "assignee": {
+              "name":"Bellatrix",
+              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBStQ1KR3SY_FRqVLZVMZ6oppEAnNLPkb6Dw&usqp=CAU"
+          },
+          "comments": ["No point","one comment","Got it", "Doesn't seem like a spacing issue", "Some random"],
+          "linked": [1]
+        },
+        {
+          "sno": 2301,
+          "tittle": "mat-expansion-panel keeps contents of collapsed panels in DOM",
+          "postedBy": "SibiN",
+          "description": "I found this while debugging rendering performance in my app. I have a large section ",
+         "labels": [3,2,1],
+          "assignee": {
+              "name":"Bellatrix",
+              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQEfe4jZpM05qPqzKdz7rlObs3odx45NzOgA&usqp=CAU"
+          },
+          "comments": ["No point","one comment"],
+          "linked": [1, 2, 4,5]
+        },
+        {
+          "sno": 2302,
+          "tittle": "feat(migrations): reuse CDK migrations for our libraries ",
+          "postedBy": "DeepakTamalli",
+          "description": "Feature Description Concerning the internal migration framework in src/cdk/schematics",
+          "labels": [5,6],
+          "assignee": {
+              "name":"Bellatrix",
+              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTH9JLYJTawS28e1tNCegMDgyvm9fuzrMT5A&usqp=CAU"
+          },
+          "comments": ["Doesn't seem like a spacing issue"],
+          "linked": [1, 2]
+        },
+        {
+          "sno": 2303,
+          "tittle": "bug(matIcon): not inline well in Dialog Title",
+          "postedBy": "Wignesh",
+          "description": "Reproduction Use StackBlitz to reproduce your issue: https://stackblitz.com/edit/comp…",
+          "labels": [4],
+          "assignee": {
+              "name":"Bellatrix",
+              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBStQ1KR3SY_FRqVLZVMZ6oppEAnNLPkb6Dw&usqp=CAU"
+          },
           "comments": ["Got it", "Doesn't seem like a spacing issue"],
           "linked": [1, 2]
+        },
+         {
+          "sno": 2236,
+          "tittle": "CDK Platform always return true for ANDROID for all platform",
+          "postedBy": "AjithRaj",
+          "description": "console.log('PLATFORMS'); console.log(this.platform.ANDROID)",
+          "labels": [18,12],
+          "assignee": {
+              "name":"Bellatrix",
+              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQEfe4jZpM05qPqzKdz7rlObs3odx45NzOgA&usqp=CAU"
+          },
+          "comments": ["Got it", "Doesn't seem like a spacing issue","a","b","c"],
+          "linked": [1, 2, 4,5,6,7]
+        },
+        {
+          "sno": 2237,
+          "tittle": "add BLUR to MatCheckbox",
+          "postedBy": "YashwanthC",
+          "description": "MatCheckbox has only FOCUS method, not BLUR. I want to control from keyboard the focu…",
+          "labels": [9,10, 11],
+          "assignee": {
+              "name":"Bellatrix",
+              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBStQ1KR3SY_FRqVLZVMZ6oppEAnNLPkb6Dw&usqp=CAU"
+          },
+          "comments": ["Got it", "Doesn't seem like a spacing issue"],
+          "linked": [1, 2]
+        },
+        {
+          "sno": 2237,
+          "tittle": "Sticky column force table to re-render itself",
+          "postedBy": "Abishek",
+          "description": "🐞 bug report Affected Package The issue is caused by package",
+          "labels": [3,2,1],
+          "assignee": {
+              "name":"Bellatrix",
+              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBStQ1KR3SY_FRqVLZVMZ6oppEAnNLPkb6Dw&usqp=CAU"
+          },
+          "comments": [ "Doesn't seem like a spacing issue"],
+          "linked": [1, 2, 3,4]
         }
 
       ],
       "closed" : [
         {
-          "sno": 1,
-          "tittle": "Spacing Issue",
-          "postedBy": "NotAishwarya",
-          "description": "This is the description for spacing issue",
-          "labels": [4,5,12],
+          "sno": 2236,
+          "tittle": "CDK Platform always return true for ANDROID for all platform",
+          "postedBy": "AjithRaj",
+          "description": "console.log('PLATFORMS'); console.log(this.platform.ANDROID)",
+          "labels": [18,12],
+          "assignee": {
+              "name":"Bellatrix",
+              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQEfe4jZpM05qPqzKdz7rlObs3odx45NzOgA&usqp=CAU"
+          },
+          "comments": ["Got it", "Doesn't seem like a spacing issue","a","b","c"],
+          "linked": [1, 2, 4,5,6,7]
+        },
+        {
+          "sno": 2237,
+          "tittle": "add BLUR to MatCheckbox",
+          "postedBy": "YashwanthC",
+          "description": "MatCheckbox has only FOCUS method, not BLUR. I want to control from keyboard the focu…",
+          "labels": [3,2,1],
           "assignee": {
               "name":"Bellatrix",
               "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBStQ1KR3SY_FRqVLZVMZ6oppEAnNLPkb6Dw&usqp=CAU"
@@ -71,17 +214,17 @@
           "linked": [1, 2]
         },
         {
-          "sno": 1,
-          "tittle": "Spacing Issue",
-          "postedBy": "NotAishwarya",
-          "description": "This is the description for spacing issue",
+          "sno": 2237,
+          "tittle": "Sticky column force table to re-render itself",
+          "postedBy": "Abishek",
+          "description": "🐞 bug report Affected Package The issue is caused by package",
           "labels": [3,2,1],
           "assignee": {
               "name":"Bellatrix",
               "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBStQ1KR3SY_FRqVLZVMZ6oppEAnNLPkb6Dw&usqp=CAU"
           },
-          "comments": ["Got it", "Doesn't seem like a spacing issue"],
-          "linked": [1, 2]
+          "comments": [ "Doesn't seem like a spacing issue"],
+          "linked": [1, 2, 3,4]
         }
       ]
     },
@@ -89,11 +232,37 @@
     "pr": {
       "open": [
         {
-          "sno": 1,
-          "tittle": "Spacing Issue",
+          "sno": 1929,
+          "tittle": "Display week number in datepicker component",
+          "postedBy": "Ajaii",
+          "description": "Hello, Is that possible to display weeknumber in datepicker like we have in google ",
+          "labels": [15,16,17],
+          "assignee": {
+              "name":"Bellatrix",
+              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTH9JLYJTawS28e1tNCegMDgyvm9fuzrMT5A&usqp=CAU"
+          },
+          "comments": ["Got it", "yass","ok","a","b","c","d"],
+          "linked": [1]
+        },
+        {
+          "sno": 1972,
+          "tittle": "fix(material/datepicker): correctly render calendar arrow in high contrast mode ",
           "postedBy": "NotAishwarya",
-          "description": "This is the description for spacing issue",
-          "labels": [5,6,15],
+          "description": "Clustering in the Google Maps module requires a separate library, but we never check ",
+          "labels": [14],
+          "assignee": {
+              "name":"Bellatrix",
+              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTH9JLYJTawS28e1tNCegMDgyvm9fuzrMT5A&usqp=CAU"
+          },
+          "comments": ["wassup","Got it", "Doesn't seem like a spacing issue"],
+          "linked": [1, 2,5]
+        },
+        {
+          "sno": 1973,
+          "tittle": "build: remove unnecessary env.sh logic for circlec",
+          "postedBy": "SibiN",
+          "description": "In the past, when the checkout_and_rebase command has been ported from angular/angula",
+           "labels": [12,13],
           "assignee": {
               "name":"Bellatrix",
               "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBStQ1KR3SY_FRqVLZVMZ6oppEAnNLPkb6Dw&usqp=CAU"
@@ -102,11 +271,167 @@
           "linked": [1, 2]
         },
         {
-          "sno": 1,
-          "tittle": "Spacing Issue",
+          "sno": 1974,
+          "tittle": "docs:Fix theme color typo",
+          "postedBy": "DeepakhTamali",
+          "description": "Fixed docs",
+           "labels": [12],
+          "assignee": {
+              "name":"Bellatrix",
+              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQEfe4jZpM05qPqzKdz7rlObs3odx45NzOgA&usqp=CAU"
+          },
+          "comments": ["Got it", "Doesn't seem like a spacing issue"],
+          "linked": [1, 2]
+        },
+        {
+          "sno": 1975,
+          "tittle": "feat(material/theming): support for additional palettes",
+          "postedBy": "YashwanthC",
+          "description": "Material fixing has been done",
+           "labels": [9,10, 11],
+          "assignee": {
+              "name":"Bellatrix",
+              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBStQ1KR3SY_FRqVLZVMZ6oppEAnNLPkb6Dw&usqp=CAU"
+          },
+          "comments": ["Got it", "Doesn't seem like a spacing issue"],
+          "linked": [1, 2]
+        },
+        {
+          "sno": 1975,
+          "tittle": "fix(material-experimental/mdc-core): add app background color",
+          "postedBy": "Wignesh",
+          "description": "Adds a mat-mdc-app-background utility class similar to mat-app-background.",
+           "labels": [8,9],
+          "assignee": {
+              "name":"Bellatrix",
+              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBStQ1KR3SY_FRqVLZVMZ6oppEAnNLPkb6Dw&usqp=CAU"
+          },
+          "comments": ["Got it", "Doesn't seem like a spacing issue"],
+          "linked": [1, 2]
+        },
+         {
+          "sno": 1976,
+          "tittle": "fix(multiple): support macOS Hover Text a11y feature",
+          "postedBy": "AjithRaj",
+          "description": "Currently there's no way to tell when the selected date in the calendar has focus",
+           "labels": [8,19],
+          "assignee": {
+              "name":"Bellatrix",
+              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTH9JLYJTawS28e1tNCegMDgyvm9fuzrMT5A&usqp=CAU"
+          },
+          "comments": ["Got it", "Doesn't seem like a spacing issue"],
+          "linked": [1, 2]
+         },
+         {
+          "sno": 1977,
+          "tittle": "fix(cdk/drag-drop): avoid conflicts with sticky table headers",
+          "postedBy": "Abhishiek",
+          "description": "It's not uncommon for a client to want to respond to the table after it finishes rend",
+           "labels": [8,15,14],
+          "assignee": {
+              "name":"Bellatrix",
+              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBStQ1KR3SY_FRqVLZVMZ6oppEAnNLPkb6Dw&usqp=CAU"
+          },
+          "comments": ["Got it", "Doesn't seem like a spacing issue"],
+          "linked": [1, 2]
+         },
+         {
+          "sno": 1978,
+          "tittle": "fix(cdk/table): set default role of table to 'table'",
+          "postedBy":"Gandalf the grey",
+          "description": "Material fixing has been done",
+           "labels": [9,10],
+          "assignee": {
+              "name":"Bellatrix",
+              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBStQ1KR3SY_FRqVLZVMZ6oppEAnNLPkb6Dw&usqp=CAU"
+          },
+          "comments": ["Got it", "Doesn't seem like a spacing issue"],
+          "linked": [1, 2]
+        },
+        {
+          "sno": 1978,
+          "tittle": "fix(material/slide-toggle): NVDA reading out clickable before label",
+          "postedBy":"FroddoBaggins",
+          "description": "Material fixing has been done",
+           "labels": [6,5,1],
+          "assignee": {
+              "name":"Bellatrix",
+              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBStQ1KR3SY_FRqVLZVMZ6oppEAnNLPkb6Dw&usqp=CAU"
+          },
+          "comments": ["Got it", "Doesn't seem like a spacing issue"],
+          "linked": [1, 2]
+        },
+         {
+          "sno": 1929,
+          "tittle": "Display week number in datepicker component",
+          "postedBy": "Ajaii",
+          "description": "Hello, Is that possible to display weeknumber in datepicker like we have in google ",
+          "labels": [15,16,17],
+          "assignee": {
+              "name":"Bellatrix",
+              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQEfe4jZpM05qPqzKdz7rlObs3odx45NzOgA&usqp=CAU"
+          },
+          "comments": ["Got it", "yass","ok","a","b","c","d"],
+          "linked": [1]
+        },
+        {
+          "sno": 1972,
+          "tittle": "fix(material/datepicker): correctly render calendar arrow in high contrast mode ",
           "postedBy": "NotAishwarya",
-          "description": "This is the description for spacing issue",
-          "labels": [4,1,7],
+          "description": "Clustering in the Google Maps module requires a separate library, but we never check ",
+          "labels": [14],
+          "assignee": {
+              "name":"Bellatrix",
+              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBStQ1KR3SY_FRqVLZVMZ6oppEAnNLPkb6Dw&usqp=CAU"
+          },
+          "comments": ["wassup","Got it", "Doesn't seem like a spacing issue"],
+          "linked": [1, 2,5]
+        },
+        {
+          "sno": 1973,
+          "tittle": "build: remove unnecessary env.sh logic for circlec",
+          "postedBy": "SibiN",
+          "description": "In the past, when the checkout_and_rebase command has been ported from angular/angula",
+           "labels": [12,13],
+          "assignee": {
+              "name":"Bellatrix",
+              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBStQ1KR3SY_FRqVLZVMZ6oppEAnNLPkb6Dw&usqp=CAU"
+          },
+          "comments": ["Got it", "Doesn't seem like a spacing issue"],
+          "linked": [1, 2]
+        },
+        {
+          "sno": 1974,
+          "tittle": "docs:Fix theme color typo",
+          "postedBy": "DeepakhTamali",
+          "description": "Fixed docs",
+           "labels": [12],
+          "assignee": {
+              "name":"Bellatrix",
+              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBStQ1KR3SY_FRqVLZVMZ6oppEAnNLPkb6Dw&usqp=CAU"
+          },
+          "comments": ["Got it", "Doesn't seem like a spacing issue"],
+          "linked": [1, 2]
+        },
+        {
+          "sno": 1975,
+          "tittle": "feat(material/theming): support for additional palettes",
+          "postedBy": "YashwanthC",
+          "description": "Material fixing has been done",
+           "labels": [9,10, 11],
+          "assignee": {
+              "name":"Bellatrix",
+              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBStQ1KR3SY_FRqVLZVMZ6oppEAnNLPkb6Dw&usqp=CAU"
+          },
+          "comments": ["Got it", "Doesn't seem like a spacing issue"],
+          "linked": [1, 2]
+        },
+        {
+          "sno": 1975,
+          "tittle": "fix(material-experimental/mdc-core): add app background color",
+          "postedBy": "Wignesh",
+          "description": "Adds a mat-mdc-app-background utility class similar to mat-app-background.",
+           "labels": [8,9],
           "assignee": {
               "name":"Bellatrix",
               "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBStQ1KR3SY_FRqVLZVMZ6oppEAnNLPkb6Dw&usqp=CAU"
@@ -114,16 +439,44 @@
           "comments": ["Got it", "Doesn't seem like a spacing issue"],
           "linked": [1, 2]
         }
+
+
       ],
       "closed" : [
         {
-          "sno": 1,
-          "tittle": "Spacing Issue",
-          "postedBy": "NotAishwarya",
-          "description": "This is the description for spacing issue",
-           "labels": [4,1,7],
+          "sno": 1973,
+          "tittle": "build: remove unnecessary env.sh logic for circlec",
+          "postedBy": "SibiNehru",
+          "description": "In the past, when the checkout_and_rebase command has been ported from angular/angula",
+           "labels": [12,13],
           "assignee": {
               "name":"Bellatrix",
+              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBStQ1KR3SY_FRqVLZVMZ6oppEAnNLPkb6Dw&usqp=CAU"
+          },
+          "comments": ["Got it", "Doesn't seem like a spacing issue"],
+          "linked": [1, 2]
+        },
+        {
+          "sno": 1975,
+          "tittle": "feat(material/theming): support for additional palettes",
+          "postedBy": "Bellatrix",
+          "description": "Material fixing has been done",
+           "labels": [9,10, 11],
+          "assignee": {
+              "name":"Bellatrix",
+              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQEfe4jZpM05qPqzKdz7rlObs3odx45NzOgA&usqp=CAU"
+          },
+          "comments": ["Got it", "Doesn't seem like a spacing issue"],
+          "linked": [1, 2]
+        },
+        {
+          "sno": 1975,
+          "tittle": "fix(material-experimental/mdc-core): add app background color",
+          "postedBy": "Wignesh",
+          "description": "Adds a mat-mdc-app-background utility class similar to mat-app-background.",
+           "labels": [8,9],
+          "assignee": {
+              "name":"Dumbledore",
               "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBStQ1KR3SY_FRqVLZVMZ6oppEAnNLPkb6Dw&usqp=CAU"
           },
           "comments": ["Got it", "Doesn't seem like a spacing issue"],
@@ -132,26 +485,25 @@
       ]
     },
 
-    "labellist" : [{"name" :"Javascript", "color" : "#D4C5F92E", "tcolor" : "#DACFFA"},
-       {"name" :"CSS" , "color" : "#EDEDED2E", "tcolor" : "#DACFFA"},
+    "labellist" : [{"name" :"Javascript", "color" : "#D4C5F92E", "tcolor" : "#D2C3F9"},
+       {"name" :"CSS" , "color" : "#EDEDED2E", "tcolor" : "#EBEBEB"},
        {"name" :"PR", "color" : "#5319E72E", "tcolor" : "#DACFFA"},
-       {"name" :"android", "color" : "yellow", "tcolor" : "#DACFFA"},
-       {"name" :"a11y", "color" : "violet", "tcolor" : "#DACFFA"},
-       {"name" :"good first issue", "color" : "gray", "tcolor" : "#DACFFA"},
-       {"name" :"feature", "color" : "orange", "tcolor" : "#DACFFA"},
-       {"name" :"docs", "color" : "silver", "tcolor" : "#DACFFA"},
-       {"name" :"blocked", "color" : "red", "tcolor" : "#DACFFA"},
-       {"name" :"G", "color" : "blue", "tcolor" : "#DACFFA"},
-       {"name" :"needs investigation", "color" : "green", "tcolor" : "#DACFFA"},
-       {"name" :"needs clarification", "color" : "yellow", "tcolor" : "#DACFFA"},
-       {"name" :"safari", "color" : "orange", "tcolor" : "#DACFFA"},
-       {"name" :"ios", "color" : "violet", "tcolor" : "#DACFFA"},
-      {"name" : "regression", "color" : "gray", "tcolor" : "#DACFFA"},
-       {"name" :"P1", "color" : "purple", "tcolor" : "#DACFFA"},
-       {"name" :"P2", "color" : "green", "tcolor" : "#DACFFA"},
-       {"name" :"P5", "color" : "yellow", "tcolor" : "#DACFFA"},
-       {"name" :"P3", "color" : "violet", "tcolor" : "#DACFFA"},
-      {"name" : "P4", "color" : "violet", "tcolor" : "#DACFFA"},
-       {"name" : "troubleshooting", "color" : "red", "tcolor" : "#DACFFA"}
+       {"name" :"android", "color" : "#FBCA042E", "tcolor" : "#FAC905"},
+       {"name" :"a11y", "color" : "#BFDADC2E", "tcolor" : "#BDD9D8"},
+       {"name" :"good first issue", "color" : "#F71F042E", "tcolor" : "#FDA399"},
+       {"name" :"feature", "color" : "#EA98BA2E", "tcolor" : "#E995B8"},
+       {"name" :"docs", "color" : "#B619EA2E", "tcolor" : "#E3A7F7"},
+       {"name" :"blocked", "color" : "#F4B4002E", "tcolor" : "#F0B000"},
+       {"name" :"needs investigation", "color" : "#C2E0C62E", "tcolor" : "#BFDEC3"},
+       {"name" :"needs clarification", "color" : "#1D76DB2E", "tcolor" : "#68A7EA"},
+       {"name" :"safari",  "color" : "#D4C5F92E", "tcolor" : "#D2C3F9"},
+       {"name" :"ios", "color" : "#F71F042E", "tcolor" : "#FDA399"},
+      {"name" : "regression",  "color" : "#EA98BA2E", "tcolor" : "#E995B8"},
+       {"name" :"P1",  "color" : "#EA98BA2E", "tcolor" : "#E995B8"},
+       {"name" :"P2", "color" : "#FEF2C02E", "tcolor" : "#FEF1BE"},
+       {"name" :"P5", "color" : "#1D76DB2E", "tcolor" : "#68A7EA"},
+       {"name" :"P3", "color" : "#F71F042E", "tcolor" : "#FDA399"},
+      {"name" : "P4", "color" : "#EDEDED2E", "tcolor" : "#EBEBEB"},
+       {"name" : "troubleshooting", "color" :"#F71F042E", "tcolor" : "#FDA399"}
       ]
   }

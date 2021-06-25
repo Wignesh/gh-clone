@@ -12,6 +12,7 @@ import { PullRequestsComponent } from './core/pages/repository-info/pull-request
 import { CodeViewComponent } from './core/pages/repository-info/code-view/code-view.component';
 import { AuthGuard } from './core/pages/login/auth.guard';
 import { AccessGuard } from './core/pages/access.guard';
+import { WorkInProgressComponent } from './core/pages/shared/work-in-progress/work-in-progress.component';
 
 const routes: Routes = [
   {
@@ -47,12 +48,28 @@ const routes: Routes = [
         component: PullRequestsComponent,
       },
       {
+        path: 'actions',
+        component: WorkInProgressComponent,
+      }, {
+        path: 'projects',
+        component: WorkInProgressComponent,
+      }, {
+        path: 'wiki',
+        component: WorkInProgressComponent,
+      }, {
+        path: 'security',
+        component: WorkInProgressComponent,
+      }, {
+        path: 'insights',
+        component: WorkInProgressComponent,
+      },
+      {
         path: '',
         component: RepositoryContentComponent,
       },
       {
-        path:"**",
-        component:CodeViewComponent
+        path: "**",
+        component: CodeViewComponent
       }
     ]
   },
@@ -73,4 +90,4 @@ const routes: Routes = [
   exports: [RouterModule],
   providers: [AuthGuard],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
