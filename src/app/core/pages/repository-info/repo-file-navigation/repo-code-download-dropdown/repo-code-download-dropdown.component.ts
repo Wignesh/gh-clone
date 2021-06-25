@@ -1,41 +1,43 @@
-import { Component, OnChanges, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { createPopper } from '@popperjs/core';
 
 @Component({
-  selector: 'app-repo-branches-dropdown',
-  templateUrl: './repo-branches-dropdown.component.html',
-  styleUrls: ['./repo-branches-dropdown.component.scss']
+  selector: 'app-repo-code-download-dropdown',
+  templateUrl: './repo-code-download-dropdown.component.html',
+  styleUrls: ['./repo-code-download-dropdown.component.scss']
 })
+export class RepoCodeDownloadDropdownComponent implements OnInit {
 
-
-export class RepoBranchesDropdownComponent implements OnInit,OnChanges {
 
   dropdownDisplayed:boolean = false
   dropdownPosition:DOMRect|undefined
   buttonPosition:DOMRect|undefined
 
-  constructor() {
-  }
+  constructor() { }
 
   ngOnInit(): void {
+    this.dropdownPosition = document.querySelector('.repo-code-dropdown-popper')?.getBoundingClientRect()
+    this.buttonPosition = document.querySelector('.code-download-btn')?.getBoundingClientRect()
 
-    this.dropdownPosition = document.querySelector('#branch-dropdown-popper')?.getBoundingClientRect()
-    this.buttonPosition = document.querySelector('#branch-select-dropdown')?.getBoundingClientRect()
-
-    const branchDropdown = document.querySelector('#branch-select-dropdown') as HTMLElement;
-    const tooltip = document.querySelector('#branch-dropdown-popper') as HTMLElement;
+    const branchDropdown = document.querySelector('.code-download-btn') as HTMLElement;
+    const tooltip = document.querySelector('.repo-code-dropdown-popper') as HTMLElement;
     createPopper(branchDropdown, tooltip, {
       placement: 'bottom-start',
+      modifiers: [
+        {
+          name: 'offset',
+          options: {
+            offset: [-290,10],
+          },
+        },
+      ]
     });
 
     this.dismissOnClickingOutsideBoundary()
-
   }
 
   checkIfButtonIsClicked(mouseX:number,mouseY:number){
     const {left,right,top,bottom} = this.buttonPosition as DOMRect
-
-    // console.log(left,right,top,bottom,mouseX,mouseY)
 
     if((left<=mouseX && mouseX<=right)&&(top<=mouseY && mouseY<=bottom)){
       return true
@@ -43,12 +45,13 @@ export class RepoBranchesDropdownComponent implements OnInit,OnChanges {
     return false
   }
 
-
   checkIfDropdownIsClicked(mouseX:number,mouseY:number){
     const {left,right,top,bottom} = this.dropdownPosition as DOMRect
 
-    // console.log(left,right,top,bottom,mouseX,mouseY)
+    console.log(left,right,top,bottom,mouseX,mouseY)
 
+    // to account for the relative position shift due to popper
+    // solves the issues for now but should check later
     if((left<=mouseX && mouseX<=right)&&(top<=mouseY && mouseY<=bottom)){
       return true
     }
@@ -66,6 +69,8 @@ export class RepoBranchesDropdownComponent implements OnInit,OnChanges {
       if(dropdownIsClicked || buttonIsClicked ){
         return
       }
+
+      console.log("changing state")
 
       if(this.dropdownDisplayed===true){
         this.dropdownDisplayed = false;
@@ -86,8 +91,8 @@ export class RepoBranchesDropdownComponent implements OnInit,OnChanges {
   }
 
   ngOnChanges(): void {
-    this.dropdownPosition = document.querySelector('#branch-dropdown-popper')?.getBoundingClientRect()
-    this.buttonPosition = document.querySelector('#branch-select-dropdown')?.getBoundingClientRect()
+    this.dropdownPosition = document.querySelector('.repo-code-dropdown-popper')?.getBoundingClientRect()
+    this.buttonPosition = document.querySelector('.code-download-btn')?.getBoundingClientRect()
   }
 
 }
