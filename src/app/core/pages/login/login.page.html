@@ -30,9 +30,9 @@
                 </div>
             </div>
             <form class="auth-form">
-                <label>Username or email address</label>
+                <label>Username or email address <span>(Wignesh)</span> </label>
                 <input (focus)="closeError()" [(ngModel)]="username" name="username" type="text" autofocus>
-                <label>Password <a routerLink="/password_reset">Forgot password?</a></label>
+                <label>Password <span>(Vignesh@123)</span> <a routerLink="/password_reset">Forgot password?</a></label>
                 <input (focus)="closeError()" [(ngModel)]="password" name="password" type="password">
                 <app-button (click)="login()"></app-button>
             </form>
