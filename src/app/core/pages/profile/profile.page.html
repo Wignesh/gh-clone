@@ -1,4 +1,4 @@
-<app-nav-profile (isRepository)="changeRepo($event)"></app-nav-profile>
+<app-nav-profile></app-nav-profile>
 
 <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
@@ -7,12 +7,9 @@
     <div class="profblock">
         <app-profile-desc ></app-profile-desc>
     </div>
-    <div *ngIf="isOverview">
+    <div>
         <app-pop-repo></app-pop-repo>
         <app-contribution-block></app-contribution-block>
-    </div>
-    <div *ngIf="isRepo">
-        <app-repositories></app-repositories>
     </div>
 </div>
 <app-profile-footer></app-profile-footer>
