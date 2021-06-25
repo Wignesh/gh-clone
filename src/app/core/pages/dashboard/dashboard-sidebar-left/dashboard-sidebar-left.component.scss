@@ -1,0 +1,316 @@
+@import "../../../styles/common/constants";
+
+.aside-left {
+  position: sticky;
+  top: 0;
+  display: flex !important;
+  height: 100vh;
+  width: 18vw;
+  display: block;
+  border-right: 1px solid $color-border-primary !important;
+  border-bottom: 1px solid $color-border-primary !important;
+  border-color: $color-border-secondary !important;
+  background-color: $color-bg-primary !important;
+  max-width: 350px;
+  .dashboard-sidebar {
+    top: 0 !important;
+    overflow: auto !important;
+    padding-left: 32px !important;
+    padding-right: 32px !important;
+    position: static;
+    width: 100%;
+    .switch-dashboard-context {
+      border-bottom: 1px solid $color-border-primary !important;
+      border-color: $color-border-secondary !important;
+      margin-top: 16px !important;
+      margin-bottom: 24px !important;
+      padding-top: 16px !important;
+      padding-bottom: 16px !important;
+      details {
+        display: inline-block !important;
+        summary {
+          display: inline-block;
+          padding: 0;
+          cursor: pointer;
+          user-select: none;
+          background-color: transparent;
+          border: 0;
+          appearance: none;
+          color: $color-text-primary !important;
+          width: 100% !important;
+          font-weight: 600 !important;
+          text-decoration: none !important;
+          list-style: none;
+          .avatar-user {
+            list-style: none;
+            height: 20px;
+            aspect-ratio: auto 20 / 20;
+            width: 20px;
+            box-sizing: border-box;
+            border-style: none;
+            display: inline-block;
+            overflow: hidden;
+            line-height: 1;
+            vertical-align: middle;
+            background-color: $color-avatar-bg;
+            flex-shrink: 0;
+            box-shadow: 0 0 0 1px $color-avatar-border;
+            border-radius: 50% !important;
+          }
+          .username {
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
+              Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+            line-height: 1.5;
+            font-size: inherit;
+            color: $color-text-primary !important;
+            font-weight: 600 !important;
+            list-style: none;
+            margin-left: 8px !important;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: inline-block;
+            max-width: 125px;
+            vertical-align: top;
+          }
+          .dropdown-caret {
+            display: inline-block;
+            vertical-align: middle;
+            content: "";
+            margin-left: 4px;
+            border-top-style: solid;
+            border-top-width: 4px;
+            border-right: 4px solid transparent;
+            border-bottom: 0 solid transparent;
+            border-left: 4px solid transparent;
+          }
+        }
+      }
+    }
+    .dashboard-repo-containers {
+      margin-bottom: 16px !important;
+      .repos-container {
+        .repo-header {
+          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
+            Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+          line-height: 1.5;
+          color: $color-text-primary;
+          font-weight: 600;
+          justify-content: space-between !important;
+          align-items: center !important;
+          margin-bottom: 4px !important;
+          font-size: 14px !important;
+          display: flex !important;
+          .new-repo-btn {
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
+              Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+            word-wrap: break-word;
+            box-sizing: border-box;
+            text-decoration: none;
+            position: relative;
+            display: inline-block;
+            font-weight: 500;
+            white-space: nowrap;
+            vertical-align: middle;
+            cursor: pointer;
+            user-select: none;
+            border: 1px solid;
+            border-radius: 6px;
+            appearance: none;
+            transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+            transition-property: color, background-color, border-color;
+            background-color: $color-btn-primary-bg;
+            border-color: $color-btn-primary-border;
+            box-shadow: $color-btn-primary-shadow,
+              $color-btn-primary-inset-shadow;
+            padding: 3px 12px;
+            font-size: 12px;
+            line-height: 20px;
+            color: $color-text-white !important;
+            .octicon {
+              height: 16;
+              width: 16;
+              display: inline-block;
+              overflow: visible !important;
+              fill: currentColor;
+              color: $color-btn-primary-icon;
+              vertical-align: text-top;
+            }
+            &:hover {
+              background-color: $color-btn-primary-hover-bg;
+              border-color: $color-btn-primary-hover-border;
+            }
+            &:focus {
+              background-color: $color-btn-primary-focus-bg;
+              border-color: $color-btn-primary-focus-border;
+              box-shadow: $color-btn-primary-focus-shadow;
+            }
+          }
+        }
+        .repo-search {
+          margin-top: 8px !important;
+          margin-bottom: 16px !important;
+          input {
+            overflow: visible;
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
+              Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+            padding: 5px 12px;
+            font-size: 14px;
+            line-height: 20px;
+            color: $color-text-primary;
+            vertical-align: middle;
+            background-repeat: no-repeat;
+            background-position: right 8px center;
+            border: 1px solid $color-input-border;
+            border-radius: 6px;
+            outline: none;
+            box-shadow: $color-shadow-inset;
+            background-color: $color-input-contrast-bg;
+            display: block;
+            width: 100%;
+            margin-bottom: 16px !important;
+            &:focus {
+              outline: none;
+              border-color: $color-state-focus-border;
+              box-shadow: $color-state-focus-shadow;
+            }
+          }
+        }
+        .repo-list {
+          padding-left: 0;
+          margin-top: 0;
+          margin-bottom: 0;
+          list-style: none !important;
+          li {
+            list-style: none !important;
+            div {
+              width: 100% !important;
+              a {
+                font-family: -apple-system, BlinkMacSystemFont, Segoe UI,
+                  Helvetica, Arial, sans-serif, Apple Color Emoji,
+                  Segoe UI Emoji;
+                font-weight: 600 !important;
+                background-color: transparent;
+                color: $color-text-link;
+                text-decoration: none;
+                flex-wrap: wrap !important;
+                align-items: baseline !important;
+                max-width: 100% !important;
+                margin-bottom: 8px !important;
+                font-size: 14px !important;
+                display: inline-flex !important;
+                &:hover {
+                  text-decoration: underline;
+                }
+                .repo-icon {
+                  color: $color-text-tertiary !important;
+                  margin-right: 8px !important;
+                  .octicon-private {
+                    color: $color-text-tertiary !important;
+                    width: 16;
+                    height: 16;
+                    display: inline-block;
+                    overflow: visible !important;
+                    vertical-align: text-bottom;
+                    flex-shrink: 0 !important;
+                    fill: $color-icon-warning;
+                  }
+                  .octicon-public {
+                    color: $color-text-tertiary !important;
+                    width: 16;
+                    height: 16;
+                    display: inline-block;
+                    overflow: visible !important;
+                    vertical-align: text-bottom;
+                    flex-shrink: 0 !important;
+                    fill: currentColor;
+                  }
+                }
+                .user-link {
+                  flex-shrink: 0 !important;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                  display: inline-block;
+                  max-width: 125px;
+                  vertical-align: top;
+                }
+                .repo-link {
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                  display: inline-block;
+                  vertical-align: top;
+                  max-width: 260px;
+                }
+              }
+            }
+          }
+        }
+        form {
+          button {
+            display: inline-block;
+            cursor: pointer;
+            background-color: transparent;
+            appearance: none;
+            color: $color-text-secondary !important;
+            border-top: 1px solid $color-border-primary !important;
+            border: 0 !important;
+            width: 100% !important;
+            margin-top: 8px !important;
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+            font-size: 12px !important;
+            text-align: left !important;
+            &:hover {
+              color: $color-text-link !important;
+            }
+          }
+        }
+      }
+    }
+    .activity-container {
+      border-top: 1px solid $color-border-primary !important;
+      h2 {
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
+          Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+        color: $color-text-primary;
+        font-weight: 600;
+        margin-top: 16px;
+        font-size: 14px;
+      }
+      .recent-activity-info {
+        margin-top: 8px !important;
+        margin-bottom: 24px !important;
+        p {
+          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
+            Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+          min-height: 17px;
+          margin: 4px 0 2px;
+          font-size: 12px;
+          color: $color-text-secondary;
+        }
+      }
+    }
+    .team-container {
+      border-top: 1px solid $color-border-primary !important;
+      margin-bottom: 16px !important;
+      h2 {
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
+          Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+        color: $color-text-primary;
+        font-weight: 600;
+        margin-top: 16px;
+        font-size: 14px;
+      }
+      p {
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
+          Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+        font-size: 14px;
+        color: $color-text-primary;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

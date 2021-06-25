@@ -1,0 +1,55 @@
+<!-- Style 1 -->
+<div class="news-item">
+    <div class="news-body">
+        <div class="news-details">
+            <div class="container">
+                <span class="user">
+                    <a href="" class="user-link">
+                        <img class="user-avatar" src="{{news.data.user_avatar}}" width="32" height="32"
+                            alt="@{{news.data.user}}">
+                    </a>
+                </span>
+                <div class="news-card">
+                    <div class="news-title">
+                        <div class="container">
+                            <a href="" class="user-link">{{news.data.user}}</a>
+                            <span class="user-action"> pushed to <a href="" class="repo-link">{{news.data.repo}}</a>
+                                <span class="news-time">{{news.data.date}}</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="news-card-body">
+                        <div class="news-card-body-content ">
+                            <span class="news-commit-messag">{{news.data.total}} commit{{news.data.total > 1 ? "s" :
+                                ""}} to</span>
+                            <a href="" class="news-commit-branch">{{news.data.branch}}</a>
+                            <div class="news-commits">
+                                <ul class="commit-list">
+                                    <ng-container *ngFor="let commit of news.data.commits let i = index">
+                                        <li *ngIf="i < 2" class="commit-item">
+                                            <span class="commit-user">
+                                                <img width="16" height="16" alt="" src="{{commit.avatar}}">
+                                            </span>
+                                            <code class="commit-id">
+                                                <a href="">{{commit.id}}</a>
+                                            </code>
+                                            <div class="commit-message">
+                                                <blockquote>{{commit.message}}</blockquote>
+                                            </div>
+                                        </li>
+                                    </ng-container>
+
+                                    <li *ngIf="news.data.commits.length > 1" class="more-commits">
+                                        <a class="more-commits-link" href="">{{news.data.total -
+                                            news.data.commits.length}} more
+                                            commits »</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

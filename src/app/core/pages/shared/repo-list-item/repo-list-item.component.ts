@@ -7,10 +7,12 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class RepoListItemComponent implements OnInit {
 
-  @Input() repo = {
-    title:'',
-    readme:'',
-    language:''
+  @Input() repo =  {
+    title: '',
+    readme: '',
+    language: '',
+    tags: [''],
+    lastupdated: ''
   };
 
   constructor() { }

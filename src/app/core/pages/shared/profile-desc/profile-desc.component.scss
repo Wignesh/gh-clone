@@ -25,13 +25,14 @@
 {
     width: 100%;
     text-align: left;
-    margin:0px 0px 8px;
     padding:20px;
+    padding-bottom: 13px;
 }
 
 .previewprof
 {
     display: block;
+    width: 100%;
 }
 .resume
 {
@@ -49,7 +50,6 @@
     padding:10px;
     width: 100%;
     text-align: left;
-    ;
     font-size:    14px;
     line-height:    21px;
     margin:0px 0px 8px;
@@ -73,7 +73,7 @@
     display:flex;
     font-size:14px;
     line-height:21px;
-    width: 80%;
+    width: 90%;
     margin:0px 0px 0px 6rem;
     padding:20px;
 }
@@ -99,23 +99,32 @@
 .follows
 {
     display: flex;
-    justify-content: space-between;
     width: 80%;
     text-align: center;
+    margin-left: 20px;
+}
+.follows > div > a
+{
+    margin:2px;
 }
 .profachieve
 {
-    border-color:#ebedef;
+    border-color:#30363d;
     border-style:solid none none;
     border-width:1px 0px 0px;
-    
-    font-family:-apple-system;
-    font-weight:600;
-    line-height:24px;
-    
-    margin:0px 0px 0px 6rem;
+    font-weight: 600;
+    line-height: 24px;
+    margin:0px 0px 0px 5rem;
     padding:20px;
     width:80%;
+}
+.profachieve > a
+{
+    padding:10px
+}
+.profachieve > div
+{
+    margin-left: 10px;
 }
 
 
@@ -153,7 +162,10 @@
 
 .editprof
 {
+    
     display: none;
+    width: 95%;
+    margin:0px 1% 3rem 7rem;
 }
 
 
@@ -171,28 +183,20 @@
     padding:0px 7px;
     text-align:left;
     text-transform:uppercase;
-}
-
-.editinput
-{
-    align-items: center;
-    background-position:
-    right 8px 50%;
-    border-color:    #373e47;
-    border-radius:    6px;
-    border-style:    solid;
-    border-width:    1px;
-    box-shadow:    #000000 0px 0px 0px 0px;
-    font-family:    -apple-system;
-    font-size:    12px;
-    line-height:    20px;
-    margin:    0px 0px 0px 8px;
-    padding:    3px 12px;
+    margin-left: 5px;
 }
 textarea{
     resize: vertical;
     width: 80%;
-    padding:100px;
+    height: 100px;
+    font-size: 16px;
+    color:#c4d1d9;
+    background-color: #161b22;
+    border-color:    #373e47;
+}
+textarea:focus
+{
+    box-shadow: #0366d6;
 }
 .editinputdiv
 {
@@ -202,6 +206,24 @@ textarea{
     line-height:21px;
     margin:15px 0px 0px;
     padding-left: 10px;
+}
+
+
+.editinput
+{
+    align-items: center;  
+    color:#c4d1d9;
+    background-color: #161b22;
+    border-color:    #373e47;
+    border-radius:    6px;
+    border-style:    solid;
+    border-width:    1px;
+    box-shadow:    #000000 0px 0px 0px 0px;
+    font-size:    14px;
+    line-height:    20px;
+    margin:    0px 0px 0px 8px;
+    padding:    3px 12px;
+    width: 70%;
 }
 
 .editbadgediv
@@ -223,12 +245,12 @@ textarea{
     box-shadow:#000000 0px 0px 0px 0px;
     color:#ffffff;
     display:inline-block;
-    font-family:-apple-system;
     font-size:12px;
     font-weight:500;
     line-height:20px;
     padding:3px 12px;
     text-align:center;
+    margin-right: 15px;
 }
 .editbtnc
 {
@@ -241,7 +263,6 @@ textarea{
     box-shadow:#000000 0px 0px 0px 0px;
     color:#ffffff;
     display:inline-block;
-    font-family:-apple-system;
     font-size:12px;
     font-weight:500;
     line-height:20px;

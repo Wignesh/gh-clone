@@ -1,0 +1,34 @@
+<div class="h-65 d-flex align-items-center font-family-sans-serif">
+    <form>
+      <input type="text" id="repo-search" placeholder="Find a Repository..."/>
+
+      <div class="mlr-2 d-inline">
+        
+      <select name="type" id="type">
+        <option hidden>Type</option>
+        <option value="all">All</option>
+        <option value="public">Public</option>
+        <option value="private">Private</option>
+        <option value="sources">Sources</option>
+        <option value="forks">Forks</option>
+        <option value="archived">Archived</option>
+        <option value="mirrors">Mirrors</option>
+      </select>
+      <select name="Language" id="language">
+        <option hidden>Language</option>
+        <option value="all">All</option>
+        <option value="typescript">TypeScript</option>
+        <option value="javascript">JavaScript</option>
+        <option value="python">Python</option>
+      </select>
+      <select name="sort" id="sort">
+        <option hidden>Sort</option>
+        <option value="lastUpdated">Last Updated</option>
+        <option value="name">Name</option>
+        <option value="stars ">Stars</option>
+      </select>
+      </div>
+      
+      <button id="new-button">New</button>
+    </form>
+  </div>

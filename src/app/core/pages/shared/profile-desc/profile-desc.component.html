@@ -2,11 +2,12 @@
     <div class="imgdiv">
     <img class="profileimg" src="https://cdn.i-scmp.com/sites/default/files/d8/images/methode/2019/03/14/a0998edc-43db-11e9-b5dc-9921d5eb8a6d_image_hires_141150.JPG">
     </div>
+    <div class="namediv">
+        <span class="profname">{{profile.profname}}</span><br/>
+        <span class="username">{{profile.username}}</span><br/>
+    </div>
     <div class="previewprof" #previewprof>
-        <div class="namediv">
-            <span class="profname">{{profile.profname}}</span><br/>
-            <span class="username">{{profile.username}}</span><br/>
-        </div>
+        
          <div class="resume">
             {{profile.description}}
         </div>
@@ -50,10 +51,10 @@
                         badge
                     </label>
                 </div>  
-                <textarea class="editinput" name="description" [(ngModel)]="editdescription">{{profile.description}}</textarea>
+                <textarea  name="description" [(ngModel)]="editdescription"></textarea>
                 <div class="editinputdiv">
                     <i class="fas fa-building"></i>
-                    <input class="editinput"name="company" [(ngModel)]="editcompany" type="text" placeholder="company">
+                    <input class="editinput"name="company" [(ngModel)]="editcompany"  type="text" placeholder="company">
                 </div>
                 <div class="editinputdiv">
                     <i class="fas fa-map-marker"></i>
@@ -61,33 +62,33 @@
                 </div>
                 <div class="editinputdiv">
                     <i class="fas fa-envelope"></i>
-                    <input class="editinput" name="email" [(ngModel)]="editemail" type="email" placeholder="email">
+                    <input class="editinput" name="email" [(ngModel)]="editemail"  type="email" placeholder="email">
                 </div>
                 <div class="editinputdiv">
                     <i class="fas fa-link"></i>
-                    <input class="editinput" name="website" [(ngModel)]="editwebsite" type="website" placeholder="website">
+                    <input class="editinput" name="website" [(ngModel)]="editwebsite" type="text" placeholder="website">
                 </div>
                 <div class="editinputdiv">
                     <i class="fab fa-twitter"></i>
-                    <input class="editinput" mame="twitter" [(ngModel)]="edittwitter" type="text" placeholder="twitter username">
+                    <input class="editinput" name="twitter" [(ngModel)]="edittwitter"  type="text" placeholder="twitter username">
                 </div>
                 <br/>
                 <div style="display: flex;">
                 <button  type="submit" class="editbtns">Save</button>
-                
                 <button (click)="canceledit()" class="editbtnc" >Cancel</button>
                 </div>
             </form>
+
         </div>
     </div>
     <div class="profachieve">
-        <div><h2> Achievements </h2></div>
+        <div><a> Achievements</a> </div>
         <img class="profachimg" src="./assets/images/achievement-badge1.png">
         <!-- <img class="profachimg" src="./assets/images/achievement-badge2.png"> -->
         <img class="profachimg" src="./assets/images/achievement-badge3.png">
     </div>
     <div class="profachieve" >
-        <h2> Highlights</h2>
+    <a>Highlights</a>
         <div>
             <i class="fas fa-star"></i>
         <span  class="probadge"> PRO</span>

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { DataService } from '../../services/data.service';
+import { RepoListDataService } from 'src/app/core/services/RepoListData/repo-list-data.service';
 
 @Component({
   selector: 'app-pop-repo',
@@ -9,13 +10,22 @@ import { DataService } from '../../services/data.service';
 })
 export class PopRepoComponent implements OnInit {
 
-repos:Array<any> = [];
+  repos =  [{
+    title: '',
+    readme: '',
+    language: '',
+    tags: [''],
+    lastupdated: ''
+  }];
 
-  constructor(private dataService : DataService) { }
+  constructor(private repoListDataService : RepoListDataService) { }
+
+  getRepositories(){
+    this.repos = this.repoListDataService.getrepos();
+  }
 
   ngOnInit(): void {
-    this.repos = this.dataService.getRepoList();
-    console.log("pop-repo", this.repos);
+    this.getRepositories();
   }
 
 }
