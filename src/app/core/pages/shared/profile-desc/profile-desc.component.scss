@@ -9,6 +9,7 @@
     font-size: 14px;
     line-height: 21px;
     font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+    color: #8b949e;
 }
 .imgdiv
 {
@@ -60,6 +61,7 @@
     font-size:26px;
     font-weight:600;
     margin : 0 0 0 6rem;
+    color: #c9d1d9;
 }
 .username
 {
@@ -268,4 +270,9 @@ textarea:focus
     line-height:20px;
     padding:3px 12px;
     text-align:center;
+}
+
+.editForm{
+    margin-right: 5.4955rem;
+    width: 100%;
 }
