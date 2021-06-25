@@ -13,11 +13,22 @@ $common-font: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
   border-bottom: 1px solid $color-border-primary;
   padding: 0.65rem 0.65rem 0.65rem 1rem;
   justify-content: space-between;
+
   .container-right {
     display: flex;
     flex-wrap: wrap;
+
     .resolver-icon {
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
     }
+    .new-row{
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+    }
+
     .resolver-details-main {
       margin-left: 0.4rem;
       position: relative;
@@ -25,22 +36,11 @@ $common-font: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
         font-size: 16px;
         font-weight: 600;
         vertical-align: middle;
+        margin-left: 8px;
         &:hover {
           color: $color-text-link;
           cursor: pointer;
-        }
-        .label {
-          border-radius: 0.85rem;
-          background-color: violet;
-          border: none;
-          padding: 0.2rem 0.3rem;
-          margin: 0.2rem;
-          font-weight: 550;
-          font-size: 0.7rem;
-          &:hover {
-            cursor: pointer;
-          }
-        }
+        }        
       }
       .card-metadata {
         line-height: 18px;
@@ -89,4 +89,20 @@ $common-font: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
   z-index: 2;
   position: absolute;
   bottom: 12vh;
+}
+
+.label {
+  border-radius: 0.85rem;
+  background-color: violet;
+  border: none;
+  padding: 0.2rem 0.3rem;
+  margin: 0.2rem;
+  font-weight: 550;
+  font-size: 0.7rem;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.label-cont{
+  margin-left: 4px;
 }
