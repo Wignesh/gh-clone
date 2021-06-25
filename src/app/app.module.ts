@@ -30,6 +30,9 @@ import { ResolverDetailsCardComponent } from './core/pages/repository-info/share
 import { RepositoryPageReadmeComponent } from './core/pages/repository-info/repository-page-readme/repository-page-readme.component';
 import { LanguagesUsedIndicatorComponent } from './core/pages/repository-info/languages-used-indicator/languages-used-indicator.component';
 import { RepoFileNavigationComponent } from './core/pages/repository-info/repo-file-navigation/repo-file-navigation.component';
+import { RepoBranchesDropdownComponent } from './core/pages/repository-info/repo-file-navigation/repo-branches-dropdown/repo-branches-dropdown.component'
+
+
 import { NavComponent } from './core/components/shared/nav/nav.component';
 import { AuthFooterComponent } from './core/components/shared/auth-footer/auth-footer.component';
 import { ButtonComponent } from './core/components/shared/button/button.component';
@@ -45,6 +48,10 @@ import { DashboardNewsItemForkedComponent } from './core/pages/dashboard/dashboa
 import { DashboardNewsLoadingComponent } from './core/pages/dashboard/dashboard-news-loading/dashboard-news-loading.component';
 import { DashboardNewsFeedComponent } from './core/pages/dashboard/dashboard-news-feed/dashboard-news-feed.component';
 import { DashboardNewsFeedSidebarRightComponent } from './core/pages/dashboard/dashboard-news-feed-sidebar-right/dashboard-news-feed-sidebar-right.component';
+import { CodeViewComponent } from './core/pages/repository-info/code-view/code-view.component';
+import { RepoCodeDownloadDropdownComponent } from './core/pages/repository-info/repo-file-navigation/repo-code-download-dropdown/repo-code-download-dropdown.component';
+import { ResolverDetailsPopupComponent } from './core/pages/repository-info/shared/resolver-details-popup/resolver-details-popup.component';
+
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
@@ -76,6 +83,7 @@ import { HttpClientModule } from '@angular/common/http';
     RepositoryPageReadmeComponent,
     LanguagesUsedIndicatorComponent,
     RepoFileNavigationComponent,
+    RepoBranchesDropdownComponent,
     NavComponent,
     AuthFooterComponent,
     ButtonComponent,
@@ -91,6 +99,9 @@ import { HttpClientModule } from '@angular/common/http';
     DashboardNewsLoadingComponent,
     DashboardNewsFeedComponent,
     DashboardNewsFeedSidebarRightComponent,
+    CodeViewComponent,
+    ResolverDetailsPopupComponent,
+    RepoCodeDownloadDropdownComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, RouterModule, FormsModule, HttpClientModule],
  

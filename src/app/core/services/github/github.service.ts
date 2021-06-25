@@ -1,6 +1,7 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
+import files from '../../config/files.config';
 
 //http headers
 const OPTIONS = {
@@ -30,6 +31,8 @@ export class GithubService {
     //make rest-API call
     this.http.get(url, OPTIONS).subscribe((response) => {
 
+      let dirResults: any = [];
+      let fileResults: any = [];
       let results: any = [];
       if (response !== null) {
 
@@ -44,7 +47,13 @@ export class GithubService {
             path: newPath,
             type: item[1].type
           };
-          results.push(temp);
+          if (temp.type === "dir") {
+            dirResults.push(temp);
+          } else {
+            fileResults.push(temp);
+          }
+          //the result will have folders first and then files
+          results = dirResults.concat(fileResults);
         });
         this.directorySubject.next(results);
       }
@@ -81,12 +90,14 @@ export class GithubService {
   }
 
   checkIfFile(path: string) {
-    let isFile = path.includes(".py") ||
-      path.includes(".java") ||
-      path.includes(".js") ||
-      path.includes(".txt") ||
-      path.includes(".ts");
-
+    let isFile = false;
+    for(let i = 0; i < files.length; i++){
+      isFile = path.includes(files[i]);
+      if(isFile){
+        break;
+      }
+    }    
+    console.log(`isFile: ${isFile}`);
     return isFile;
   }
 }

@@ -1,20 +1,39 @@
 .about-section {
   display: flex;
   flex-direction: column;
-  padding: 0 1rem;
-  width: 20rem;  
+  padding: 0 1rem 0 0;
+  width: 20rem;
+  background: #0d1117;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+  sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 }
 
+// link styling
 
+
+.title{
+  color:#c9d1d9;
+  font-weight: 600;
+  font-size: medium;
+}
 
 .repo-description {
   margin: 1rem 0;
+  color:#c9d1d9;
+  font-size: medium;
 }
+
+
 
 .repo-website-link {
   a {
     text-decoration: none;
     font-weight: 500;
+    color:#58a6ff;
+    cursor: pointer;
+    &:hover{
+      text-decoration: underline;
+    }
   }
 }
 
@@ -30,8 +49,14 @@
     background: #f1f8ff;
     border-radius: 1rem;
     font-size: small;
-    color: blue;
+    color: #58a6ff;
     font-weight: 500;
+    background: #388bfd1a;
+    cursor: pointer;
+
+    &:hover{
+      background: #388bfd33;
+    }
   }
 }
 
@@ -40,15 +65,25 @@
   margin-top: 1rem;
   display: flex;
   align-items: center;
+  color:#8b949e;
+  cursor: pointer;
 
   svg {
     margin-right: 1rem;
+    fill:#8b949e;
+  }
+
+  &:hover{
+    color: #58a6ff;
+    svg{
+      fill: #58a6ff;
+    }
   }
 }
 
 .repo-license-link {
   padding-bottom: 1rem;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #30363d;
 }
 
 //releases styling
@@ -56,24 +91,41 @@
 .releases {
   margin-top: 1rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #30363d;
 
   .releases-count {
     font-size: small;
     margin: 0rem 0.2rem;
     padding: 0.2rem 0.5rem;
-    background: rgb(236, 225, 225);
     border-radius: 1rem;
+    background: #8b949e33;
+    color:#8b949e;
   }
 
   .about-latest-release {
     margin: 1rem 0;
     display: flex;
+    cursor: pointer;
 
     svg {
       margin: 0 0.5rem;
       margin-top: 0.25rem;
+      fill:#56d364;
     }
+
+    .release-name{
+      color:#c9d1d9;
+      font-weight: 400;
+    }
+
+    .released-time{
+      font-size: small;
+      color:gray;
+    }
+
+
+
+
 
     .latest-tag {
       margin-left: 1rem;
@@ -83,12 +135,30 @@
       border-radius: 1rem;
       height: 1.6rem;
       align-self: flex-start;
+      color:#3fb950;
+      background: transparent;
+      border:1px solid #2ea04366;
+      display: flex;
+      align-items: center;
+    }
+
+    &:hover{
+      .release-name{
+        color:#58a6ff;
+      }
+
+      .released-time{
+        color:#58a6ff;
+      }
     }
   }
   .all-releases-link {
-    color: blue;
+    color:#58a6ff;
     cursor: pointer;
     font-size: small;
+    &:hover{
+      text-decoration: underline;
+    }
   }
 }
 
@@ -98,7 +168,7 @@
   padding: 1rem 0;
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #30363d;
   .packages-title {
     margin-bottom: 1rem;
   }
@@ -108,14 +178,15 @@
 
 .usedby {
   padding: 1rem 0;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #30363d;
 
   .usedby-count {
     font-size: small;
     margin: 0rem 0.2rem;
     padding: 0.2rem 0.5rem;
-    background: rgb(236, 225, 225);
     border-radius: 1rem;
+    background: #8b949e33;
+    color:#8b949e;
   }
 
   .usedby-user-details {
@@ -123,16 +194,20 @@
     display: flex;
     align-items: center;
 
-    svg {
-      transform: scale(1.5);
+    img {
+      border-radius: 50%;
+      transform: scale(1.4);
     }
 
     .all-usedby-users-link {
-      color: blue;
+      color:#58a6ff;
       cursor: pointer;
       font-size: small;
       width: 8rem;
       margin-left: 1rem;
+      &:hover{
+        text-decoration: underline;
+      }
     }
   }
 }
@@ -141,27 +216,40 @@
 
 .contributors {
   padding: 1rem 0;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #30363d;
 
   .contributors-count {
     font-size: small;
     margin: 0rem 0.2rem;
     padding: 0.2rem 0.5rem;
-    background: rgb(236, 225, 225);
     border-radius: 1rem;
+    background: #8b949e33;
+    color:#8b949e;
   }
 
   .contributor-details {
     margin: 1rem 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 0.3rem;
+    gap: 0.4rem;
+
+    img{
+      border-radius: 50%;
+    }
+
+    path{
+      fill:white;
+    }
+
   }
 
   .all-contributors-link {
-    color: blue;
+    color:#58a6ff;
     cursor: pointer;
     font-size: small;
+    &:hover{
+      text-decoration: underline;
+    }
   }
 }
 
@@ -170,28 +258,45 @@
 
 .environments {
   padding: 1rem 0;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #30363d;
 
   .environment-count {
     font-size: small;
     margin: 0rem 0.2rem;
     padding: 0.2rem 0.5rem;
-    background: rgb(236, 225, 225);
     border-radius: 1rem;
+    background: #8b949e33;
+    color:#8b949e;
   }
 
   .environment-detail {
     margin-top: 1rem;
     gap: 1rem;
     display: flex;
+    color:#c9d1d9;
+    svg{
+      fill:#c9d1d9;
+    }
+
+    .env-name{
+      cursor: pointer;
+      &:hover{
+        text-decoration: underline;
+        color: #58a6ff;
+      }
+    }
 
     .active-tag {
-      padding: 0.2rem 0.4rem;
-      background: rgb(236, 225, 225);
+      padding: 0.1rem 0.4rem;
       font-size: 0.9rem;
       border-radius: 1rem;
       height: 1.6rem;
       align-self: flex-start;
+      color:#3fb950;
+      background: transparent;
+      border:1px solid #2ea04366;
+      display: flex;
+      align-items: center;
     }
   }
 }
@@ -215,10 +320,6 @@
   flex-direction: column;
 }
 
-.title {
-  font-weight: 600;
-  font-size: large;
-}
 
 .justify-center {
   justify-content: center;

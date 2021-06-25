@@ -1,0 +1,28 @@
+<div class="details-popup">
+    <div class="repo-details">
+        droidLight/objectDetector on jun 24
+    </div>
+    <div class="r-details">
+        <div class="icon-class">
+            <span class="iconify" attr.data-icon={{ricon}} [style.color]="riconcolor" data-inline="false"></span>
+        </div>
+        <div class="details-content">
+            <div class="r-title">
+                {{resolverDetails?.tittle}}
+            </div>
+            <span class="r-sno">
+                #{{resolverDetails.sno}}
+            </span>
+
+            <div class="description">
+                {{resolverDetails.description}}
+            </div>
+            <div class="button-container">
+                <button class="label" *ngFor="let labelindex of resolverDetails?.labels"
+                    [style.background-color]="labels[labelindex]?.color">{{labels[labelindex]?.name}}</button>
+            </div>
+
+        </div>
+    </div>
+
+</div>

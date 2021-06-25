@@ -1,38 +1,41 @@
+//attributes
 $common-font: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
   sans-serif, Apple Color Emoji, Segoe UI Emoji;
-$hover-color:#0366d6;
+$text-hover-color: #58a6ff;
+$text-color-secondary: #8b949e;
+$text-color-primary: #c9d1d9;
+$box-border-color: #30363d;
+$file-border-color: #21262d;
+$dir-icon-color: #6e7681;
+$file-icon-color: #484f58;
+$cross-color: #f85149;
+$black-shade: #161b22;
 
 .box {
-  background-color: #ffffff;
-  border: 1px solid #e1e4e8;
+  border: 1px solid $box-border-color;
   border-radius: 6px;
-}
-
-.file-structure {
-  color: #24292e;
-  font-size: 14px;
-  line-height: 21px;
+  overflow: hidden;
+  text-overflow: clip;
 }
 
 .file-row {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  border-color: #ebedef;
+  border-color: $file-border-color;
   border-style: solid none none;
   border-width: 1px 0px 0px;
-  color: #24292e;
   font-size: 14px;
   line-height: 21px;
   margin: -1px 0px 0px;
   padding: 8px 16px;
 }
 .file-row:hover {
-  background-color: #f6f8fa;
+  background-color: $black-shade;
 }
 
 .entity-name {
-  color: #24292e;
+  color: $text-color-primary;
   display: inline;
   font-family: $common-font;
   font-size: 14px;
@@ -40,8 +43,9 @@ $hover-color:#0366d6;
   text-decoration: none;
 }
 .entity-name:hover {
-  color:$hover-color;
+  color: $text-hover-color;
   text-decoration: underline;
+  cursor: pointer;
 }
 .name-wrapper {
   flex: 3;
@@ -50,15 +54,16 @@ $hover-color:#0366d6;
 }
 
 .commit-text {
-  color: #24292e;
+  color: $text-color-secondary;
   display: inline;
   font-family: $common-font;
   font-size: 14px;
   line-height: 21px;
 }
 .commit-text:hover {
-  color: $hover-color;
+  color: $text-hover-color;
   text-decoration: underline;
+  cursor: pointer;
 }
 .commit-text-wrapper {
   flex: 6;
@@ -66,7 +71,7 @@ $hover-color:#0366d6;
 
 .commit-time {
   font-family: $common-font;
-  color: #6a737d;
+  color: $text-color-secondary;
   font-size: 14px;
   line-height: 21px;
 }
@@ -81,13 +86,13 @@ $hover-color:#0366d6;
   line-height: 21px;
 }
 .icon-dir {
-  color: #79b8ff;
-  fill: #79b8ff;
+  color: $dir-icon-color;
+  fill: $dir-icon-color;
 }
 
 .icon-file {
-  color: #959da5;
-  fill: #959da5;
+  color: $file-icon-color;
+  fill: $file-icon-color;
 }
 
 //latest commit bar
@@ -95,18 +100,22 @@ $hover-color:#0366d6;
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: #f1f8ff;
-  border-color: #c8e1ff;
+  background-color: #0d1117;
+  border-color: #30363d;
   border-radius: 6px 6px 0px 0px;
   border-style: solid;
   border-width: 1px;
-  color: #24292e;
+  color: $text-color-primary;
   font-size: 14px;
   line-height: 21px;
   margin: -1px -1px 0px;
   padding: 16px;
 }
-
+.latest-action > .commit-text {
+  color: $text-color-primary;
+  font-size: 14px;
+  line-height: 21px;
+}
 .circular-avatar {
   width: 24px;
   height: 24px;
@@ -117,7 +126,7 @@ $hover-color:#0366d6;
 }
 
 .profile-name {
-  color: #24292e;
+  color: $text-color-primary;
   display: inline;
   font-family: $common-font;
   font-size: 14px;
@@ -127,12 +136,13 @@ $hover-color:#0366d6;
 }
 .profile-name:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .cross-icon {
-  color: #cb2431;
+  color: $cross-color;
   display: inline;
-  fill: #cb2431;
+  fill: $cross-color;
   font-size: 14px;
   line-height: 21px;
   text-align: left;
@@ -153,6 +163,7 @@ $hover-color:#0366d6;
   justify-content: center;
   align-items: center;
   text-align: left;
+  fill: $text-color-primary;
   margin: 0px 4px 0px 8px;
 }
 .commit-num {
@@ -168,27 +179,151 @@ $hover-color:#0366d6;
   line-height: 18px;
   margin: 0px 0px 0px 8px;
 }
-.commit-id:hover{
-  color: $hover-color;
+.commit-id:hover {
+  color: $text-hover-color;
   cursor: pointer;
   text-decoration: underline;
 }
-.commit-cont{
+.commit-cont {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-center;
 }
 
-.commit-cont:hover{
-  color:$hover-color;
-  fill: $hover-color;
+.commit-cont:hover {
+  color: $text-hover-color;
+  fill: $text-hover-color;
+  cursor: pointer;
 }
 .latest-time {
   margin: 0px 8px;
 }
-.latest-time:hover{
-  color: $hover-color;
+.latest-time:hover {
+  color: $text-hover-color;
   cursor: pointer;
   text-decoration: underline;
+  cursor: pointer;
+}
+
+.contributors-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 0px 0px 6px 6px;
+  color: $text-color-primary;
+  flex-wrap: wrap;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0px 0px -1px;
+  padding: 16px;
+}
+.contrib-icon {
+  font-size: 21px;
+  line-height: 21px;
+  fill: $text-color-primary;
+  color: $text-color-primary;
+}
+.contrib-num {
+  margin: 0px 4px;
+}
+.contrib-img-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 16px;
+}
+.contrib-img {
+  margin: 0px 4px !important;
+}
+.file-contents {
+  margin-top: 16px;
+}
+
+.file-menu-bar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: $black-shade;
+  border-color: $box-border-color;
+  border-radius: 6px 6px 0px 0px;
+  border-style: solid;
+  border-width: 1px;
+  color: $text-color-primary;
+  font-size: 14px;
+  line-height: 21px;
+  margin: -1px -1px 0px;
+  padding: 8px 8px 8px 16px;
+}
+.shield-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14;
+  line-height: 21px;
+  fill: $text-color-primary;
+  color: $text-color-primary;
+  margin-right: 3px;
+}
+.line-text{
+  margin: 0px 4px;
+}
+.sloc{
+  margin:0px 8px 0px 4px;
+}
+.mem{
+  margin-left: 8px;
+}
+.btn {
+  background-color: $file-border-color;
+  border-color: $box-border-color;
+  border-style: solid;
+  box-shadow: #000000 0px 0px 0px 0px;
+  color: $text-color-primary;
+  font-family: $common-font;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 3px 12px;
+}
+.btn:hover{
+  cursor: pointer;
+  background-color: $text-color-secondary;
+  border: $text-color-secondary;
+}
+
+.btn-left {
+  border-radius: 6px 0px 0px 6px;
+  border-width: 1px 0px 1px 1px;
+  margin-left: auto;
+}
+
+.btn-right {
+  border-radius: 0px 6px 6px 0px;
+  border-width: 1px;
+  margin-right: 5px;
+}
+.icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: $text-color-primary;
+  color: $text-color-primary;
+}
+.icon:hover{
+  fill: $text-hover-color;
+  cursor: pointer;
+}
+.del:hover{
+  fill: $cross-color;
+  cursor: pointer;
+}
+.code-pane{
+  display: table-cell;
+  font-size: 12 px;
+  color: $text-color-primary;
+  overflow: hidden;
+  text-overflow: clip;
 }

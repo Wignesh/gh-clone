@@ -10,9 +10,9 @@
         </path>
       </svg>
       <h1 class="flex flex-row items-center repo-relative-path text-blue">
-        <span class="text-xl font-normal cursor-pointer">angular </span>
-        <span class="text-xl text-gray">/</span>
-        <span class="text-xl font-semibold cursor-pointer"> components</span>
+        <span class="author-name">{{author}} </span>
+        <span class="auth-repo-name-seperator">/</span>
+        <span class="repo-name cursor-pointer" [routerLink]="basePath"> {{repositoryName}}</span>
       </h1>
     </div>
 
@@ -27,13 +27,18 @@
             </path>
           </svg>
           Watch
+          <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor" class="bi bi-caret-down"
+            viewBox="0 0 16 16">
+            <path
+              d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+          </svg>
         </span>
-        <span class="repo-metric-value">985</span>
+        <span class="repo-metric-value  ">985</span>
       </div>
       <div class="repo-star">
         <span class="repo-metric-heading">
           <svg aria-hidden="true" viewBox="0 0 16 16" version="1.1" data-view-component="true" height="16" width="16"
-            class="octicon octicon-star mr-1">
+            class="octicon octicon-star">
             <path fill-rule="evenodd"
               d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z">
             </path>
@@ -63,44 +68,74 @@
 
   <div class="flex repository-nav">
 
-    <div class="repository-nav-item code-item" [ngClass]="{'bb-orange font-semibold':currentURL===basePath}">
-      <svg class="text-black bi bi-code" style="color:black" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-        viewBox="0 0 16 16">
+    <div class="repository-nav-item code-item" [routerLink]="basePath"
+      [ngClass]="{'active-nav-item':currentURL===basePath}">
+      <svg class="text-black bi bi-code" style="fill:gray" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+        fill="currentColor" viewBox="0 0 16 16">
         <path
           d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8l3.147-3.146zm4.292 0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8l-3.147-3.146z" />
       </svg>
-      <span class="repo-nav-item-heading" [routerLink]="['./']">Code</span>
+      <span class="repo-nav-item-heading">Code</span>
     </div>
 
-    <div class="repository-nav-item issues-item" [ngClass]="{'bb-orange font-semibold':currentURL==basePath+'/issues'}">
-      <svg class="octicon octicon-issue-opened" fill="currentColor" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 9.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path><path fill-rule="evenodd" d="M8 0a8 8 0 100 16A8 8 0 008 0zM1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0z"></path></svg>
-      <span class="repo-nav-item-heading" [routerLink]="['./issues']">Issues</span>
+    <div class="repository-nav-item issues-item" [routerLink]="basePath+''+'/issues'"
+      [ngClass]="{'active-nav-item':currentURL==basePath+'/issues'}">
+      <svg class="octicon octicon-issue-opened" fill="currentColor" viewBox="0 0 16 16" version="1.1" width="16"
+        height="16" aria-hidden="true">
+        <path d="M8 9.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path>
+        <path fill-rule="evenodd" d="M8 0a8 8 0 100 16A8 8 0 008 0zM1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0z"></path>
+      </svg>
+      <span class="repo-nav-item-heading">Issues</span>
       <span class="issue-count">1.7k</span>
     </div>
 
-    <div class="repository-nav-item pull-requests-item" [ngClass]="{'bb-orange font-semibold':currentURL==basePath+'/pullrequest'}">
-      <svg class="octicon octicon-git-pull-request" fill="currentColor" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.177 3.073L9.573.677A.25.25 0 0110 .854v4.792a.25.25 0 01-.427.177L7.177 3.427a.25.25 0 010-.354zM3.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122v5.256a2.251 2.251 0 11-1.5 0V5.372A2.25 2.25 0 011.5 3.25zM11 2.5h-1V4h1a1 1 0 011 1v5.628a2.251 2.251 0 101.5 0V5A2.5 2.5 0 0011 2.5zm1 10.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM3.75 12a.75.75 0 100 1.5.75.75 0 000-1.5z"></path></svg>
-      <span class="repo-nav-item-heading" [routerLink]="['./pullrequest']">Pull requests</span>
+    <div class="repository-nav-item pull-requests-item" [routerLink]="basePath+'/pullrequest'"
+      [ngClass]="{'active-nav-item':currentURL==basePath+'/pullrequest'}">
+      <svg class="octicon octicon-git-pull-request" fill="currentColor" viewBox="0 0 16 16" version="1.1" width="16"
+        height="16" aria-hidden="true">
+        <path fill-rule="evenodd"
+          d="M7.177 3.073L9.573.677A.25.25 0 0110 .854v4.792a.25.25 0 01-.427.177L7.177 3.427a.25.25 0 010-.354zM3.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122v5.256a2.251 2.251 0 11-1.5 0V5.372A2.25 2.25 0 011.5 3.25zM11 2.5h-1V4h1a1 1 0 011 1v5.628a2.251 2.251 0 101.5 0V5A2.5 2.5 0 0011 2.5zm1 10.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM3.75 12a.75.75 0 100 1.5.75.75 0 000-1.5z">
+        </path>
+      </svg>
+      <span class="repo-nav-item-heading">Pull requests</span>
       <span class="pull-requests-count">336</span>
     </div>
 
-    <div class="repository-nav-item actions-item" [ngClass]="{'bb-orange font-semibold':currentURL==basePath+'/actions'}">
-      <svg class="octicon octicon-play UnderlineNav-octicon d-none d-sm-inline" fill="currentColor" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zM6.379 5.227A.25.25 0 006 5.442v5.117a.25.25 0 00.379.214l4.264-2.559a.25.25 0 000-.428L6.379 5.227z"></path></svg>
+    <div class="repository-nav-item actions-item"
+      [ngClass]="{'active-nav-item':currentURL==basePath+'/actions'}">
+      <svg class="octicon octicon-play UnderlineNav-octicon d-none d-sm-inline" fill="currentColor" viewBox="0 0 16 16"
+        version="1.1" width="16" height="16" aria-hidden="true">
+        <path fill-rule="evenodd"
+          d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zM6.379 5.227A.25.25 0 006 5.442v5.117a.25.25 0 00.379.214l4.264-2.559a.25.25 0 000-.428L6.379 5.227z">
+        </path>
+      </svg>
       <span class="repo-nav-item-heading">Actions</span>
     </div>
 
-    <div class="repository-nav-item projects-item" [ngClass]="{'bb-orange font-semibold':currentURL==basePath+'/projects'}">
-      <svg class="octicon octicon-project UnderlineNav-octicon d-none d-sm-inline" fill="currentColor" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M1.75 0A1.75 1.75 0 000 1.75v12.5C0 15.216.784 16 1.75 16h12.5A1.75 1.75 0 0016 14.25V1.75A1.75 1.75 0 0014.25 0H1.75zM1.5 1.75a.25.25 0 01.25-.25h12.5a.25.25 0 01.25.25v12.5a.25.25 0 01-.25.25H1.75a.25.25 0 01-.25-.25V1.75zM11.75 3a.75.75 0 00-.75.75v7.5a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75zm-8.25.75a.75.75 0 011.5 0v5.5a.75.75 0 01-1.5 0v-5.5zM8 3a.75.75 0 00-.75.75v3.5a.75.75 0 001.5 0v-3.5A.75.75 0 008 3z"></path></svg>
+    <div class="repository-nav-item projects-item"
+      [ngClass]="{'active-nav-item':currentURL==basePath+'/projects'}">
+      <svg class="octicon octicon-project UnderlineNav-octicon d-none d-sm-inline" fill="currentColor"
+        viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+        <path fill-rule="evenodd"
+          d="M1.75 0A1.75 1.75 0 000 1.75v12.5C0 15.216.784 16 1.75 16h12.5A1.75 1.75 0 0016 14.25V1.75A1.75 1.75 0 0014.25 0H1.75zM1.5 1.75a.25.25 0 01.25-.25h12.5a.25.25 0 01.25.25v12.5a.25.25 0 01-.25.25H1.75a.25.25 0 01-.25-.25V1.75zM11.75 3a.75.75 0 00-.75.75v7.5a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75zm-8.25.75a.75.75 0 011.5 0v5.5a.75.75 0 01-1.5 0v-5.5zM8 3a.75.75 0 00-.75.75v3.5a.75.75 0 001.5 0v-3.5A.75.75 0 008 3z">
+        </path>
+      </svg>
       <span class="repo-nav-item-heading">Projects</span>
       <span class="projects-count">7</span>
     </div>
 
-    <div class="repository-nav-item wiki-item" [ngClass]="{'bb-orange font-semibold':currentURL==basePath+'/wiki'}">
-      <svg class="octicon octicon-book UnderlineNav-octicon d-none d-sm-inline" fill="currentColor" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 1.75A.75.75 0 01.75 1h4.253c1.227 0 2.317.59 3 1.501A3.744 3.744 0 0111.006 1h4.245a.75.75 0 01.75.75v10.5a.75.75 0 01-.75.75h-4.507a2.25 2.25 0 00-1.591.659l-.622.621a.75.75 0 01-1.06 0l-.622-.621A2.25 2.25 0 005.258 13H.75a.75.75 0 01-.75-.75V1.75zm8.755 3a2.25 2.25 0 012.25-2.25H14.5v9h-3.757c-.71 0-1.4.201-1.992.572l.004-7.322zm-1.504 7.324l.004-5.073-.002-2.253A2.25 2.25 0 005.003 2.5H1.5v9h3.757a3.75 3.75 0 011.994.574z"></path></svg>
+    <div class="repository-nav-item wiki-item" [ngClass]="{'active-nav-item':currentURL==basePath+'/wiki'}">
+      <svg class="octicon octicon-book UnderlineNav-octicon d-none d-sm-inline" fill="currentColor" viewBox="0 0 16 16"
+        version="1.1" width="16" height="16" aria-hidden="true">
+        <path fill-rule="evenodd"
+          d="M0 1.75A.75.75 0 01.75 1h4.253c1.227 0 2.317.59 3 1.501A3.744 3.744 0 0111.006 1h4.245a.75.75 0 01.75.75v10.5a.75.75 0 01-.75.75h-4.507a2.25 2.25 0 00-1.591.659l-.622.621a.75.75 0 01-1.06 0l-.622-.621A2.25 2.25 0 005.258 13H.75a.75.75 0 01-.75-.75V1.75zm8.755 3a2.25 2.25 0 012.25-2.25H14.5v9h-3.757c-.71 0-1.4.201-1.992.572l.004-7.322zm-1.504 7.324l.004-5.073-.002-2.253A2.25 2.25 0 005.003 2.5H1.5v9h3.757a3.75 3.75 0 011.994.574z">
+        </path>
+      </svg>
       <span class="repo-nav-item-heading">Wiki</span>
     </div>
 
-    <div class="repository-nav-item security-item" [ngClass]="{'bb-orange font-semibold':currentURL==basePath+'/security'}">
+    <div class="repository-nav-item security-item"
+      [ngClass]="{'active-nav-item':currentURL==basePath+'/security'}">
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
         class="bi bi-shield-exclamation" viewBox="0 0 16 16">
         <path
@@ -111,8 +146,14 @@
       Security
     </div>
 
-    <div class="repository-nav-item insights-item" [ngClass]="{'bb-orange font-semibold':currentURL==basePath+'/insights'}">
-      <svg class="octicon octicon-graph UnderlineNav-octicon d-none d-sm-inline" fill="currentColor" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 1.75a.75.75 0 00-1.5 0v12.5c0 .414.336.75.75.75h14.5a.75.75 0 000-1.5H1.5V1.75zm14.28 2.53a.75.75 0 00-1.06-1.06L10 7.94 7.53 5.47a.75.75 0 00-1.06 0L3.22 8.72a.75.75 0 001.06 1.06L7 7.06l2.47 2.47a.75.75 0 001.06 0l5.25-5.25z"></path></svg>
+    <div class="repository-nav-item insights-item"
+      [ngClass]="{'active-nav-item':currentURL==basePath+'/insights'}">
+      <svg class="octicon octicon-graph UnderlineNav-octicon d-none d-sm-inline" fill="currentColor" viewBox="0 0 16 16"
+        version="1.1" width="16" height="16" aria-hidden="true">
+        <path fill-rule="evenodd"
+          d="M1.5 1.75a.75.75 0 00-1.5 0v12.5c0 .414.336.75.75.75h14.5a.75.75 0 000-1.5H1.5V1.75zm14.28 2.53a.75.75 0 00-1.06-1.06L10 7.94 7.53 5.47a.75.75 0 00-1.06 0L3.22 8.72a.75.75 0 001.06 1.06L7 7.06l2.47 2.47a.75.75 0 001.06 0l5.25-5.25z">
+        </path>
+      </svg>
       Insights
     </div>
 

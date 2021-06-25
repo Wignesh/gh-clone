@@ -1,15 +1,31 @@
-<div id="repo-content-root flex flex-col">
-    <div class="flex">
-      <div class="file-tree">
-        <app-repo-file-navigation></app-repo-file-navigation>
-        <app-repository-code class="code-view" [authorName]="authorName" [repoName]="repoName"></app-repository-code>
+<div class="repo-content-root">
+  <div class="flex flex-row">
+
+    <!--container for displaying file and the readme file-->
+    <div class="left-pane flex flex-col">
+
+      <div class="code-bar-container">
+        <!--horizontal bar with master branch buttons and download buttons-->
+        <div class="bar-container">
+          <app-repo-file-navigation></app-repo-file-navigation>
+        </div>
+
+        <!-- file structure component-->
+        <div class="code-container">
+          <app-repository-code [authorName]="authorName" [repoName]="repoName"></app-repository-code>
+        </div>
+        
       </div>
 
-      <div class="right-panel">
-          <app-repository-page-about></app-repository-page-about>
+      <div class="readme-container">
+        <app-repository-page-readme></app-repository-page-readme>
       </div>
     </div>
 
-    <app-repository-page-readme></app-repository-page-readme>
+    <!--container for displaying right side pane like about, contributors-->
+    <div class="right-pane">
+      <app-repository-page-about></app-repository-page-about>
+    </div>
 
+  </div>
 </div>
