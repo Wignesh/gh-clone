@@ -6,21 +6,34 @@
 .oned-pie-chart{
   display: flex;
   gap: 0.1rem;
+
+  div:first-of-type{
+    border-radius: 1rem 0 0 1rem;
+  }
+
+  div:last-of-type{
+    border-radius: 0 0 1rem 1rem;
+  }
+
 }
 
 .lang-details{
   display: flex;
   flex-wrap: wrap;
   margin:0.5rem 0 ;
-  gap:1rem;
+  gap:0.5rem;
   font-size: small;
 
   .language-name{
     color:#c9d1d9;
+    margin-left: 0.2rem;
+    font-weight: 550;
   }
 
   .language-percent{
     color:gray;
+    margin-right: 1rem;
+    margin-left: 0.2rem;
   }
 
 }
