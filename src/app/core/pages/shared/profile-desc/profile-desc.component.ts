@@ -38,12 +38,20 @@ export class ProfileDescComponent implements OnInit {
   {
     this.previewprofdiv.nativeElement.style.display="none"
     this.editprofdiv.nativeElement.style.display="block"
+    this.editcompany=this.profile.company;
+    this.editdescription=this.profile.description;
+    this.editemail=this.profile.email;
+    this.editlocation=this.profile.location;
+    this.edittwitter=this.profile.twitter;
+    this.editwebsite=this.profile.website;
+  
+    
   }
   canceledit()
   {
     this.previewprofdiv.nativeElement.style.display="block"
     this.editprofdiv.nativeElement.style.display="none"
-  
+    console.log("cancel button clicked")
 
   }
   saveedit()
@@ -54,7 +62,9 @@ export class ProfileDescComponent implements OnInit {
     this.profile.twitter=this.edittwitter;
     this.profile.description=this.editdescription;
     this.profile.location=this.editlocation;
-    this.canceledit();
+    this.previewprofdiv.nativeElement.style.display="block"
+    this.editprofdiv.nativeElement.style.display="none"
+    
   }
   
 }
