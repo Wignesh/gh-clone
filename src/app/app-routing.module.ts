@@ -10,54 +10,67 @@ import { RepositoryContentComponent } from './core/pages/repository-info/reposit
 import { RepositoryCodeComponent } from './core/pages/repository-info/repository-code/repository-code.component';
 import { IssuesComponent } from './core/pages/repository-info/issues/issues.component';
 import { PullRequestsComponent } from './core/pages/repository-info/pull-requests/pull-requests.component';
+import { AuthGuard } from './core/pages/login/auth.guard';
+import { AccessGuard } from './core/pages/access.guard';
 
 const routes: Routes = [
   {
+    path: '',
+    component: LoginPage,
+    canActivate: [AccessGuard],
+  },
+  {
     path: 'login',
     component: LoginPage,
+    canActivate: [AccessGuard],
   },
   {
     path: 'dashboard',
     component: DashboardPage,
+    canActivate: [AuthGuard],
   },
   {
     path: 'repositories',
     component: RepositoriesPage,
+    canActivate: [AuthGuard],
   },
   {
     path: 'repository-info/:author/:repo',
     component: RepositoryInfoPage,
-    children:[
+    children: [
       {
-        path:"issues",
-        component:IssuesComponent
+        path: 'issues',
+        component: IssuesComponent,
       },
       {
-        path:"pullrequest",
-        component:PullRequestsComponent
+        path: 'pullrequest',
+        component: PullRequestsComponent,
       },
       {
-        path:"",
-        component:RepositoryContentComponent
+        path: '',
+        component: RepositoryContentComponent,
       },
       {
-        path:"**",
-        component:RepositoryCodeComponent
-      }
-    ]
+        path: '**',
+        component: RepositoryCodeComponent,
+      },
+    ],
   },
   {
     path: 'settings',
     component: SettingsPage,
+    canActivate: [AuthGuard],
   },
   {
     path: 'profile',
     component: ProfilePage,
+    canActivate: [AuthGuard],
   },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
+  providers: [AuthGuard],
 })
 export class AppRoutingModule {}

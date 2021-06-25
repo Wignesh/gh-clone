@@ -1,7 +1,7 @@
 @import "../../styles/common/constants";
 main {
   background-color: $color-bg-primary;
-  div {
+  .logo-container {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -17,14 +17,78 @@ main {
       }
     }
   }
-  main {
+  .auth-wrapper {
     display: flex;
     align-items: center;
     flex-direction: column;
-    div {
+    .main-container {
       padding: 0px 16px;
-      width: 20vw;
+      width: 25vw;
+      @media only screen and (min-width: 1441px) {
+        width: 20vw;
+      }
+      @media only screen and (min-width: 1440px) and (max-device-width: 2559px) {
+        width: 30vw;
+      }
+      /* Desktops and laptops ----------- */
+      @media only screen and (min-width: 1024px) and (max-device-width: 1439px) {
+        width: 50vw;
+      }
+      /* iPads (portrait and landscape) ----------- */
+      @media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+        width: 70vw;
+      }
+      /* Smartphones (portrait and landscape) ----------- */
+      @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+        width: 90vw;
+      }
       display: block;
+      .error-container {
+        padding: 0;
+        .flash-error {
+          // position: relative;
+          background-image: linear-gradient(
+            $color-alert-error-bg,
+            $color-alert-error-bg
+          );
+          border-color: $color-alert-error-border;
+          color: $color-alert-error-text;
+          background-color: $color-bg-canvas;
+          border-radius: 6px;
+          border-style: solid;
+          border-width: 1px;
+          margin: 18px 0px;
+          padding: 15px 20px;
+          .flash-container {
+            max-width: 1012px;
+            color: $color-alert-error-text;
+            .flash-close-button {
+              font-family: -apple-system, BlinkMacSystemFont, Segoe UI,
+                Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+              font-size: 13px;
+              background: none;
+              cursor: pointer;
+              border: none;
+              float: right;
+              margin: -16px 16px;
+              padding: 16px;
+              text-align: center;
+              height: 40px;
+              .octicon {
+                text-align: center;
+                height: 16;
+                width: 16;
+                fill: currentColor;
+                display: inline-block;
+                vertical-align: text-bottom;
+                margin-right: 0;
+                color: $color-alert-error-icon;
+              }
+            }
+          }
+        }
+      }
+
       h1 {
         color: $color-text-primary;
         font-size: 24px;
@@ -57,6 +121,7 @@ main {
             color: $color-text-link;
             float: right;
             font-size: 12px;
+            text-decoration: none;
           }
         }
         input {
@@ -99,6 +164,10 @@ main {
         display: block;
         a {
           color: $color-text-link;
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
     }

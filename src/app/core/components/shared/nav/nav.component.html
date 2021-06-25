@@ -1,7 +1,7 @@
-<header>
-    <div>
-        <a routerLink="/dashboard">
-            <svg height="32" viewBox="0 0 16 16" version="1.1" width="32">
+<header class="nav-header">
+    <div class="nav-logo-container">
+        <a routerLink="/dashboard" class="nav-octa-link">
+            <svg height="32" viewBox="0 0 16 16" version="1.1" width="32" class="nav-logo">
                 <path fill-rule="evenodd"
                     d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
                 </path>
@@ -9,9 +9,9 @@
         </a>
     </div>
 
-    <div>
-        <div>
-            <form>
+    <div class="nav-wrapper">
+        <div class="nav-search-container">
+            <form class="nav-search-form">
                 <label>
                     <input type="text" name="q" value="" placeholder="Search or jump to…" autocapitalize="off"
                         role="combobox" spellcheck="false" autocomplete="off" />
@@ -19,7 +19,7 @@
                 </label>
             </form>
         </div>
-        <nav>
+        <nav class="header-nav-items">
             <a routerLink="/pulls">
                 Pull requests
             </a>
@@ -34,11 +34,12 @@
             </a>
         </nav>
     </div>
-    <div>
-        <div>
-            <a routerLink="/notifications">
+
+    <div class="nav-right">
+        <div class="nav-notification-container">
+            <a class="nav-notification-link" routerLink="/notifications">
                 <span></span>
-                <svg viewBox="0 0 16 16" version="1.1" height="16" width="16">
+                <svg class="nav-notification-icon" viewBox="0 0 16 16" version="1.1" height="16" width="16">
                     <path
                         d="M8 16a2 2 0 001.985-1.75c.017-.137-.097-.25-.235-.25h-3.5c-.138 0-.252.113-.235.25A2 2 0 008 16z">
                     </path>
@@ -48,10 +49,10 @@
                 </svg>
             </a>
         </div>
-        <div>
-            <details>
-                <summary>
-                    <svg viewBox="0 0 16 16" version="1.1" height="16" width="16">
+        <div class="nav-new-container" (click)="handleNewMenu()">
+            <details class="nav-new-details">
+                <summary class="nav-new-summary">
+                    <svg class="nav-new-icon" viewBox="0 0 16 16" version="1.1" height="16" width="16">
                         <path fill-rule="evenodd"
                             d="M7.75 2a.75.75 0 01.75.75V7h4.25a.75.75 0 110 1.5H8.5v4.25a.75.75 0 11-1.5 0V8.5H2.75a.75.75 0 010-1.5H7V2.75A.75.75 0 017.75 2z">
                         </path>
@@ -61,19 +62,54 @@
                     </span>
                 </summary>
             </details>
+            <div class="detail-menu-container-new" *ngIf="showNewMenu">
+                <div class="detail-menu">
+                    <a class="drop-down-item">New repository</a>
+                    <a class="drop-down-item">Import repository</a>
+                    <a class="drop-down-item">New gist</a>
+                    <a class="drop-down-item">New organization</a>
+                    <a class="drop-down-item">New project</a>
+                </div>
+            </div>
         </div>
-        <div>
-            <a routerLink="/profile">
-                <details>
-                    <summary>
-                        <img src="https://avatars.githubusercontent.com/u/26745858?s=60&amp;v=4" alt="@Wignesh"
-                            size="20" height="24" width="24" />
+
+        <div class="nav-profile-container" (click)="handleProfileMenu()">
+            <div class="nav-profile-link">
+                <details class="nav-profile-details">
+                    <summary class="nav-profile-summary">
+                        <img class="nav-profile-image"
+                            src="https://avatars.githubusercontent.com/u/26745858?s=60&amp;v=4" alt="@Wignesh" size="20"
+                            height="24" width="24" />
                         <span>
                         </span>
                     </summary>
                 </details>
-            </a>
+                <div class="detail-menu-container" *ngIf="showProfileMenu">
+                    <div class="detail-menu">
+                        <div class="nav-current-user">
+                            <a routerLink="/profile" class="drop-down-link">Signed in as Wignesh</a>
+                        </div>
+                        <div class="drop-down-divider"></div>
 
+                        <a routerLink="/profile" class="drop-down-item">Your Profile</a>
+                        <a routerLink="/repositories" class="drop-down-item">Your repositories</a>
+                        <a class="drop-down-item">Your codespaces</a>
+                        <a class="drop-down-item">Your organizations</a>
+                        <a class="drop-down-item">Your projects</a>
+                        <a class="drop-down-item">Your discussions</a>
+                        <a class="drop-down-item">Your stars</a>
+                        <a class="drop-down-item">Your gists</a>
+                        <div class="drop-down-divider"></div>
+                        <a class="drop-down-item">Upgrade</a>
+                        <a class="drop-down-item">Feature preview</a>
+                        <a class="drop-down-item">Help</a>
+                        <a routerLink="/settings" class="drop-down-item">Settings</a>
+                        <div class="drop-down-divider"></div>
+                        <a (click)="logout()" routerLink="/login" class="drop-down-item">Sign out</a>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
 
