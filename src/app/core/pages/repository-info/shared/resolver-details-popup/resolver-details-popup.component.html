@@ -19,7 +19,8 @@
             </div>
             <div class="button-container">
                 <button class="label" *ngFor="let labelindex of resolverDetails?.labels"
-                    [style.background-color]="labels[labelindex]?.color">{{labels[labelindex]?.name}}</button>
+                    [style.background-color]="labels[labelindex]?.color"
+                    [style.color]="labels[labelindex]?.tcolor">{{labels[labelindex]?.name}}</button>
             </div>
 
         </div>

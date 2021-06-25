@@ -1,12 +1,14 @@
 <div class="resolver-container">
     <div class="resolver-toolbar">
         <div class="resolver-count">
-            <div class="open-count  active-btn" [routerLink]="[]" [queryParams]="{ query: 'open'}">
+            <div class="open-count" [class.active-btn]="isActive('open')" [routerLink]="[]"
+                [queryParams]="{ query: 'open'}">
                 <span class="iconify icon-1" attr.data-icon={{this.icons[this.rtype]?.open?.icon}}
                     data-inline="false"></span>
                 {{openCount}} Open
             </div>
-            <div class="close-count icon-1" [routerLink]="[]" [queryParams]="{ query: 'closed'}">
+            <div class="close-count icon-1" [class.active-btn]="isActive('closed')" [routerLink]="[]"
+                [queryParams]="{ query: 'closed'}">
                 <span class="iconify" attr.data-icon={{this.icons[this.rtype].closed?.icon}} data-inline="false"></span>
                 {{closedCount}}
                 Closed
