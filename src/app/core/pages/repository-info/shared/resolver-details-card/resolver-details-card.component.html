@@ -1,10 +1,9 @@
 <div class="resolver-card">
+
     <div class="container-right">
-        <div class="resolver-icon">
-            <span class="iconify icon-1" attr.data-icon={{(icons[rtype])[rresult]?.icon}}
-                [style.color]="(icons[rtype])[rresult]?.color" data-inline="false"></span>
-        </div>
+
         <div class="resolver-details-main" (mouseover)="displayDetails=true" (mouseout)="displayDetails=false">
+
             <ng-template [ngIf]="displayDetails">
                 <div class="chumma">
                     <app-resolver-details-popup [resolverDetails]="resolverDetails"
@@ -12,15 +11,30 @@
                     </app-resolver-details-popup>
                 </div>
             </ng-template>
-            <div class="card-title">{{resolverDetails?.tittle}}
-                <button class="label" *ngFor="let labelindex of resolverDetails?.labels"
-                    [style.background-color]="labels[labelindex]?.color">{{labels[labelindex]?.name}}</button>
+
+            <div class="new-row">
+                <!--modified by sibi-->
+
+                <div class="resolver-icon">
+                    <!--same icon moved here-->
+                    <span class="iconify icon-1" attr.data-icon={{(icons[rtype])[rresult]?.icon}}
+                        [style.color]="(icons[rtype])[rresult]?.color" data-inline="false"></span>
+                </div>
+
+                <!--title along with  buttons-->
+                <div class="card-title">{{resolverDetails?.tittle}}</div>
+                <div class="label-cont">
+                    <button class="label" *ngFor="let labelindex of resolverDetails?.labels"
+                        [style.background-color]="labels[labelindex]?.color">{{labels[labelindex]?.name}}</button>
+                </div>
+
             </div>
 
             <div class="card-metadata">#{{resolverDetails.sno}} opened 3 hours ago by {{resolverDetails?.postedBy}}
             </div>
         </div>
     </div>
+
     <div class="metadata-bar-left">
         <div class="comp-1">
             <span class="iconify" data-icon="octicon:git-pull-request-24" data-inline="false"></span>

@@ -1,0 +1,123 @@
+// dropdown button
+
+.code-download-btn {
+  color: white;
+  background: #238636;
+  border: 1px solid #2ea043;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 1rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  &:hover {
+    background-color: #2ea043;
+    border-color: #3fb950;
+  }
+}
+
+// tooltip
+
+.repo-code-dropdown-popper {
+  background: #1c2128;
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  position: relative;
+  padding: 1rem 0;
+  box-shadow: -10px 10px 10px -10px #161b22;
+}
+
+.top-section{
+  padding:0 1rem 1rem 1rem;
+  border-bottom: 1px solid #30363d;
+  .dropdown-header{
+    margin: 0.2rem 0;
+  }
+
+  .weburl-git-link{
+    display: flex;
+    align-items: stretch;
+    margin:0.3rem 0.2rem;
+    input{
+      width: 20rem;
+      padding: 0.5rem;
+      background: #0d1117;
+      color: #c9d1d9;
+      border: none;
+      border-radius: 0.3rem 0 0 0.3rem;
+    }
+
+    div{
+      width: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #21262d;
+      cursor: pointer;
+      border-radius:0 0.3rem 0.3rem 0;
+      border:1px solid transparent;
+      &:hover{
+        background-color: #30363d;
+        border:1px solid #8b949e;
+      }
+    }
+  }
+}
+
+.clone-choice-nav {
+  display: flex;
+  gap: 0.4rem;
+  margin: 0.5rem 0;
+
+  span {
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    &:hover {
+      border-bottom: 2px solid #f9826c;
+    }
+  }
+
+
+}
+
+.weburl-clone-instruction{
+  color:#8b949e;
+  font-weight: lighter;
+}
+
+.top-section,.bottom-section{
+  width: 100%;
+}
+
+.bottom-section > * {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  cursor: pointer;
+
+  svg{
+    fill:#c9d1d9;
+  }
+
+  &:hover{
+    background-color: #161b22;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-center{
+  align-items: center;
+}
+
+.gap-1 {
+  gap: 1rem;
+}

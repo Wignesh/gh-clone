@@ -13,18 +13,29 @@ $common-font: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
   border-bottom: 1px solid $color-border-primary;
   padding: 0.65rem 0.65rem 0.65rem 1rem;
   justify-content: space-between;
+
   .container-right {
     display: flex;
     flex-wrap: wrap;
+
     .resolver-icon {
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
     }
+    .new-row {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+    }
+
     .resolver-details-main {
-      margin-left: 0.4rem;
       position: relative;
       .card-title {
         font-size: 16px;
         font-weight: 600;
         vertical-align: middle;
+        margin-left: 8px;
         &:hover {
           color: $color-text-link;
           cursor: pointer;
@@ -47,6 +58,7 @@ $common-font: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
         line-height: 18px;
         color: $color-text-secondary;
         font-size: 12px;
+        padding-left: 17px;
       }
     }
   }
@@ -90,4 +102,21 @@ $common-font: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
   z-index: 2;
   position: absolute;
   bottom: 12vh;
+}
+
+.label {
+  border-radius: 24px;
+  background-color: violet;
+  border: 1px solid rgb(210 195 249 / 0.3);
+  padding: 0 7px;
+  color: white;
+  margin: 0.2rem;
+  font-weight: 500;
+  font-size: 12px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.label-cont {
+  margin-left: 4px;
 }
