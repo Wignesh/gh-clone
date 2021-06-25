@@ -61,4 +61,19 @@ export class RepoListDataService {
   getrepos(){
     return this.repos;
   }
+
+  
+  isOverview: boolean = true;
+  isRepository: boolean = false;
+
+  loadRepo(){
+    this.isRepository = true;
+    this.isOverview = false; 
+  }
+
+  loadOverview(){
+    this.isRepository=false;
+    this.isOverview=true;
+  }
+
 }
