@@ -3,9 +3,10 @@
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 }
 
-.file-navigation-header{
+.file-navigation-header {
   background: #0d1117;
-  width: 65vw;
+  //to expand to available width
+  //width: 65vw;
 }
 
 .left-part {
@@ -15,29 +16,28 @@
   font-weight: 500;
   font-size: small;
 
-
   .branches-metadata {
     display: flex;
     align-items: center;
     gap: 0.2rem;
-    color:#c9d1d9;
+    color: #c9d1d9;
     cursor: pointer;
 
-    svg{
-      fill:#c9d1d9;
+    svg {
+      fill: #c9d1d9;
     }
 
-    &-heading{
+    &-heading {
       color: gray;
     }
 
-    &:hover{
-      color: #58a6ff ;
-      svg{
-        fill:#58a6ff;
+    &:hover {
+      color: #58a6ff;
+      svg {
+        fill: #58a6ff;
       }
 
-      .branches-metadata-heading{
+      .branches-metadata-heading {
         color: #58a6ff;
       }
     }
@@ -47,23 +47,23 @@
     display: flex;
     align-items: center;
     gap: 0.2rem;
-    color:#c9d1d9;
+    color: #c9d1d9;
     cursor: pointer;
 
-    &-heading{
+    &-heading {
       color: gray;
     }
 
-    svg{
-      fill:#c9d1d9;
+    svg {
+      fill: #c9d1d9;
     }
 
-    &:hover{
-      color: #58a6ff ;
-      svg{
-        fill:#58a6ff;
+    &:hover {
+      color: #58a6ff;
+      svg {
+        fill: #58a6ff;
       }
-      .tags-metadata-heading{
+      .tags-metadata-heading {
         color: #58a6ff;
       }
     }
@@ -83,7 +83,7 @@
     border: 1px solid #30363d;
     padding: 0.35rem 1rem;
     border-radius: 0.3rem;
-    cursor:pointer;
+    cursor: pointer;
     &:hover {
       background: #30363d;
       border: 1px solid #8b949e;
@@ -98,7 +98,7 @@
     border: 1px solid #30363d;
     padding: 0.35rem 1rem;
     border-radius: 0.3rem;
-    cursor:pointer;
+    cursor: pointer;
     &:hover {
       background: #30363d;
       border: 1px solid #8b949e;
@@ -106,16 +106,16 @@
   }
 
   .code-download-btn {
-    color:white;
+    color: white;
     background: #238636;
-    border:1px solid #2ea043;
+    border: 1px solid #2ea043;
     display: flex;
     align-items: center;
     gap: 0.5rem;
     padding: 0.35rem 1rem;
     border-radius: 0.3rem;
-    cursor:pointer;
-    &:hover{
+    cursor: pointer;
+    &:hover {
       background-color: #2ea043;
       border-color: #3fb950;
     }
@@ -146,4 +146,45 @@
 
 .justify-between {
   justify-content: space-between;
+}
+
+//file-path
+.file-path {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+
+  #root-path {
+    color: #58a6ff;
+    display: inline;
+  }
+
+  .path-sep {
+    margin: 0px 4px;
+    color: #c9d1d9;
+  }
+  .dir {
+    color: #c9d1d9;
+  }
+}
+.dot-button {
+  gap: 0.2rem;
+  align-items: center;
+  background-color: #21262d;
+  border: 1px solid #30363d;
+  padding: 0.4rem 1rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  fill: #8b949e;
+
+  .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &:hover {
+    background: #30363d;
+    border: 1px solid #8b949e;
+  }
 }

@@ -1,3 +1,4 @@
+import { Input } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RepoFileNavigationComponent implements OnInit {
 
+  @Input() isRootPage:boolean=true;
   constructor() { }
 
   ngOnInit(): void {
