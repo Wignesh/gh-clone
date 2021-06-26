@@ -1,6 +1,7 @@
 <div class="profileblock">
     <div class="imgdiv">
-    <img class="profileimg" src="https://cdn.i-scmp.com/sites/default/files/d8/images/methode/2019/03/14/a0998edc-43db-11e9-b5dc-9921d5eb8a6d_image_hires_141150.JPG">
+    <!-- <img class="profileimg" src="https://cdn.i-scmp.com/sites/default/files/d8/images/methode/2019/03/14/a0998edc-43db-11e9-b5dc-9921d5eb8a6d_image_hires_141150.JPG"> -->
+    <img class="profileimg" src="https://avatars.githubusercontent.com/u/34213472?v=4">
     </div>
     <div class="namediv">
         <span class="profname">{{profile.profname}}</span><br/>
@@ -32,16 +33,17 @@
                 </div>
             </div>
             <div class="descdiv">
-                <span><i class="fas fa-book-reader"></i> {{profile.company}} </span><br/>
-                <span><i class="far fa-envelope"></i> {{profile.email}} </span><br/>
-                <span><i class="fas fa-link"></i> {{ profile.website}}</span><br/>
-                <span><i class="fab fa-twitter-square"></i>{{profile.twitter}} </span><br/>
-                <span><i class="fas fa-flag"></i> {{profile.location}} </span><br/>
+                <div class="descdivspan"><i class="fas fa-book-reader"></i> {{profile.company}} </div>
+                <div  class="descdivspan"><i class="far fa-envelope"></i> {{profile.email}} </div>
+                <div  class="descdivspan"><i class="fas fa-link"></i> {{ profile.website}}</div>
+                <div  class="descdivspan"><i class="fab fa-twitter-square"></i>{{profile.twitter}} </div >
+                <div  class="descdivspan"><i class="fas fa-flag"></i> {{profile.location}} </div >
             </div>
         </div>
     </div>
     <div class="editprof" #editprof>
-        <div>
+        <div style="margin-right: 5.45rem;">
+            <!-- <div> -->
             <form (submit)="saveedit()">
                 <div class="editbadgediv">
                     <input type="checkbox">
@@ -51,7 +53,9 @@
                         badge
                     </label>
                 </div>  
+                <div class="editinputdiv">
                 <textarea  name="description" [(ngModel)]="editdescription"></textarea>
+                </div>
                 <div class="editinputdiv">
                     <i class="fas fa-building"></i>
                     <input class="editinput"name="company" [(ngModel)]="editcompany"  type="text" placeholder="company">
