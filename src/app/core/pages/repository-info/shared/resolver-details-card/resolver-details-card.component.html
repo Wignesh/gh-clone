@@ -3,6 +3,7 @@
     <div class="container-right">
 
         <div class="resolver-details-main" (mouseover)="displayDetails=true" (mouseout)="displayDetails=false">
+
             <ng-template [ngIf]="displayDetails">
                 <div class="chumma">
                     <app-resolver-details-popup [resolverDetails]="resolverDetails"
@@ -10,10 +11,12 @@
                     </app-resolver-details-popup>
                 </div>
             </ng-template>
-            
-            <div class="new-row"><!--modified by sibi-->            
-                
-                <div class="resolver-icon"><!--same icon moved here-->
+
+            <div class="new-row">
+                <!--modified by sibi-->
+
+                <div class="resolver-icon">
+                    <!--same icon moved here-->
                     <span class="iconify icon-1" attr.data-icon={{(icons[rtype])[rresult]?.icon}}
                         [style.color]="(icons[rtype])[rresult]?.color" data-inline="false"></span>
                 </div>
@@ -24,9 +27,9 @@
                     <button class="label" *ngFor="let labelindex of resolverDetails?.labels"
                         [style.background-color]="labels[labelindex]?.color">{{labels[labelindex]?.name}}</button>
                 </div>
-                
+
             </div>
-            
+
             <div class="card-metadata">#{{resolverDetails.sno}} opened 3 hours ago by {{resolverDetails?.postedBy}}
             </div>
         </div>

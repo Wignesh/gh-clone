@@ -3,31 +3,34 @@
 .aside-left {
   position: sticky;
   top: 0;
-  display: flex !important;
+  display: flex;
   height: 100vh;
-  width: 18vw;
   display: block;
-  border-right: 1px solid $color-border-primary !important;
-  border-bottom: 1px solid $color-border-primary !important;
-  border-color: $color-border-secondary !important;
-  background-color: $color-bg-primary !important;
-  max-width: 350px;
+  border-right: 1px solid $color-border-primary;
+  border-bottom: 1px solid $color-border-primary;
+  border-color: $color-border-secondary;
+  background-color: $color-bg-primary;
   .dashboard-sidebar {
-    top: 0 !important;
-    overflow: auto !important;
-    padding-left: 32px !important;
-    padding-right: 32px !important;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    overflow: auto;
+    padding-left: 32px;
+    padding-right: 32px;
     position: static;
-    width: 100%;
+    width: auto;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
     .switch-dashboard-context {
-      border-bottom: 1px solid $color-border-primary !important;
-      border-color: $color-border-secondary !important;
-      margin-top: 16px !important;
-      margin-bottom: 24px !important;
-      padding-top: 16px !important;
-      padding-bottom: 16px !important;
+      border-bottom: 1px solid $color-border-primary;
+      border-color: $color-border-secondary;
+      margin-top: 16px;
+      margin-bottom: 24px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      word-wrap: break-word;
       details {
-        display: inline-block !important;
+        display: inline-block;
         summary {
           display: inline-block;
           padding: 0;
@@ -36,10 +39,10 @@
           background-color: transparent;
           border: 0;
           appearance: none;
-          color: $color-text-primary !important;
-          width: 100% !important;
-          font-weight: 600 !important;
-          text-decoration: none !important;
+          color: $color-text-primary;
+          width: 100%;
+          font-weight: 600;
+          text-decoration: none;
           list-style: none;
           .avatar-user {
             list-style: none;
@@ -55,17 +58,17 @@
             background-color: $color-avatar-bg;
             flex-shrink: 0;
             box-shadow: 0 0 0 1px $color-avatar-border;
-            border-radius: 50% !important;
+            border-radius: 50%;
           }
           .username {
             font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
               Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
             line-height: 1.5;
             font-size: inherit;
-            color: $color-text-primary !important;
-            font-weight: 600 !important;
+            color: $color-text-primary;
+            font-weight: 600;
             list-style: none;
-            margin-left: 8px !important;
+            margin-left: 8px;
             overflow: hidden;
             text-overflow: ellipsis;
             display: inline-block;
@@ -87,7 +90,7 @@
       }
     }
     .dashboard-repo-containers {
-      margin-bottom: 16px !important;
+      margin-bottom: 16px;
       .repos-container {
         .repo-header {
           font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
@@ -95,11 +98,11 @@
           line-height: 1.5;
           color: $color-text-primary;
           font-weight: 600;
-          justify-content: space-between !important;
-          align-items: center !important;
-          margin-bottom: 4px !important;
-          font-size: 14px !important;
-          display: flex !important;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 4px;
+          font-size: 14px;
+          display: flex;
           .new-repo-btn {
             font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
               Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
@@ -125,12 +128,12 @@
             padding: 3px 12px;
             font-size: 12px;
             line-height: 20px;
-            color: $color-text-white !important;
+            color: $color-text-white;
             .octicon {
               height: 16;
               width: 16;
               display: inline-block;
-              overflow: visible !important;
+              overflow: visible;
               fill: currentColor;
               color: $color-btn-primary-icon;
               vertical-align: text-top;
@@ -147,8 +150,8 @@
           }
         }
         .repo-search {
-          margin-top: 8px !important;
-          margin-bottom: 16px !important;
+          margin-top: 8px;
+          margin-bottom: 16px;
           input {
             overflow: visible;
             font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
@@ -167,7 +170,7 @@
             background-color: $color-input-contrast-bg;
             display: block;
             width: 100%;
-            margin-bottom: 16px !important;
+            margin-bottom: 16px;
             &:focus {
               outline: none;
               border-color: $color-state-focus-border;
@@ -179,54 +182,54 @@
           padding-left: 0;
           margin-top: 0;
           margin-bottom: 0;
-          list-style: none !important;
+          list-style: none;
           li {
-            list-style: none !important;
+            list-style: none;
             div {
-              width: 100% !important;
+              width: 100%;
               a {
                 font-family: -apple-system, BlinkMacSystemFont, Segoe UI,
                   Helvetica, Arial, sans-serif, Apple Color Emoji,
                   Segoe UI Emoji;
-                font-weight: 600 !important;
+                font-weight: 600;
                 background-color: transparent;
                 color: $color-text-link;
                 text-decoration: none;
-                flex-wrap: wrap !important;
-                align-items: baseline !important;
-                max-width: 100% !important;
-                margin-bottom: 8px !important;
-                font-size: 14px !important;
-                display: inline-flex !important;
+                flex-wrap: wrap;
+                align-items: baseline;
+                max-width: 100%;
+                margin-bottom: 8px;
+                font-size: 14px;
+                display: inline-flex;
                 &:hover {
                   text-decoration: underline;
                 }
                 .repo-icon {
-                  color: $color-text-tertiary !important;
-                  margin-right: 8px !important;
+                  color: $color-text-tertiary;
+                  margin-right: 8px;
                   .octicon-private {
-                    color: $color-text-tertiary !important;
+                    color: $color-text-tertiary;
                     width: 16;
                     height: 16;
                     display: inline-block;
-                    overflow: visible !important;
+                    overflow: visible;
                     vertical-align: text-bottom;
-                    flex-shrink: 0 !important;
+                    flex-shrink: 0;
                     fill: $color-icon-warning;
                   }
                   .octicon-public {
-                    color: $color-text-tertiary !important;
+                    color: $color-text-tertiary;
                     width: 16;
                     height: 16;
                     display: inline-block;
-                    overflow: visible !important;
+                    overflow: visible;
                     vertical-align: text-bottom;
-                    flex-shrink: 0 !important;
+                    flex-shrink: 0;
                     fill: currentColor;
                   }
                 }
                 .user-link {
-                  flex-shrink: 0 !important;
+                  flex-shrink: 0;
                   overflow: hidden;
                   text-overflow: ellipsis;
                   white-space: nowrap;
@@ -252,17 +255,17 @@
             cursor: pointer;
             background-color: transparent;
             appearance: none;
-            color: $color-text-secondary !important;
-            border-top: 1px solid $color-border-primary !important;
-            border: 0 !important;
-            width: 100% !important;
-            margin-top: 8px !important;
-            padding-left: 0 !important;
-            padding-right: 0 !important;
-            padding-top: 0 !important;
-            padding-bottom: 0 !important;
-            font-size: 12px !important;
-            text-align: left !important;
+            color: $color-text-secondary;
+            border-top: 1px solid $color-border-primary;
+            border: 0;
+            width: 100%;
+            margin-top: 8px;
+            padding-left: 0;
+            padding-right: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+            font-size: 12px;
+            text-align: left;
             &:hover {
               color: $color-text-link !important;
             }
@@ -271,7 +274,7 @@
       }
     }
     .activity-container {
-      border-top: 1px solid $color-border-primary !important;
+      border-top: 1px solid $color-border-primary;
       h2 {
         font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
           Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
@@ -281,8 +284,8 @@
         font-size: 14px;
       }
       .recent-activity-info {
-        margin-top: 8px !important;
-        margin-bottom: 24px !important;
+        margin-top: 8px;
+        margin-bottom: 24px;
         p {
           font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
             Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
@@ -294,8 +297,8 @@
       }
     }
     .team-container {
-      border-top: 1px solid $color-border-primary !important;
-      margin-bottom: 16px !important;
+      border-top: 1px solid $color-border-primary;
+      margin-bottom: 16px;
       h2 {
         font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
           Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
@@ -310,6 +313,107 @@
         font-size: 14px;
         color: $color-text-primary;
         margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+.popover-absolute {
+  position: absolute;
+  .popover {
+    z-index: 100;
+    bottom: 100%;
+    margin-bottom: 8px;
+    left: 20%;
+    position: absolute !important;
+    .popover-container {
+      color: $color-text-primary;
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+        sans-serif, Apple Color Emoji, Segoe UI Emoji;
+      font-size: 14px;
+      line-height: 1.5;
+      word-wrap: break-word;
+      border: 1px solid $color-border-primary;
+      border-radius: 6px;
+      box-shadow: $color-shadow-large !important;
+      margin-right: auto;
+      position: relative;
+      left: -9px;
+      margin-left: 0;
+      min-width: 320px;
+      background-color: $color-bg-overlay;
+      width: 360px;
+      &::after {
+        left: 24px;
+        margin-left: 0;
+        border-bottom-color: transparent;
+        top: auto;
+        border: 8px solid transparent;
+        border-bottom: 8px solid $color-bg-overlay;
+        content: "";
+        display: inline-block;
+        position: absolute;
+        transform: rotate(180deg);
+      }
+      .popover-body {
+        padding: 16px !important;
+        .repo-info {
+          align-items: baseline !important;
+          display: flex !important;
+          .repo-title {
+            margin: 0.67em 0;
+            margin-bottom: 0;
+            margin-top: 0;
+            .octicon {
+              width: 16;
+              height: 16;
+              display: inline-block;
+              overflow: visible !important;
+              line-height: 1.5;
+              vertical-align: text-bottom;
+              margin-right: 4px !important;
+            }
+            .octicon-private {
+              fill: $color-icon-warning;
+            }
+            .repo-link-pop {
+              font-family: -apple-system, BlinkMacSystemFont, Segoe UI,
+                Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+              font-weight: 600;
+              font-size: 14px !important;
+              background-color: transparent;
+              color: $color-text-primary;
+              text-decoration: none !important;
+            }
+          }
+          .repo-visiblity {
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
+              Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+            vertical-align: middle !important;
+            margin-bottom: 4px !important;
+            margin-left: 4px !important;
+            background-color: transparent !important;
+            border: 1px solid transparent;
+            border-radius: 2em;
+            display: inline-block;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 18px;
+            padding: 0 7px;
+            border-color: $color-label-secondary-border;
+            color: $color-label-secondary-text;
+          }
+        }
+        .repo-update-wrapper {
+          .repo-update-container {
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
+              Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+            line-height: 1.5;
+            color: $color-text-secondary;
+            font-size: 12px;
+            display: inline-block;
+          }
+        }
       }
     }
   }

@@ -2,8 +2,21 @@
 
 .main {
   .main-container {
-    background-color: $color-bg-canvas-inset !important;
-    display: flex !important;
+    background-color: $color-bg-canvas-inset;
+    display: flex;
     min-height: 100vh;
+    app-dashboard-sidebar-left {
+      max-width: 350px;
+      width: 25%;
+      // @media (max-width: 425px) {
+      //   display: none;
+      // }
+    }
+    app-dashboard-news-feed {
+      width: 75%;
+      // @media (max-width: 425px) {
+      //   width: 100%;
+      // }
+    }
   }
 }

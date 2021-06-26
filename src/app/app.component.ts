@@ -12,7 +12,7 @@ export class AppComponent {
   constructor(private router: Router) {}
 
   hasValidRoute() {
-    const blacklist = ['/login'];
+    const blacklist = ['/login', '/'];
     return blacklist.includes(this.router.url);
   }
 }

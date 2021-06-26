@@ -1,0 +1,41 @@
+*
+{
+    color:#adbac7;
+}   
+div.container
+{
+    padding-top: 20px;
+    width: 100%;
+}
+hr{
+    width : 85%;
+    margin-left : 8%;
+    margin-right : 10%;
+}
+.left{
+    margin-left : 4%;
+}
+.right{
+    margin-right : 2%;
+}
+.left li, .right li{
+    float : left;
+    list-style-type: none;
+    padding: 2.5rem 3rem 3rem 0rem;
+}
+
+.left li a, .right li a{
+    text-decoration: none;
+    color : #2f91ff;
+}
+
+.right{
+    float : right;
+}
+
+.git i{
+    margin-top : 2rem;
+    font-size : 26px;
+    margin-left : 3rem;
+    color: #8b949e;
+}

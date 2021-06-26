@@ -10,19 +10,29 @@ import { RepositoryContentComponent } from './core/pages/repository-info/reposit
 import { IssuesComponent } from './core/pages/repository-info/issues/issues.component';
 import { PullRequestsComponent } from './core/pages/repository-info/pull-requests/pull-requests.component';
 import { CodeViewComponent } from './core/pages/repository-info/code-view/code-view.component';
+import { AuthGuard } from './core/pages/login/auth.guard';
+import { AccessGuard } from './core/pages/access.guard';
 
 const routes: Routes = [
   {
+    path: '',
+    component: LoginPage,
+    canActivate: [AccessGuard],
+  },
+  {
     path: 'login',
     component: LoginPage,
+    canActivate: [AccessGuard],
   },
   {
     path: 'dashboard',
     component: DashboardPage,
+    canActivate: [AuthGuard],
   },
   {
     path: 'repositories',
     component: RepositoriesPage,
+    canActivate: [AuthGuard],
   },
   {
     path: 'repository-info/:author/:repo',
@@ -49,15 +59,18 @@ const routes: Routes = [
   {
     path: 'settings',
     component: SettingsPage,
+    canActivate: [AuthGuard],
   },
   {
     path: 'profile',
     component: ProfilePage,
+    canActivate: [AuthGuard],
   },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
+  providers: [AuthGuard],
 })
 export class AppRoutingModule {}
