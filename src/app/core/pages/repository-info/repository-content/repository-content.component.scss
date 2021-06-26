@@ -1,88 +1,92 @@
-.repo-content-root{
+.repo-content-root {
   margin: 32px;
 }
-.left-pane{
-  width: 68vw;
-  margin: 0px 8px 0px;
-  padding: 0px 8px 0px 32px;
-  justify-content: flex-start;
+
+.root-flex {
+ justify-content: flex-start;
+}
+.code-container {
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+.left-pane {
+  margin-left: auto;
 }
 
 .right-pane{
-  margin: 0px 51px 0px 12px;
+  margin-left: 16px;
+  margin-right: auto;
+  padding: 8px;
 }
-.code-container{
-  margin: 16px 0px 18px 0px;
-  width: 65vw;
-}
-.readme-container{
-  width: 67.5vw;
+
+@media only screen and (max-width:1009px){
+  .repo-content-root{
+    margin: 16px;
+  }  
 }
 
 // utility
 
-.flex{
+.flex {
   display: flex;
 }
 
-.flex-row{
+.flex-row {
   flex-direction: row;
 }
 
-.flex-col{
+.flex-col {
   flex-direction: column;
 }
 
-.items-center{
+.items-center {
   align-items: center;
 }
 
-.justify-center{
+.justify-center {
   justify-content: center;
 }
 
-.justify-between{
+.justify-between {
   justify-content: space-between;
 }
 
-.items-stretch{
+.items-stretch {
   align-items: stretch;
 }
 
-.f1{
+.f1 {
   font-size: 1rem;
 }
 
-.text-xl{
+.text-xl {
   font-size: x-large;
 }
 
-.text-blue{
-  color:blue;
+.text-blue {
+  color: blue;
 }
 
-.text-gray{
-  color:gray;
+.text-gray {
+  color: gray;
 }
 
-.text-black{
-  color:black !important;
+.text-black {
+  color: black !important;
 }
 
-
-.font-bold{
+.font-bold {
   font-weight: bold;
 }
 
-.font-semibold{
+.font-semibold {
   font-weight: 550;
 }
 
-.font-normal{
+.font-normal {
   font-weight: normal;
 }
 
-.cursor-pointer{
+.cursor-pointer {
   cursor: pointer;
 }
-
