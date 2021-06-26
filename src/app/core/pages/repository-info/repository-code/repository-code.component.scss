@@ -20,7 +20,7 @@ $black-shade: #161b22;
 
 .file-row {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
   border-color: $file-border-color;
   border-style: solid none none;
@@ -34,6 +34,10 @@ $black-shade: #161b22;
   background-color: $black-shade;
 }
 
+.name-wrapper {
+  flex-basis: 27%;
+  margin-left: 4px;
+}
 .entity-name {
   color: $text-color-primary;
   display: inline;
@@ -47,37 +51,48 @@ $black-shade: #161b22;
   text-decoration: underline;
   cursor: pointer;
 }
-.name-wrapper {
-  flex: 3;
-  margin-right: 64px;
-  margin-left: 4px;
-}
+
+// .commit-text-wrapper{  
+//   flex: 1;
+//   flex-basis: 55%;
+//   flex-shrink: 1;
+//   margin:0px auto;
+//   padding: 0px 8px;
+//   min-width: 0;
+// }
 
 .commit-text {
-  color: $text-color-secondary;
   display: inline;
+  color: $text-color-secondary;  
   font-family: $common-font;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 21px;  
+  flex: 1 1 55%;
+  margin:0px auto;
+  padding: 0px 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .commit-text:hover {
   color: $text-hover-color;
   text-decoration: underline;
   cursor: pointer;
 }
-.commit-text-wrapper {
-  flex: 6;
+
+
+.commit-time-wrapper {
+  flex-shrink: 0;
 }
 
 .commit-time {
+  float:right;
   font-family: $common-font;
   color: $text-color-secondary;
   font-size: 14px;
   line-height: 21px;
 }
-.time-wrapper {
-  flex: 1;
-}
+
 
 .icon {
   display: inline;
@@ -267,13 +282,13 @@ $black-shade: #161b22;
   color: $text-color-primary;
   margin-right: 3px;
 }
-.line-text{
+.line-text {
   margin: 0px 4px;
 }
-.sloc{
-  margin:0px 8px 0px 4px;
+.sloc {
+  margin: 0px 8px 0px 4px;
 }
-.mem{
+.mem {
   margin-left: 8px;
 }
 .btn {
@@ -288,7 +303,7 @@ $black-shade: #161b22;
   line-height: 20px;
   padding: 3px 12px;
 }
-.btn:hover{
+.btn:hover {
   cursor: pointer;
   background-color: $text-color-secondary;
   border: $text-color-secondary;
@@ -305,22 +320,24 @@ $black-shade: #161b22;
   border-width: 1px;
   margin-right: 5px;
 }
-.icon{
+.tool-icon {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center;  
+  margin: 0px 8px;
   fill: $text-color-primary;
   color: $text-color-primary;
 }
-.icon:hover{
+
+.tool-icon:hover {
   fill: $text-hover-color;
   cursor: pointer;
 }
-.del:hover{
+.del:hover {
   fill: $cross-color;
   cursor: pointer;
 }
-.code-pane{
+.code-pane {
   display: table-cell;
   font-size: 12 px;
   color: $text-color-primary;
