@@ -1,0 +1,243 @@
+.profileblock
+{
+    display: inline;
+    font-size: 14px;
+    line-height: 21px;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+}
+.imgdiv
+{
+    align-items: center;
+    z-index: 2;
+}
+.profileimg
+{
+    width: 100%;
+    height:70%;
+    border-radius: 50%;
+    display: block;
+}
+.namediv
+{
+    text-align: left;
+    padding-bottom: 13px;
+    z-index: -1;
+}
+
+.previewprof
+{
+    display: block;
+    z-index: -1;
+}
+.resume
+{
+
+    font-size:16px;
+}
+
+.descdiv
+{
+    text-align: left;
+    font-size:    14px;
+    line-height:    21px;
+}
+.descdivspan
+{
+    margin-bottom: 8px;
+}
+.profname
+{
+    font-size:26px;
+    font-weight:600;
+}
+.username
+{
+    font-size:20px;
+    font-weight:300;
+    line-height: 24px;
+}
+.profbtn{
+    
+    display:flex;
+    font-size:14px;
+    line-height:21px;
+    padding:20px;
+    padding-left:0;
+    padding-right: 0;
+}
+.profeditbtn
+{
+    
+    align-items:flex-start;
+    border-color:#444c56;
+    color:#c4d1d9;
+    border-radius:6px;
+    width:100%;
+    border-style:solid;
+    border-width:1px;
+    box-shadow:#1b1f23 0px 1px 0px 0px;
+    background-color: #21262d;
+    font-size:14px;
+    font-weight:500;
+    line-height:20px;
+    padding:5px 16px;
+    text-align:center;
+}
+.follows
+{
+    display: flex;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.profachieve
+{
+    border-color:#30363d;
+    border-style:solid none none;
+    border-width:1px 0px 0px;
+    font-weight: 600;
+    line-height: 24px;
+    padding:20px;
+    padding-left: 0;
+    padding-right: 0;
+    z-index: -1;
+}
+
+
+.profachimg
+{
+    
+    display:inline;
+    font-size:14px;
+    line-height:21px;
+    width: 33%;
+    color:#0366d6;
+    height: 33%;
+    padding:5px;
+}
+
+.pro{
+    align-items:flex-start;
+    padding:5%;
+    width:100%;
+    border-color:#1b1f23;
+    border-radius:6px;
+    border-style:solid;
+    border-width:1px;
+    box-shadow:#1b1f23 0px 1px 0px 0px;    
+    font-size:14px;
+    font-weight:500;
+    line-height:20px;
+    padding:5px 16px;
+    text-align:center;
+}
+
+.probadge
+{
+    border-color:#8256d0;
+    border-radius:24px;
+    border-style:solid;
+    border-width:1px;
+    color:#986ee2;
+    display:inline-block;
+    font-size:12px;
+    font-weight:500;
+    line-height:18px;
+    padding:0px 7px;
+    text-align:left;
+    text-transform:uppercase;
+    margin-left: 5px;
+}
+
+
+.editprof
+{
+
+    display: none;
+    width: 100%;
+    margin-bottom: 50px;
+    z-index: -1;
+}
+
+
+textarea{
+    resize: vertical;
+    height: 100px;
+    color:#c4d1d9;
+    background-color: #161b22;
+    border-color:    #373e47;
+    width: 100%;
+}
+textarea:focus
+{
+    box-shadow: #0366d6;
+}
+.editinputdiv
+{
+    align-items:center;
+    display:flex;
+    line-height:21px;
+    margin:15px 0px 0px;
+    width: 100%;
+}   
+
+
+.editinput
+{
+    width: 100%;
+    align-items: center;  
+    color:#c4d1d9;
+    background-color: #161b22;
+    border-color:    #373e47;
+    border-radius:    6px;
+    border-style:    solid;
+    border-width:    1px;
+    box-shadow:    #000000 0px 0px 0px 0px;
+    line-height:    20px;
+    margin:    0px 0px 0px 8px;
+    padding:    3px 12px;
+}
+
+.editbadgediv
+{
+    font-size:14px;
+    line-height:21px;
+    margin:0px 0px 15px ;
+    margin-top: 10px;
+}
+
+.editbtns
+{
+    align-items:flex-start;
+    background-color:#347d39;
+    border-color:#46954a;
+    border-radius:6px;
+    border-style:solid;
+    border-width:1px;
+    box-shadow:#000000 0px 0px 0px 0px;
+    color:#ffffff;
+    display:inline-block;
+    font-size:12px;
+    font-weight:500;
+    line-height:20px;
+    padding:3px 12px;
+    text-align:center;
+    margin-right: 15px;
+}
+.editbtnc
+{
+    align-items:flex-start;
+    background-color:#373e47;
+    border-color:    #444c56;
+    border-radius:6px;
+    border-style:solid;
+    border-width:1px;
+    box-shadow:#000000 0px 0px 0px 0px;
+    color:#ffffff;
+    display:inline-block;
+    font-size:12px;
+    font-weight:500;
+    line-height:20px;
+    padding:3px 12px;
+    text-align:center;
+}
