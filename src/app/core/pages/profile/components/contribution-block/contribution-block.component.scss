@@ -2,18 +2,20 @@
 .contribution
 {
     float:right;
+    //margin:0px 0px 0px 50px;
     padding-right: 100px;
 }
 .contribution-img{
-    width:95%;
-    margin-left : 2rem;
+    width:96%;
+    
+    //margin-left : 5rem;
 }
 .contribution-act
 {
-    width:92%;
+    width:93%;
     display: flex;
     flex-direction: row;
-    margin-left : 3rem;
+    margin-left : 1rem;
 }
 .contribtitle
 {
@@ -83,6 +85,7 @@
     font-size:14px;
     line-height:21px;
     padding:0px 0px 0px 32px;
+    margin-left: 0.4rem;
 }
 .yearbtnblue
 {
@@ -92,7 +95,7 @@
     font-family:-apple-system;
     font-size:12px;
     line-height:18px;
-    margin:0px 0px 8px;
+    margin:0px 2px 8px;
     padding:8px 16px;
     text-align:left;
 }
@@ -146,4 +149,70 @@
     line-height:20px;
     padding:8px 6px;
     text-align:center;
+}
+
+
+
+
+@media only screen and (max-width: 1024px) {
+    .contribution
+    {
+        float:right;
+        // //margin:0px 0px 0px 50px;
+        // padding-right: 100px;
+    }
+    .contribution-img{
+        width:104%;
+
+        //margin-left : 5rem;
+    }
+    .contribution-act
+    {
+        width:100%;   
+    }
+}
+
+
+@media only screen and (max-width:768px) {
+    .contribution
+    {
+        float:right;
+        // //margin:0px 0px 0px 50px;
+        // padding-right: 100px;
+    }
+    .contribution-img{
+        width:112%;
+
+        //margin-left : 5rem;
+    }
+    .contribution-act
+    {
+        width:107%;   
+    }
+
+    .contribyears{
+        width:25%;
+        display: flex;
+        flex-direction: column;
+        color:#adbac7;
+        font-size:14px;
+        line-height:21px;
+        padding:0px 0px 0px 32px;
+        margin-left: 0.4rem;
+    }
+}
+
+@media only screen and (max-width:450px)
+{
+
+    .contribution
+    {
+        width: 100%;
+        margin-left: 50px;
+    }
+    .contribyears
+    {
+        display: none;
+    }
+
 }

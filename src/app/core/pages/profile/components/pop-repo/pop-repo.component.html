@@ -1,30 +1,18 @@
 <div class="container">
-    <section style="float : left; color : #c9d1d9; font-size : 16px; padding : 1.5rem 0rem 0.3rem 4rem;">Popular repositories</section>
-    <section style="float : right; margin-right: 13%; color: #8b949e; font-size : 13px; padding : 1.5rem 0rem 0.3rem 0.3rem;">Customize your pins</section>
+    <div style='width: 83%;'>
+        <section style="float : left; color : #c9d1d9; font-size : 16px; padding : 1.8rem 0rem 0.5rem 0.4rem;">Popular repositories</section>
+        <section style="float : right; padding : 1.8rem 0rem 0.5rem 0rem; color: #8b949e; font-size : 13px;">Customize your pins</section>
+    </div>
 <div class="cards">
-    <!-- <div class="repoCards">
-        <a href = "http://localhost:4200/repository-details/authNam/title/">Sample</a><br><br>
-        <span>Getting started with repos</span>
-    </div>
-    <div class="repoCards">
-        <a href = "#">Java-training</a><br><br>
-        <span>loading data from api to webpages using ajax</span>
-    </div>
-    <div class="repoCards">
-        <a href = "#">Java-training</a><br><br>
-        <span>loading data from api to webpages using ajax</span>
-    </div>
-    <div class="repoCards">
-        <a href = "#">Contacts-Book</a><br><br>
-        <span>Getting started with repos</span>
-    </div>
-    <div class="repoCards">
-        <a href = "#">Movie-Ticket-Booking</a><br><br>
-        <span>Getting started with repos</span>
-    </div> -->
     <div class="repoCards" *ngFor = "let repo of repos">
         <a href="#">{{ repo.title }}</a><br>
         <span>{{ repo.readme }}</span>
+        <div class="lang">
+            <div id="language-color"></div>
+            <div class="languages">
+              {{repo.language}}
+            </div>
+        </div>
     </div>
 </div>
 </div>
