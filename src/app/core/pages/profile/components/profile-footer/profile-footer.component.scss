@@ -1,40 +1,81 @@
-*
-{
-    color:#adbac7;
-}   
-div.container
-{
-    padding-top: 20px;
+// *
+// {
+//     color:#adbac7;
+// }   
+// div.container
+// {
+//     padding-top: 2%;
+// }
+
+// .left{
+//     margin-left : 8%;
+//     width: 42%;
+// }
+// .right{
+//     width: 42%;
+// }
+// .left li, .right li{
+//     float : left;
+//     list-style-type: none;
+//     //padding: 2.5rem 3rem 3rem 0rem;
+//    // padding: 2% 0.5% 2% 0;
+//    padding : 6% 8% 6% 0;
+// }
+
+// .left li a, .right li a{
+//     text-decoration: none;
+//     color : #2f91ff;
+// }
+
+// .right{
+//     float : right;
+// }
+
+// // .git i{
+// //     margin-top : 2%; //2rem
+// //     font-size : 2rem; //26px
+// //     margin-left : 3.5%;
+// //     color: #8b949e;
+// // }
+
+// .git i{
+//     margin-top: 2%;
+//     font-size: 2rem;
+//     margin-left: 1.5%;
+//     margin-right: 2%;
+// }
+
+.container{
+    width: 83%;
 }
-hr{
-    width : 85%;
-    margin-left : 8%;
-    margin-right : 10%;
+
+.list{
+    display: flex; 
+    justify-content: space-between;
+    width: 83%;
+    margin-left: 8%;
 }
-.left{
-    margin-left : 8%;
-}
-.right{
-    margin-right : 4%;
-}
-.left li, .right li{
-    float : left;
+
+.list li{
     list-style-type: none;
-    padding: 2.5rem 3rem 3rem 0rem;
+    padding-top: 2%;
+    padding-bottom: 3%;
 }
 
-.left li a, .right li a{
+.list li a{
     text-decoration: none;
-    color : #2f91ff;
+    color: #2f91ff;
 }
 
-.right{
-    float : right;
+.list>a>i{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: #30363d;
+    margin-right: 2rem;
+    margin-left: 2rem;
 }
 
-.git i{
-    margin-top : 2rem;
-    font-size : 26px;
-    margin-left : 3rem;
+.list>a>i:hover{
     color: #8b949e;
+    cursor: pointer;
 }
