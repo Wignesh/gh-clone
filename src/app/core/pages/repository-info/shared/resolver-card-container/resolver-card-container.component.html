@@ -35,9 +35,24 @@
     </div>
     <div class="cards">
 
-        <div *ngFor="let resolverDetails of rList">
+        <div *ngFor="let resolverDetails of rList | custompaginator: currentPage">
             <app-resolver-details-card [rtype]="rtype" [resolverDetails]="resolverDetails" [rresult]="rresult">
             </app-resolver-details-card>
         </div>
     </div>
+</div>
+
+<div class="paginator">
+    <button class="paginator-btn" [disabled]="currentPage==1" [routerLink]="[]"
+        [queryParams]="{ query: rresult, pgno : (currentPage-1)}">
+        <span class="spl-char">&#60;</span>
+        Previous</button>
+    <div class="page-box">
+        <div class="pg-no" *ngFor="let in of  counter(), index as i" [class.active-pg]="(i+1)== currentPage">{{i+1}}
+        </div>
+
+    </div>
+    <button class="paginator-btn" [disabled]="currentPage==counter().length" [routerLink]="[]"
+        [queryParams]="{ query: rresult,pgno : currentPage+1}">Next
+        <span class="spl-char">&#62;</span></button>
 </div>

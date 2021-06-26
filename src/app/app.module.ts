@@ -10,7 +10,7 @@ import { RepositoryInfoPage } from './core/pages/repository-info/repository-info
 import { SettingsPage } from './core/pages/settings/settings.page';
 import { IssuesComponent } from './core/pages/repository-info/issues/issues.component';
 import { ProfilePage } from './core/pages/profile/profile.page';
-import { RepoListItemComponent } from './core/pages/shared/repo-list-item/repo-list-item.component';  
+import { RepoListItemComponent } from './core/pages/shared/repo-list-item/repo-list-item.component';
 import { RouterModule } from '@angular/router';
 import { NavProfileComponent } from './core/pages/profile/components/nav-profile/nav-profile.component';
 import { PopRepoComponent } from './core/pages/profile/components/pop-repo/pop-repo.component';
@@ -30,8 +30,7 @@ import { ResolverDetailsCardComponent } from './core/pages/repository-info/share
 import { RepositoryPageReadmeComponent } from './core/pages/repository-info/repository-page-readme/repository-page-readme.component';
 import { LanguagesUsedIndicatorComponent } from './core/pages/repository-info/languages-used-indicator/languages-used-indicator.component';
 import { RepoFileNavigationComponent } from './core/pages/repository-info/repo-file-navigation/repo-file-navigation.component';
-import { RepoBranchesDropdownComponent } from './core/pages/repository-info/repo-file-navigation/repo-branches-dropdown/repo-branches-dropdown.component'
-
+import { RepoBranchesDropdownComponent } from './core/pages/repository-info/repo-file-navigation/repo-branches-dropdown/repo-branches-dropdown.component';
 
 import { NavComponent } from './core/components/shared/nav/nav.component';
 import { AuthFooterComponent } from './core/components/shared/auth-footer/auth-footer.component';
@@ -54,6 +53,7 @@ import { ResolverDetailsPopupComponent } from './core/pages/repository-info/shar
 import { HttpClientModule } from '@angular/common/http';
 import { WorkInProgressComponent } from './core/pages/shared/work-in-progress/work-in-progress.component';
 import { IssuesFilterDropdownComponent } from './core/pages/repository-info/issues/issues-filter-dropdown/issues-filter-dropdown.component';
+import { CustomPaginatorPipe } from './core/pipes/customPaginator.pipe';
 
 @NgModule({
   declarations: [
@@ -105,10 +105,18 @@ import { IssuesFilterDropdownComponent } from './core/pages/repository-info/issu
     RepoCodeDownloadDropdownComponent,
     WorkInProgressComponent,
     IssuesFilterDropdownComponent,
+
+    CustomPaginatorPipe,
   ],
-  imports: [BrowserModule, AppRoutingModule, RouterModule, FormsModule, HttpClientModule],
- 
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    RouterModule,
+    FormsModule,
+    HttpClientModule,
+  ],
+
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

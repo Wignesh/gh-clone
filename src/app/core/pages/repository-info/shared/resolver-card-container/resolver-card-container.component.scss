@@ -14,6 +14,7 @@ $common-font: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
   border-radius: 6px;
   border: 1px solid $color-border-primary;
   margin: 16px 0px 0px;
+  border-bottom: none;
   .resolver-toolbar {
     display: flex;
     justify-content: space-between;
@@ -68,6 +69,64 @@ $common-font: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
     }
   }
   .cards {
+  }
+}
+
+.paginator {
+  margin: 1.5% 0;
+  display: flex;
+  justify-content: center;
+
+  .paginator-btn {
+    border: 1px solid transparent;
+    text-align: center;
+    color: $color-text-link;
+    background-color: transparent;
+    line-height: 21px;
+    vertical-align: middle;
+    padding: 5px 10px;
+
+    &:hover {
+      cursor: pointer;
+      border-radius: 6px;
+      border: 1px solid $color-border-primary;
+    }
+
+    &:disabled {
+      cursor: default;
+      color: $color-text-disabled;
+      border: none;
+      .spl-char {
+        color: $color-text-disabled;
+      }
+    }
+  }
+  .page-box {
+    margin: 0px 5px;
+    display: flex;
+    .pg-no {
+      color: $color-state-selected-primary-text;
+      vertical-align: middle;
+      text-align: center;
+      border: 1px solid transparent;
+      border-radius: 6px;
+      line-height: 20px;
+      min-width: 32px;
+      padding: 5px 10px;
+      margin: 0px 2px;
+      &:hover {
+        cursor: pointer;
+        border-color: $color-border-primary;
+      }
+    }
+    .active-pg {
+      background-color: $color-state-selected-primary-bg;
+    }
+  }
+  .spl-char {
+    color: $color-text-link;
+    line-height: 21px;
+    padding: 0px 6px 0px 0px;
   }
 }
 
