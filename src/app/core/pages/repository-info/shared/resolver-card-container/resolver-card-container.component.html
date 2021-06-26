@@ -1,3 +1,16 @@
+<div class="responsive-resolver-count">
+    <div class="open-count" [class.active-btn]="isActive('open')" [routerLink]="[]" [queryParams]="{ query: 'open'}">
+        <span class="iconify icon-1" attr.data-icon={{this.icons[this.rtype]?.open?.icon}} data-inline="false"></span>
+        {{openCount}} Open
+    </div>
+    <div class="close-count icon-1" [class.active-btn]="isActive('closed')" [routerLink]="[]"
+        [queryParams]="{ query: 'closed'}">
+        <span class="iconify" attr.data-icon={{this.icons[this.rtype].closed?.icon}} data-inline="false"></span>
+        {{closedCount}}
+        Closed
+    </div>
+</div>
+
 <div class="resolver-container">
     <div class="resolver-toolbar">
         <div class="resolver-count">
@@ -48,7 +61,8 @@
         <span class="spl-char">&#60;</span>
         Previous</button>
     <div class="page-box">
-        <div class="pg-no" *ngFor="let in of  counter(), index as i" [class.active-pg]="(i+1)== currentPage">{{i+1}}
+        <div class="pg-no" *ngFor="let in of  counter(), index as i" [class.active-pg]="(i+1)== currentPage"
+            [routerLink]="[]" [queryParams]="{ query: rresult, pgno : (i+1)}">{{i+1}}
         </div>
 
     </div>
