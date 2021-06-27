@@ -13,3 +13,13 @@ img {
 .profblock{
   width: 24%;
 }
+
+.popAndContri{
+  width: 72%;
+}
+
+@media screen and (max-width: 458px){
+  .popAndContri{
+    width: 91%;
+  }
+}

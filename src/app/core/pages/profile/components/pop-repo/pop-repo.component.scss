@@ -25,6 +25,10 @@
     padding: 1rem;
 }
 
+.custOuter{
+    width: 83%;
+}
+
 a{
     text-decoration : none;
     color : #2f91ff;
@@ -64,4 +68,21 @@ span{
     display: flex;
     align-items: center;
     margin-top: 1rem;
+}
+
+@media screen and (max-width: 458px){
+    .cards{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }    
+    .repoCards{
+        width: 100%;
+    }
+    .custOuter{
+        width:100%;
+    }
+    .cust{
+        margin-right: 0%;
+    }
 }

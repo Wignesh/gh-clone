@@ -102,3 +102,27 @@ li:hover{
         margin-left: 43%;
     } 
 }
+
+@media screen and (max-width: 1441px) {
+    .profile-nav ul{
+        margin-left: 34%;
+    } 
+}
+
+@media screen and (max-width: 768px){
+    .profile-nav ul{
+        margin-left: 38%;
+        //margin-left for profile block - 6rem
+    }
+}
+
+@media screen and (max-width: 458px){
+    .profile-nav ul{
+        width: 100%;
+        margin-left: 0%;
+    }
+    .profile-nav ul li{
+        padding-right: 1.8rem;
+    }
+    //.profile margin-left : 0rem
+}
