@@ -1,5 +1,5 @@
 .repo-content-root {
-  margin: 32px;
+  padding: 32px;
 }
 
 .code-about-container{
@@ -9,7 +9,7 @@
 .left-pane{
   width: 68vw;
   margin: 0px 8px 0px;
-  padding: 0px 8px 0px 32px;
+  padding: 0px 8px 0px 0px;
   justify-content: flex-start;
 }
 
@@ -32,7 +32,7 @@
 
 @media only screen and (max-width:1009px){
   .repo-content-root{
-    margin: 16px;
+    padding: 32px 8px;
   }  
   .left-pane{
     width: 66vw;
