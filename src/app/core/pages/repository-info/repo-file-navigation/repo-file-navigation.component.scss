@@ -120,9 +120,16 @@
   }
 }
 
+.mobile-display{
+  display: none;
+}
 
 @media screen and (max-width:768px) {
     .right-part{display: none;}
+    
+    .mobile-display{
+      display: block;
+    }
 }
 
 // utility
