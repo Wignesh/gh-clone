@@ -1,7 +1,8 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, ViewChildren } from '@angular/core';
 import * as resolverIcons from '../../../../constants/resolvericons.json';
 import { ActivatedRoute } from '@angular/router';
 import { RepoIssuesPrDataService } from 'src/app/core/services/RepoIssuesPRdata/repo-issues-pr-data.service';
+import { filter } from 'rxjs/operators';
 
 @Component({
   selector: 'app-resolver-card-container',
@@ -19,7 +20,7 @@ export class ResolverCardContainerComponent implements OnInit {
   rList: any[] = [];
 
   //local copy of data as list from service
-  rdata: { [index: string]: any };
+  //rdata: { [index: string]: any };
 
   //Query result eg : open, close
   rresult = 'open';
@@ -30,11 +31,16 @@ export class ResolverCardContainerComponent implements OnInit {
   icons: { [index: string]: any } = resolverIcons;
   validQuery: boolean = true;
 
+  //To store the lenght of data from filter pipe
+  filterMetaData = { count: 0 };
+
+  queryByAuthor = '';
+
   constructor(
     private route: ActivatedRoute,
     private resolverDataService: RepoIssuesPrDataService
   ) {
-    this.rdata = resolverDataService.getResolverData();
+    // this.rdata = resolverDataService.getResolverData();
   }
 
   ngOnInit(): void {
@@ -42,9 +48,16 @@ export class ResolverCardContainerComponent implements OnInit {
       this.rresult = params['query'] ? params['query'] : 'open';
 
       //valid query?
-      if (this.rresult == 'open' || this.rresult == 'closed') {
-        const dummy = this.rdata[this.rtype];
-        this.rList = dummy[this.rresult];
+      if (
+        this.rresult == 'open' ||
+        this.rresult == 'closed' ||
+        this.rresult == 'onc'
+      ) {
+        //getDataFromService
+        this.rList = this.resolverDataService.getOpenOrCloseData(
+          this.rtype,
+          this.rresult
+        );
         this.validQuery = true;
       } else this.validQuery = false;
 
@@ -54,13 +67,23 @@ export class ResolverCardContainerComponent implements OnInit {
       if (pg)
         this.currentPage =
           pg > 0 &&
-          pg <= Math.floor((this.rList.length - 1) / this.itemsPerPage) + 1
+          pg <=
+            Math.floor((this.filterMetaData.count - 1) / this.itemsPerPage) + 1
             ? pg
             : 1;
+
+      this.queryByAuthor = params['author'] ? params['author'] : '';
     });
 
-    this.openCount = (this.openCount = this.rdata[this.rtype])?.open?.length;
-    this.closedCount = this.rdata[this.rtype]?.closed?.length;
+    this.openCount = this.resolverDataService.getOpenOrCloseData(
+      this.rtype,
+      'open'
+    ).length;
+
+    this.closedCount = this.resolverDataService.getOpenOrCloseData(
+      this.rtype,
+      'closed'
+    ).length;
   }
 
   // open/close active btn
@@ -71,7 +94,7 @@ export class ResolverCardContainerComponent implements OnInit {
   // Helper function - for pagination
   counter() {
     return Array(
-      Math.floor((this.rList.length - 1) / this.itemsPerPage) + 1
+      Math.floor((this.filterMetaData.count - 1) / this.itemsPerPage) + 1
     ).fill(4);
   }
 }

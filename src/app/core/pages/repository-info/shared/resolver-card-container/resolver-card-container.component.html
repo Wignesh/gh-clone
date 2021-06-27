@@ -58,7 +58,8 @@
         </div>
     </ng-template>
     <div class="cards">
-        <div *ngFor="let resolverDetails of rList | custompaginator: currentPage : itemsPerPage">
+        <div
+            *ngFor="let resolverDetails of rList | filter : queryByAuthor :'postedBy': filterMetaData |custompaginator: currentPage : itemsPerPage">
             <app-resolver-details-card [rtype]="rtype" [resolverDetails]="resolverDetails" [rresult]="rresult">
             </app-resolver-details-card>
         </div>
@@ -76,7 +77,7 @@
         </div>
 
     </div>
-    <button class="paginator-btn" [disabled]="currentPage==counter().length" [routerLink]="[]"
+    <button class="paginator-btn" [disabled]="currentPage==counter().length || counter().length==0" [routerLink]="[]"
         [queryParams]="{ query: rresult,pgno : currentPage+1}">Next
         <span class="spl-char">&#62;</span></button>
 </div>

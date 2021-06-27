@@ -45,9 +45,8 @@
         </div>
 
         <div class="metadata-comp">
-            <div class="comment-data">
-                <span *ngIf="resolverDetails?.comments?.length!=0" class="iconify" data-icon="octicon:comment-16"
-                    data-inline="false"></span>
+            <div class="comment-data" *ngIf="resolverDetails?.comments?.length!=0">
+                <span class="iconify" data-icon="octicon:comment-16" data-inline="false"></span>
                 {{resolverDetails?.comments?.length}}
             </div>
         </div>
