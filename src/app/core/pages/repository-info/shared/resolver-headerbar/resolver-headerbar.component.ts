@@ -6,6 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./resolver-headerbar.component.scss'],
 })
 export class ResolverHeaderbarComponent implements OnInit {
+  //eg : issues, Pull Request
   @Input() rtype: string = '';
   constructor() {}
 

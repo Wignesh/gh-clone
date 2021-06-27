@@ -158,6 +158,35 @@ $common-font: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
   align-items: flex-start;
   margin: 0rem 0.3rem 0rem 0rem;
 }
+.invalid-query {
+  height: 18rem;
+  padding: 4rem;
+  text-align: center;
+  vertical-align: middle;
+  border-bottom: $border-width $border-style $color-border-primary;
+  color: $color-icon-secondary;
+  .invalid-query-icon {
+    .iconify {
+      font-size: 1.4rem;
+      margin-bottom: 8px;
+    }
+  }
+  .invalid-query-header {
+    font-size: 24px;
+    margin: 1.2rem 0;
+    font-weight: 600;
+  }
+  .invalid-query-message {
+    font-size: 16px;
+    color: $color-text-secondary;
+    a {
+      color: $color-text-link;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
 
 @media only screen and (max-width: 1000px) {
   .responsive-resolver-count {
