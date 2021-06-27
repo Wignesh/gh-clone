@@ -10,21 +10,39 @@
   margin-bottom: 32px;
 }
 .left-pane {
-  margin-left: auto;
+  margin-left: 2vw;
+  width:70vw; 
 }
 
 .right-pane{
   margin-left: 16px;
-  margin-right: auto;
   padding: 8px;
+  flex: 0 2 20vw;
 }
 
 @media only screen and (max-width:1009px){
   .repo-content-root{
     margin: 16px;
   }  
+  .left-pane{
+    width: 66vw;
+  }  
 }
 
+@media only screen and (max-width:768px){
+  .root-flex{
+    flex-direction: column;
+    align-items: center;
+  }
+  .left-pane{
+    width: 100vw;
+  }
+  .right-pane{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+}
 // utility
 
 .flex {
