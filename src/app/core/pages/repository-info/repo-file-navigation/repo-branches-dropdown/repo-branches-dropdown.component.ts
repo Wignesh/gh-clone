@@ -26,6 +26,14 @@ export class RepoBranchesDropdownComponent implements OnInit,OnChanges {
     const tooltip = document.querySelector('#branch-dropdown-popper') as HTMLElement;
     createPopper(branchDropdown, tooltip, {
       placement: 'bottom-start',
+      modifiers: [
+        {
+          name: 'offset',
+          options: {
+            offset: [0,10],
+          },
+        },
+      ]
     });
 
     this.dismissOnClickingOutsideBoundary()
@@ -34,8 +42,6 @@ export class RepoBranchesDropdownComponent implements OnInit,OnChanges {
 
   checkIfButtonIsClicked(mouseX:number,mouseY:number){
     const {left,right,top,bottom} = this.buttonPosition as DOMRect
-
-    // console.log(left,right,top,bottom,mouseX,mouseY)
 
     if((left<=mouseX && mouseX<=right)&&(top<=mouseY && mouseY<=bottom)){
       return true

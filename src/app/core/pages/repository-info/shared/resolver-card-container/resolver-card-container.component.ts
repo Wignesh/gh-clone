@@ -16,6 +16,7 @@ export class ResolverCardContainerComponent implements OnInit {
   rList: any[] = [];
   rdata: { [index: string]: any } = resolverData;
   rresult = 'open';
+  currentPage: number = 1;
 
   icons: { [index: string]: any } = resolverIcons;
   constructor(private route: ActivatedRoute) {}
@@ -25,6 +26,9 @@ export class ResolverCardContainerComponent implements OnInit {
       this.rresult = params['query'] ? params['query'] : 'open';
       const dummy = this.rdata[this.rtype];
       this.rList = dummy[this.rresult];
+
+      const pg = params['pgno'] ? parseInt(params['pgno']) : 1;
+      if (pg) this.currentPage = pg;
     });
 
     this.openCount = (this.openCount = this.rdata[this.rtype])?.open?.length;
@@ -33,5 +37,9 @@ export class ResolverCardContainerComponent implements OnInit {
 
   isActive(btype: string) {
     return this.rresult == btype;
+  }
+
+  counter() {
+    return Array(Math.floor((this.rList.length - 1) / 5) + 1).fill(4);
   }
 }

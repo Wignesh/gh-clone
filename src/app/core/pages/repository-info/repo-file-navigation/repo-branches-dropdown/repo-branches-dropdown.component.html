@@ -15,12 +15,13 @@
 
 
 <div class="branch-dropdown" id="branch-dropdown-popper" [ngStyle]="{'display':dropdownDisplayed?'block':'none'}">
-  <div class="flex justify-between dropdown-heading">
-    <span class="title">Switch branches/tags</span>
-    <span (click)="removeDropDownFromDOM()" style="cursor: pointer;" >x</span>
+  <div class="header-search-container">
+    <div class="flex justify-between dropdown-heading">
+      <span class="title">Switch branches/tags</span>
+      <span (click)="removeDropDownFromDOM()" style="cursor: pointer;" >x</span>
+    </div>
+    <input type="text" placeholder="Find or create a branch..." />  
   </div>
-  <input type="text" placeholder="Find or create a branch..." />
-
   <div class="tabs branch-tag-switch" >
 
     <input type="radio" name="tabs" id="tabone" checked="checked">
