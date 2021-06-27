@@ -2,6 +2,17 @@
   margin: 32px;
 }
 
+.code-about-container{
+  display: flex;
+}
+
+.left-pane{
+  width: 68vw;
+  margin: 0px 8px 0px;
+  padding: 0px 8px 0px 32px;
+  justify-content: flex-start;
+}
+
 .root-flex {
  justify-content: flex-start;
 }
@@ -9,11 +20,10 @@
   margin-top: 16px;
   margin-bottom: 32px;
 }
-.left-pane {
-  margin-left: 2vw;
-  width:70vw; 
-}
-
+// .left-pane {
+//   margin-left: 2vw;
+//   width:70vw; 
+// }
 .right-pane{
   margin-left: 16px;
   padding: 8px;
@@ -30,19 +40,53 @@
 }
 
 @media only screen and (max-width:768px){
-  .root-flex{
-    flex-direction: column;
-    align-items: center;
+
+  .repo-content-root{
+    padding: 1.5rem;
+    position: relative;
+    margin: 0;
   }
-  .left-pane{
-    width: 100vw;
-  }
-  .right-pane{
-    width: 100vw;
+
+  .code-about-container{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    
+    .left-pane{
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
+
+    .code-container{
+      width: 100%;
+    }
+
+    .readme-container{
+      width: 100%;
+    }
+  
   }
+
+  .code-about-container{
+    position: relative;
+    .code-container{
+      width: 100%;
+    }
+  }
+
+
+  .right-pane{
+    align-self: center;
+    margin: 1rem auto;
+    margin-top: 2rem;
+    padding-left: 2rem;
+  }
+
+
+
+
 }
+
 // utility
 
 .flex {

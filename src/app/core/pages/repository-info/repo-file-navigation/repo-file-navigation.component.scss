@@ -5,8 +5,6 @@
 
 .file-navigation-header {
   background: #0d1117;
-  //to expand to available width
-  //width: 65vw;
 }
 
 .left-part {
@@ -120,6 +118,11 @@
       border-color: #3fb950;
     }
   }
+}
+
+
+@media screen and (max-width:768px) {
+    .right-part{display: none;}
 }
 
 // utility
