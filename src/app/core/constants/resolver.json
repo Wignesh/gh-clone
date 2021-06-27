@@ -34,7 +34,7 @@
           "description": "I found this while debugging rendering performance in my app. I have a large section ",
          "labels": [1,7],
           "assignee": {
-              "name":"Bellatrix",
+              "name":"Hercule",
               "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQEfe4jZpM05qPqzKdz7rlObs3odx45NzOgA&usqp=CAU"
           },
           "comments": ["No point","one comment"],
@@ -60,7 +60,7 @@
           "description": "Reproduction Use StackBlitz to reproduce your issue: https://stackblitz.com/edit/comp…",
           "labels": [2,4,3,5,7],
           "assignee": {
-              "name":"Bellatrix",
+              "name":"Baggins",
               "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTH9JLYJTawS28e1tNCegMDgyvm9fuzrMT5A&usqp=CAU"
           },
           "comments": ["Got it", "Doesn't seem like a spacing issue"],
@@ -73,7 +73,7 @@
           "description": "console.log('PLATFORMS'); console.log(this.platform.ANDROID)",
           "labels": [8,10],
           "assignee": {
-              "name":"Bellatrix",
+              "name":"Jeeves",
               "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQEfe4jZpM05qPqzKdz7rlObs3odx45NzOgA&usqp=CAU"
           },
           "comments": ["Got it", "Doesn't seem like a spacing issue","a","b","c"],
@@ -86,7 +86,7 @@
           "description": "MatCheckbox has only FOCUS method, not BLUR. I want to control from keyboard the focu…",
           "labels": [9,12, 11],
           "assignee": {
-              "name":"Bellatrix",
+              "name":"Tom",
               "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBStQ1KR3SY_FRqVLZVMZ6oppEAnNLPkb6Dw&usqp=CAU"
           },
           "comments": ["Got it", "Doesn't seem like a spacing issue"],
@@ -112,7 +112,7 @@
           "description": "Reproduction Feel free to close this if this is intended behavior",
           "labels": [6,5,1],
           "assignee": {
-              "name":"Bellatrix",
+              "name":"Jerry",
               "profileUrl":""
           },
           "comments": ["No point","one comment","Got it", "Doesn't seem like a spacing issue", "Some random"],
@@ -354,6 +354,44 @@
           },
           "comments": [ "Doesn't seem like a spacing issue"],
           "linked": [1, 2, 3,4]
+        },
+        {
+          "sno": 2300,
+          "tittle": "Angular 12 build error - Type '(index: any, item: DropDownItem<any>) => string' is not assignable to type 'TrackByFunction<any>' #42609",
+          "postedBy": "NotAishwarya",
+          "description": "🐞 Bug report I upgrade my private library to angular 12 from angular 11. I start to g",
+          "labels": [1,2,3],
+          "assignee": {
+              "name":"Bellatrix",
+              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBStQ1KR3SY_FRqVLZVMZ6oppEAnNLPkb6Dw&usqp=CAU"
+          },
+          "comments": ["1","2","3"],
+          "linked": []
+        },{
+"sno": 2301,
+          "tittle": "Introduce ChangeDetectionStrategy.OnWatch and @Watch() annotation ",
+          "postedBy": "SibiN",
+          "description": "I use Angular for years with complex applications, and i've still troubles with per",
+          "labels": [4,5,6],
+          "assignee": {
+              "name":"",
+              "profileUrl":""
+          },
+          "comments": [],
+          "linked": [1]
+        },
+        {
+          "sno": 2303,
+          "tittle": "mat-expansion-panel keeps contents of collapsed panels in DOM",
+          "postedBy": "DeepakTammali",
+          "description": "I found this while debugging rendering performance in my app. I have a large section ",
+         "labels": [1,7],
+          "assignee": {
+              "name":"Bellatrix",
+              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQEfe4jZpM05qPqzKdz7rlObs3odx45NzOgA&usqp=CAU"
+          },
+          "comments": ["No point","one comment"],
+          "linked": [1, 2, 4,5,6,7]
         }
       ]
     },
@@ -636,6 +674,44 @@
           },
           "comments": ["Got it", "Doesn't seem like a spacing issue"],
           "linked": [1, 2]
+        },
+        {
+          "sno": 2300,
+          "tittle": "Angular 12 build error - Type '(index: any, item: DropDownItem<any>) => string' is not assignable to type 'TrackByFunction<any>' #42609",
+          "postedBy": "NotAishwarya",
+          "description": "🐞 Bug report I upgrade my private library to angular 12 from angular 11. I start to g",
+          "labels": [1,2,3],
+          "assignee": {
+              "name":"Bellatrix",
+              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBStQ1KR3SY_FRqVLZVMZ6oppEAnNLPkb6Dw&usqp=CAU"
+          },
+          "comments": ["1","2","3"],
+          "linked": []
+        },{
+"sno": 2301,
+          "tittle": "Introduce ChangeDetectionStrategy.OnWatch and @Watch() annotation ",
+          "postedBy": "SibiN",
+          "description": "I use Angular for years with complex applications, and i've still troubles with per",
+          "labels": [4,5,6],
+          "assignee": {
+              "name":"",
+              "profileUrl":""
+          },
+          "comments": [],
+          "linked": [1]
+        },
+        {
+          "sno": 2303,
+          "tittle": "mat-expansion-panel keeps contents of collapsed panels in DOM",
+          "postedBy": "DeepakTammali",
+          "description": "I found this while debugging rendering performance in my app. I have a large section ",
+         "labels": [1,7],
+          "assignee": {
+              "name":"Bellatrix",
+              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQEfe4jZpM05qPqzKdz7rlObs3odx45NzOgA&usqp=CAU"
+          },
+          "comments": ["No point","one comment"],
+          "linked": [1, 2, 4,5,6,7]
         },
         {
           "sno": 1975,

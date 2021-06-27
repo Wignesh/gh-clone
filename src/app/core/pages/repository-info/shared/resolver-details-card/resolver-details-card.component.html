@@ -39,9 +39,10 @@
                 {{resolverDetails?.linked.length}}
             </div>
         </div>
-        <div class="metadata-comp">
-            <img *ngIf="resolverDetails?.assignee?.profileUrl!=''" class="asignee-img"
-                src="{{resolverDetails?.assignee?.profileUrl}}">
+        <div class="metadata-comp ">
+            <img *ngIf="resolverDetails?.assignee?.profileUrl!=''" class="asignee-img "
+                title="{{resolverDetails?.assignee?.name}}" src="{{resolverDetails?.assignee?.profileUrl}}">
+
         </div>
 
         <div class="metadata-comp">
