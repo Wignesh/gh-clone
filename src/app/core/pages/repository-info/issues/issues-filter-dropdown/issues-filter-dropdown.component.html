@@ -14,10 +14,12 @@
     <span>
       Open issues and pull requests
     </span>
-    <span>
+    <span [routerLink]="[]" (click)="removeDropDownFromDOM()"
+      [queryParams]="{ query: 'onc', pgno:1, author: 'NotAishwarya'}">
       Your issues
     </span>
-    <span>
+    <span [routerLink]="[]" (click)="removeDropDownFromDOM()"
+      [queryParams]="{ query: 'onc', pgno:1, author: 'NotAishwarya'}">
       Your pull requests
     </span>
     <span>

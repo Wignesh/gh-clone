@@ -54,6 +54,7 @@ import { ResolverDetailsPopupComponent } from './core/pages/repository-info/shar
 import { HttpClientModule } from '@angular/common/http';
 import { WorkInProgressComponent } from './core/pages/shared/work-in-progress/work-in-progress.component';
 import { CustomPaginatorPipe } from './core/pipes/customPaginator.pipe';
+import { Filter } from './core/pipes/filter.pipe';
 
 @NgModule({
   declarations: [
@@ -107,6 +108,7 @@ import { CustomPaginatorPipe } from './core/pipes/customPaginator.pipe';
     IssuesFilterDropdownComponent,
 
     CustomPaginatorPipe,
+    Filter,
   ],
   imports: [
     BrowserModule,

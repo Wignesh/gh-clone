@@ -4,52 +4,64 @@
       "open": [
         {
           "sno": 2300,
-          "tittle": "build: remove unnecessary env.sh logic for circlec",
+          "tittle": "Angular 12 build error - Type '(index: any, item: DropDownItem<any>) => string' is not assignable to type 'TrackByFunction<any>' #42609",
           "postedBy": "NotAishwarya",
-          "description": "Reproduction Feel free to close this if this is intended behavior",
-          "labels": [6,5,1],
+          "description": "🐞 Bug report I upgrade my private library to angular 12 from angular 11. I start to g",
+          "labels": [1,2,3],
           "assignee": {
               "name":"Bellatrix",
               "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBStQ1KR3SY_FRqVLZVMZ6oppEAnNLPkb6Dw&usqp=CAU"
           },
-          "comments": ["No point","one comment","Got it", "Doesn't seem like a spacing issue", "Some random"],
+          "comments": ["1","2","3"],
+          "linked": []
+        },{
+"sno": 2301,
+          "tittle": "Introduce ChangeDetectionStrategy.OnWatch and @Watch() annotation ",
+          "postedBy": "SibiN",
+          "description": "I use Angular for years with complex applications, and i've still troubles with per",
+          "labels": [4,5,6],
+          "assignee": {
+              "name":"",
+              "profileUrl":""
+          },
+          "comments": [],
           "linked": [1]
         },
         {
-          "sno": 2301,
+          "sno": 2303,
           "tittle": "mat-expansion-panel keeps contents of collapsed panels in DOM",
-          "postedBy": "SibiN",
+          "postedBy": "DeepakTammali",
           "description": "I found this while debugging rendering performance in my app. I have a large section ",
-         "labels": [3,2,1],
+         "labels": [1,7],
           "assignee": {
-              "name":"Bellatrix",
+              "name":"Hercule",
               "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQEfe4jZpM05qPqzKdz7rlObs3odx45NzOgA&usqp=CAU"
           },
           "comments": ["No point","one comment"],
-          "linked": [1, 2, 4,5]
+          "linked": [1, 2, 4,5,6,7]
         },
         {
-          "sno": 2302,
+          "sno": 2304,
           "tittle": "feat(migrations): reuse CDK migrations for our libraries ",
-          "postedBy": "DeepakTamalli",
+          "postedBy": "Gandalf",
           "description": "Feature Description Concerning the internal migration framework in src/cdk/schematics",
-          "labels": [5,6],
+          "labels": [9],
           "assignee": {
               "name":"Bellatrix",
-              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTH9JLYJTawS28e1tNCegMDgyvm9fuzrMT5A&usqp=CAU"
+              "profileUrl":""
           },
-          "comments": ["Doesn't seem like a spacing issue"],
-          "linked": [1, 2]
+          "comments": ["Doesn't seem like a spacing issue","d","a","b","c","g"],
+          "linked": []
         },
         {
-          "sno": 2303,
+          "sno": 2305,
           "tittle": "bug(matIcon): not inline well in Dialog Title",
           "postedBy": "Wignesh",
           "description": "Reproduction Use StackBlitz to reproduce your issue: https://stackblitz.com/edit/comp…",
-          "labels": [4],
+          "labels": [2,4,3,5,7],
           "assignee": {
-              "name":"Bellatrix",
-              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBStQ1KR3SY_FRqVLZVMZ6oppEAnNLPkb6Dw&usqp=CAU"
+              "name":"Baggins",
+              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTH9JLYJTawS28e1tNCegMDgyvm9fuzrMT5A&usqp=CAU"
           },
           "comments": ["Got it", "Doesn't seem like a spacing issue"],
           "linked": [1, 2]
@@ -59,9 +71,9 @@
           "tittle": "CDK Platform always return true for ANDROID for all platform",
           "postedBy": "AjithRaj",
           "description": "console.log('PLATFORMS'); console.log(this.platform.ANDROID)",
-          "labels": [18,12],
+          "labels": [8,10],
           "assignee": {
-              "name":"Bellatrix",
+              "name":"Jeeves",
               "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQEfe4jZpM05qPqzKdz7rlObs3odx45NzOgA&usqp=CAU"
           },
           "comments": ["Got it", "Doesn't seem like a spacing issue","a","b","c"],
@@ -72,26 +84,26 @@
           "tittle": "add BLUR to MatCheckbox",
           "postedBy": "YashwanthC",
           "description": "MatCheckbox has only FOCUS method, not BLUR. I want to control from keyboard the focu…",
-          "labels": [9,10, 11],
+          "labels": [9,12, 11],
           "assignee": {
-              "name":"Bellatrix",
+              "name":"Tom",
               "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBStQ1KR3SY_FRqVLZVMZ6oppEAnNLPkb6Dw&usqp=CAU"
           },
           "comments": ["Got it", "Doesn't seem like a spacing issue"],
-          "linked": [1, 2]
+          "linked": []
         },
         {
           "sno": 2237,
           "tittle": "Sticky column force table to re-render itself",
           "postedBy": "Abishek",
           "description": "🐞 bug report Affected Package The issue is caused by package",
-          "labels": [3,2,1],
+          "labels": [13,14],
           "assignee": {
               "name":"Bellatrix",
-              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBStQ1KR3SY_FRqVLZVMZ6oppEAnNLPkb6Dw&usqp=CAU"
+              "profileUrl":""
           },
-          "comments": [ "Doesn't seem like a spacing issue"],
-          "linked": [1, 2, 3,4]
+          "comments": ["1","2" ],
+          "linked": []
         },
          {
           "sno": 2300,
@@ -100,37 +112,37 @@
           "description": "Reproduction Feel free to close this if this is intended behavior",
           "labels": [6,5,1],
           "assignee": {
-              "name":"Bellatrix",
-              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBStQ1KR3SY_FRqVLZVMZ6oppEAnNLPkb6Dw&usqp=CAU"
+              "name":"Jerry",
+              "profileUrl":""
           },
           "comments": ["No point","one comment","Got it", "Doesn't seem like a spacing issue", "Some random"],
-          "linked": [1]
+          "linked": []
         },
         {
           "sno": 2301,
           "tittle": "mat-expansion-panel keeps contents of collapsed panels in DOM",
           "postedBy": "SibiN",
           "description": "I found this while debugging rendering performance in my app. I have a large section ",
-         "labels": [3,2,1],
+         "labels": [14,15],
           "assignee": {
               "name":"Bellatrix",
               "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQEfe4jZpM05qPqzKdz7rlObs3odx45NzOgA&usqp=CAU"
           },
           "comments": ["No point","one comment"],
-          "linked": [1, 2, 4,5]
+          "linked": [1, 2, 4]
         },
         {
           "sno": 2302,
           "tittle": "feat(migrations): reuse CDK migrations for our libraries ",
           "postedBy": "DeepakTamalli",
           "description": "Feature Description Concerning the internal migration framework in src/cdk/schematics",
-          "labels": [5,6],
+          "labels": [16,17],
           "assignee": {
               "name":"Bellatrix",
               "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTH9JLYJTawS28e1tNCegMDgyvm9fuzrMT5A&usqp=CAU"
           },
           "comments": ["Doesn't seem like a spacing issue"],
-          "linked": [1, 2]
+          "linked": []
         },
         {
           "sno": 2303,
@@ -140,10 +152,10 @@
           "labels": [4],
           "assignee": {
               "name":"Bellatrix",
-              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBStQ1KR3SY_FRqVLZVMZ6oppEAnNLPkb6Dw&usqp=CAU"
+              "profileUrl":""
           },
           "comments": ["Got it", "Doesn't seem like a spacing issue"],
-          "linked": [1, 2]
+          "linked": []
         },
          {
           "sno": 2236,
@@ -168,22 +180,126 @@
               "name":"Bellatrix",
               "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBStQ1KR3SY_FRqVLZVMZ6oppEAnNLPkb6Dw&usqp=CAU"
           },
-          "comments": ["Got it", "Doesn't seem like a spacing issue"],
-          "linked": [1, 2]
+          "comments": [],
+          "linked": []
         },
         {
           "sno": 2237,
           "tittle": "Sticky column force table to re-render itself",
           "postedBy": "Abishek",
           "description": "🐞 bug report Affected Package The issue is caused by package",
-          "labels": [3,2,1],
+          "labels": [19,20],
           "assignee": {
               "name":"Bellatrix",
               "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBStQ1KR3SY_FRqVLZVMZ6oppEAnNLPkb6Dw&usqp=CAU"
           },
           "comments": [ "Doesn't seem like a spacing issue"],
           "linked": [1, 2, 3,4]
+        },
+        {
+          "sno": 2303,
+          "tittle": "Error in .summary() on .pb model imported using 'tf.saved_model.load()",
+          "postedBy": "Ajjaii",
+          "description": "I was trying to load .pb model which was saved in 20180402-114759 directory . mode… ",
+         "labels": [14,13,20,1],
+          "assignee": {
+              "name":"Bellatrix",
+              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQEfe4jZpM05qPqzKdz7rlObs3odx45NzOgA&usqp=CAU"
+          },
+          "comments": ["No point","one comment"],
+          "linked": []
+        },
+        {
+          "sno": 2305,
+          "tittle": "TFLiteConverter Generates Quantized i64 bias that MLIR Quant dialect doesn't support",
+          "postedBy": "Hercule",
+          "description": "Please make sure that this is a bug",
+         "labels": [4,5,6],
+          "assignee": {
+              "name":"Bellatrix",
+              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQEfe4jZpM05qPqzKdz7rlObs3odx45NzOgA&usqp=CAU"
+          },
+          "comments": ["No point","one comment"],
+          "linked": [1]
+        },
+        { "sno": 2308,
+          "tittle": "Bazel build ERROR with TF2.4 Cuda11.0 Cudnn8 Python3.8 MSVC2019 bazel 3.1.0 #50414",
+          "postedBy": "Jeeves",
+          "description": "Please make sure that this is a build/installation issue",
+         "labels": [7,8,9],
+          "assignee": {
+              "name":"Bellatrix",
+              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQEfe4jZpM05qPqzKdz7rlObs3odx45NzOgA&usqp=CAU"
+          },
+          "comments": ["No point","one comment"],
+          "linked": []
+        },
+        {
+          "sno": 2309,
+          "tittle": "De-standardizing the output in LSTM model if the input was not standardized",
+          "postedBy": "NevilleLongbottom",
+          "description": "I was using the LSTM model for time series prediction when I observed that the model standardises the input when given non-standard input",
+         "labels": [3,4],
+          "assignee": {
+              "name":"Bellatrix",
+              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQEfe4jZpM05qPqzKdz7rlObs3odx45NzOgA&usqp=CAU"
+          },
+          "comments": ["No point"],
+          "linked": []
+        },{
+          "sno": 2310,
+          "tittle": "Load in-cluster config in tf.distribute.cluster_resolver.KubernetesClusterResolver",
+          "postedBy": "RonWeasely",
+          "description": "System information TensorFlow version (use command below): 2.5.0 Describe the current behaviour",
+         "labels": [5,6,7],
+          "assignee": {
+              "name":"Bellatrix",
+              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQEfe4jZpM05qPqzKdz7rlObs3odx45NzOgA&usqp=CAU"
+          },
+          "comments": [],
+          "linked": []
+        },
+         {
+          "sno": 2300,
+          "tittle": "ngc --help and ngc --version result in compilation rather than providing help/version output",
+          "postedBy": "Jess",
+          "description": "The issue is caused by package @angular/compiler-cli Is t…",
+          "labels": [10,11,12],
+          "assignee": {
+              "name":"Bellatrix",
+              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBStQ1KR3SY_FRqVLZVMZ6oppEAnNLPkb6Dw&usqp=CAU"
+          },
+          "comments": ["No point","one comment","Got it", "Doesn't seem like a spacing issue", "Some random"],
+          "linked": [1]
+        },
+          {
+          "sno": 2300,
+          "tittle": "Auto bind attributes and events like Vue (Transparent Wrapper Components)",
+          "postedBy": "NotAishwarya",
+          "description": "The issue is caused by package @angular/compiler-cli Is t…",
+          "labels": [16],
+          "assignee": {
+              "name":"Bellatrix",
+              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBStQ1KR3SY_FRqVLZVMZ6oppEAnNLPkb6Dw&usqp=CAU"
+          },
+          "comments": [ "Doesn't seem like a spacing issue", "Some random"],
+          "linked": []
+        },
+          {
+          "sno": 2300,
+          "tittle": "Adding click event handler with capture set to true interferes with click handlers on items generated by NgFor.",
+          "postedBy": "NotAishwarya",
+          "description": "The issue is caused by package @angular/compiler-cli Is t…",
+          "labels": [6,5,1],
+          "assignee": {
+              "name":"Bellatrix",
+              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBStQ1KR3SY_FRqVLZVMZ6oppEAnNLPkb6Dw&usqp=CAU"
+          },
+          "comments": ["No point","one comment","Got it", "Doesn't seem like a spacing issue", "Some random"],
+          "linked": [1]
         }
+        
+
 
       ],
       "closed" : [
@@ -214,6 +330,19 @@
           "linked": [1, 2]
         },
         {
+          "sno": 2300,
+          "tittle": "build: remove unnecessary env.sh logic for circlec",
+          "postedBy": "NotAishwarya",
+          "description": "Reproduction Feel free to close this if this is intended behavior",
+          "labels": [6,5,1],
+          "assignee": {
+              "name":"Bellatrix",
+              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBStQ1KR3SY_FRqVLZVMZ6oppEAnNLPkb6Dw&usqp=CAU"
+          },
+          "comments": ["No point","one comment","Got it", "Doesn't seem like a spacing issue", "Some random"],
+          "linked": [1]
+        },
+        {
           "sno": 2237,
           "tittle": "Sticky column force table to re-render itself",
           "postedBy": "Abishek",
@@ -225,6 +354,44 @@
           },
           "comments": [ "Doesn't seem like a spacing issue"],
           "linked": [1, 2, 3,4]
+        },
+        {
+          "sno": 2300,
+          "tittle": "Angular 12 build error - Type '(index: any, item: DropDownItem<any>) => string' is not assignable to type 'TrackByFunction<any>' #42609",
+          "postedBy": "NotAishwarya",
+          "description": "🐞 Bug report I upgrade my private library to angular 12 from angular 11. I start to g",
+          "labels": [1,2,3],
+          "assignee": {
+              "name":"Bellatrix",
+              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBStQ1KR3SY_FRqVLZVMZ6oppEAnNLPkb6Dw&usqp=CAU"
+          },
+          "comments": ["1","2","3"],
+          "linked": []
+        },{
+"sno": 2301,
+          "tittle": "Introduce ChangeDetectionStrategy.OnWatch and @Watch() annotation ",
+          "postedBy": "SibiN",
+          "description": "I use Angular for years with complex applications, and i've still troubles with per",
+          "labels": [4,5,6],
+          "assignee": {
+              "name":"",
+              "profileUrl":""
+          },
+          "comments": [],
+          "linked": [1]
+        },
+        {
+          "sno": 2303,
+          "tittle": "mat-expansion-panel keeps contents of collapsed panels in DOM",
+          "postedBy": "DeepakTammali",
+          "description": "I found this while debugging rendering performance in my app. I have a large section ",
+         "labels": [1,7],
+          "assignee": {
+              "name":"Bellatrix",
+              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQEfe4jZpM05qPqzKdz7rlObs3odx45NzOgA&usqp=CAU"
+          },
+          "comments": ["No point","one comment"],
+          "linked": [1, 2, 4,5,6,7]
         }
       ]
     },
@@ -233,7 +400,7 @@
       "open": [
         {
           "sno": 1929,
-          "tittle": "Display week number in datepicker component",
+          "tittle": "Fix: Display week number in datepicker component",
           "postedBy": "Ajaii",
           "description": "Hello, Is that possible to display weeknumber in datepicker like we have in google ",
           "labels": [15,16,17],
@@ -251,11 +418,11 @@
           "description": "Clustering in the Google Maps module requires a separate library, but we never check ",
           "labels": [14],
           "assignee": {
-              "name":"Bellatrix",
-              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTH9JLYJTawS28e1tNCegMDgyvm9fuzrMT5A&usqp=CAU"
+              "name":"",
+              "profileUrl":""
           },
           "comments": ["wassup","Got it", "Doesn't seem like a spacing issue"],
-          "linked": [1, 2,5]
+          "linked": []
         },
         {
           "sno": 1973,
@@ -265,10 +432,10 @@
            "labels": [12,13],
           "assignee": {
               "name":"Bellatrix",
-              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBStQ1KR3SY_FRqVLZVMZ6oppEAnNLPkb6Dw&usqp=CAU"
+              "profileUrl":""
           },
           "comments": ["Got it", "Doesn't seem like a spacing issue"],
-          "linked": [1, 2]
+          "linked": []
         },
         {
           "sno": 1974,
@@ -281,7 +448,7 @@
               "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQEfe4jZpM05qPqzKdz7rlObs3odx45NzOgA&usqp=CAU"
           },
           "comments": ["Got it", "Doesn't seem like a spacing issue"],
-          "linked": [1, 2]
+          "linked": []
         },
         {
           "sno": 1975,
@@ -293,8 +460,8 @@
               "name":"Bellatrix",
               "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBStQ1KR3SY_FRqVLZVMZ6oppEAnNLPkb6Dw&usqp=CAU"
           },
-          "comments": ["Got it", "Doesn't seem like a spacing issue"],
-          "linked": [1, 2]
+          "comments": ["Got it", "Doesn't seem like a spacing issue","232","43","gibberish"],
+          "linked": [1, 2,3,4]
         },
         {
           "sno": 1975,
@@ -303,11 +470,11 @@
           "description": "Adds a mat-mdc-app-background utility class similar to mat-app-background.",
            "labels": [8,9],
           "assignee": {
-              "name":"Bellatrix",
-              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBStQ1KR3SY_FRqVLZVMZ6oppEAnNLPkb6Dw&usqp=CAU"
+              "name":"",
+              "profileUrl":""
           },
           "comments": ["Got it", "Doesn't seem like a spacing issue"],
-          "linked": [1, 2]
+          "linked": []
         },
          {
           "sno": 1976,
@@ -320,7 +487,7 @@
               "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTH9JLYJTawS28e1tNCegMDgyvm9fuzrMT5A&usqp=CAU"
           },
           "comments": ["Got it", "Doesn't seem like a spacing issue"],
-          "linked": [1, 2]
+          "linked": []
          },
          {
           "sno": 1977,
@@ -338,15 +505,15 @@
          {
           "sno": 1978,
           "tittle": "fix(cdk/table): set default role of table to 'table'",
-          "postedBy":"Gandalf the grey",
+          "postedBy":"Gandalf",
           "description": "Material fixing has been done",
            "labels": [9,10],
           "assignee": {
               "name":"Bellatrix",
-              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBStQ1KR3SY_FRqVLZVMZ6oppEAnNLPkb6Dw&usqp=CAU"
+              "profileUrl":""
           },
           "comments": ["Got it", "Doesn't seem like a spacing issue"],
-          "linked": [1, 2]
+          "linked": []
         },
         {
           "sno": 1978,
@@ -420,11 +587,11 @@
           "description": "Material fixing has been done",
            "labels": [9,10, 11],
           "assignee": {
-              "name":"Bellatrix",
-              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBStQ1KR3SY_FRqVLZVMZ6oppEAnNLPkb6Dw&usqp=CAU"
+              "name":"",
+              "profileUrl":""
           },
           "comments": ["Got it", "Doesn't seem like a spacing issue"],
-          "linked": [1, 2]
+          "linked": []
         },
         {
           "sno": 1975,
@@ -438,6 +605,45 @@
           },
           "comments": ["Got it", "Doesn't seem like a spacing issue"],
           "linked": [1, 2]
+        },
+         {
+          "sno": 2303,
+          "tittle": "mat-expansion-panel keeps contents of collapsed panels in DOM",
+          "postedBy": "DeepakTammali",
+          "description": "I found this while debugging rendering performance in my app. I have a large section ",
+         "labels": [1,7],
+          "assignee": {
+              "name":"",
+              "profileUrl":""
+          },
+          "comments": ["No point","one comment"],
+          "linked": [1, 2, 4,5,6,7]
+        },
+        {
+          "sno": 2304,
+          "tittle": "feat(migrations): reuse CDK migrations for our libraries ",
+          "postedBy": "Gandalf",
+          "description": "Feature Description Concerning the internal migration framework in src/cdk/schematics",
+          "labels": [9],
+          "assignee": {
+              "name":"Bellatrix",
+              "profileUrl":""
+          },
+          "comments": ["Doesn't seem like a spacing issue","d","a","b","c","g"],
+          "linked": []
+        },
+        {
+          "sno": 2305,
+          "tittle": "bug(matIcon): not inline well in Dialog Title",
+          "postedBy": "Wignesh",
+          "description": "Reproduction Use StackBlitz to reproduce your issue: https://stackblitz.com/edit/comp…",
+          "labels": [2,4,3,5,7],
+          "assignee": {
+              "name":"Bellatrix",
+              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTH9JLYJTawS28e1tNCegMDgyvm9fuzrMT5A&usqp=CAU"
+          },
+          "comments": ["Got it", "Doesn't seem like a spacing issue"],
+          "linked": []
         }
 
 
@@ -470,6 +676,44 @@
           "linked": [1, 2]
         },
         {
+          "sno": 2300,
+          "tittle": "Angular 12 build error - Type '(index: any, item: DropDownItem<any>) => string' is not assignable to type 'TrackByFunction<any>' #42609",
+          "postedBy": "NotAishwarya",
+          "description": "🐞 Bug report I upgrade my private library to angular 12 from angular 11. I start to g",
+          "labels": [1,2,3],
+          "assignee": {
+              "name":"Bellatrix",
+              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBStQ1KR3SY_FRqVLZVMZ6oppEAnNLPkb6Dw&usqp=CAU"
+          },
+          "comments": ["1","2","3"],
+          "linked": []
+        },{
+"sno": 2301,
+          "tittle": "Introduce ChangeDetectionStrategy.OnWatch and @Watch() annotation ",
+          "postedBy": "SibiN",
+          "description": "I use Angular for years with complex applications, and i've still troubles with per",
+          "labels": [4,5,6],
+          "assignee": {
+              "name":"",
+              "profileUrl":""
+          },
+          "comments": [],
+          "linked": [1]
+        },
+        {
+          "sno": 2303,
+          "tittle": "mat-expansion-panel keeps contents of collapsed panels in DOM",
+          "postedBy": "DeepakTammali",
+          "description": "I found this while debugging rendering performance in my app. I have a large section ",
+         "labels": [1,7],
+          "assignee": {
+              "name":"Bellatrix",
+              "profileUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQEfe4jZpM05qPqzKdz7rlObs3odx45NzOgA&usqp=CAU"
+          },
+          "comments": ["No point","one comment"],
+          "linked": [1, 2, 4,5,6,7]
+        },
+        {
           "sno": 1975,
           "tittle": "fix(material-experimental/mdc-core): add app background color",
           "postedBy": "Wignesh",
@@ -486,24 +730,26 @@
     },
 
     "labellist" : [{"name" :"Javascript", "color" : "#D4C5F92E", "tcolor" : "#D2C3F9"},
-       {"name" :"CSS" , "color" : "#EDEDED2E", "tcolor" : "#EBEBEB"},
-       {"name" :"PR", "color" : "#5319E72E", "tcolor" : "#DACFFA"},
+       {"name" :"comp : query" , "color" : "#EDEDED2E", "tcolor" : "#EBEBEB"},
+       {"name" :"cross - cutting: types", "color" : "#5319E72E", "tcolor" : "#DACFFA"},
        {"name" :"android", "color" : "#FBCA042E", "tcolor" : "#FAC905"},
        {"name" :"a11y", "color" : "#BFDADC2E", "tcolor" : "#BDD9D8"},
        {"name" :"good first issue", "color" : "#F71F042E", "tcolor" : "#FDA399"},
        {"name" :"feature", "color" : "#EA98BA2E", "tcolor" : "#E995B8"},
        {"name" :"docs", "color" : "#B619EA2E", "tcolor" : "#E3A7F7"},
-       {"name" :"blocked", "color" : "#F4B4002E", "tcolor" : "#F0B000"},
+       {"name" :"holist: error messages", "color" : "#F4B4002E", "tcolor" : "#F0B000"},
        {"name" :"needs investigation", "color" : "#C2E0C62E", "tcolor" : "#BFDEC3"},
        {"name" :"needs clarification", "color" : "#1D76DB2E", "tcolor" : "#68A7EA"},
        {"name" :"safari",  "color" : "#D4C5F92E", "tcolor" : "#D2C3F9"},
-       {"name" :"ios", "color" : "#F71F042E", "tcolor" : "#FDA399"},
+       {"name" :"core: DOM Rendering", "color" : "#F71F042E", "tcolor" : "#FDA399"},
       {"name" : "regression",  "color" : "#EA98BA2E", "tcolor" : "#E995B8"},
        {"name" :"P1",  "color" : "#EA98BA2E", "tcolor" : "#E995B8"},
        {"name" :"P2", "color" : "#FEF2C02E", "tcolor" : "#FEF1BE"},
        {"name" :"P5", "color" : "#1D76DB2E", "tcolor" : "#68A7EA"},
        {"name" :"P3", "color" : "#F71F042E", "tcolor" : "#FDA399"},
       {"name" : "P4", "color" : "#EDEDED2E", "tcolor" : "#EBEBEB"},
-       {"name" : "troubleshooting", "color" :"#F71F042E", "tcolor" : "#FDA399"}
+       {"name" : "troubleshooting", "color" :"#F71F042E", "tcolor" : "#FDA399"},
+       {"name" : "memory leak", "color" :"#8ee24d2e", "tcolor" : "#8FE14C"},
+        {"name" : "comp : performance", "color" :"#8ee24d2e", "tcolor" : "#8FE14C"}
       ]
   }

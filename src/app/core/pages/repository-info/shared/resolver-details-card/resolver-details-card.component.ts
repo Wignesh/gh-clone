@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import * as resolverData from '../../../../constants/resolver.json';
+import { RepoIssuesPrDataService } from 'src/app/core/services/RepoIssuesPRdata/repo-issues-pr-data.service';
 import * as resolverIcons from '../../../../constants/resolvericons.json';
 @Component({
   selector: 'app-resolver-details-card',
@@ -8,17 +8,21 @@ import * as resolverIcons from '../../../../constants/resolvericons.json';
 })
 export class ResolverDetailsCardComponent implements OnInit {
   @Input() resolverDetails: any;
-  @Input() rtype = '';
-  @Input() rresult = 'open';
-  displayDetails: boolean = false;
 
-  resolverData = resolverData;
+  //eg: Pull Request, Issues
+  @Input() rtype = '';
+
+  //Query result eg : open, close
+  @Input() rresult = 'open';
+
+  //data for the popup
+  displayDetails: boolean = false;
   labels: any;
   icons: { [index: string]: any } = resolverIcons;
 
-  constructor() {}
+  constructor(private resolverDataService: RepoIssuesPrDataService) {}
 
   ngOnInit(): void {
-    this.labels = this.resolverData.labellist;
+    this.labels = this.resolverDataService.getRepoLabels();
   }
 }
