@@ -4,7 +4,7 @@
         <div class="latest-action">
             <img class="circular-avatar" src="https://droidlight.github.io/assets/img/profile.png">
             <a class="profile-name">crisbeto</a>
-            <div class="commit-text-wrapper"><a class="commit-text">build: fix wrong variable reference</a></div>
+            <a class="commit-text">build: fix wrong variable reference</a>
 
 
             <div class="cross-icon">
@@ -16,7 +16,7 @@
                 </svg>
             </div>
             <span class="commit-id">353146</span>
-            <span class="latest-time commit-time">3 hours ago</span>
+            <span class="latest-time commit-time commit-time-wrapper">3 hours ago</span>
 
             <div class="commit-cont">
                 <div class="commit-icon">
@@ -83,10 +83,11 @@
                     <!--file/dir name-->
                     <span class="name-wrapper"><a class="entity-name"
                             [routerLink]="[entity.path]">{{entity.name}}</a></span>
-                    <span class="commit-text-wrapper">
-                        <a class="commit-text">build: do not update shared dev-infra package in snapshotjobs</a>
-                    </span>
-                    <div class="time-wrapper"><span class="commit-time">5 days ago</span></div>
+                    <!--<span class="commit-text-wrapper"><a class="commit-text">build: do not update shared dev-infra
+                            package in snapshotjobs</a></span>-->
+                    <a class="commit-text">build: do not update shared dev-infra
+                        package in snapshotjobs</a>
+                    <span class="commit-time-wrapper"><span class="commit-time">5 days ago</span></span>
                 </div>
 
             </div>
@@ -115,7 +116,7 @@
 
             <button class="btn btn-left">Raw</button>
             <button class="btn btn-right">Blame</button>
-            <div class="icon">
+            <div class="tool-icon">
                 <svg aria-hidden="true" viewBox="0 0 16 16" version="1.1" data-view-component="true" height="16"
                     width="16" class="octicon octicon-device-desktop">
                     <path fill-rule="evenodd"
@@ -123,7 +124,7 @@
                     </path>
                 </svg>
             </div>
-            <div class="icon">
+            <div class="tool-icon">
                 <svg aria-hidden="true" viewBox="0 0 16 16" version="1.1" data-view-component="true" height="16"
                     width="16" class="octicon octicon-pencil">
                     <path fill-rule="evenodd"
@@ -131,7 +132,7 @@
                     </path>
                 </svg>
             </div>
-            <div class="icon del">
+            <div class="tool-icon del">
                 <svg aria-hidden="true" viewBox="0 0 16 16" version="1.1" data-view-component="true" height="16"
                     width="16" class="octicon octicon-trash">
                     <path fill-rule="evenodd"

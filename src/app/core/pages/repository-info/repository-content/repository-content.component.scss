@@ -1,6 +1,11 @@
-.repo-content-root{
+.repo-content-root {
   margin: 32px;
 }
+
+.code-about-container{
+  display: flex;
+}
+
 .left-pane{
   width: 68vw;
   margin: 0px 8px 0px;
@@ -8,81 +13,142 @@
   justify-content: flex-start;
 }
 
+.root-flex {
+ justify-content: flex-start;
+}
+.code-container {
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+// .left-pane {
+//   margin-left: 2vw;
+//   width:70vw; 
+// }
 .right-pane{
-  margin: 0px 51px 0px 12px;
+  margin-left: 16px;
+  padding: 8px;
+  flex: 0 2 20vw;
 }
-.code-container{
-  margin: 16px 0px 18px 0px;
-  width: 65vw;
+
+@media only screen and (max-width:1009px){
+  .repo-content-root{
+    margin: 16px;
+  }  
+  .left-pane{
+    width: 66vw;
+  }  
 }
-.readme-container{
-  width: 67.5vw;
+
+@media only screen and (max-width:768px){
+
+  .repo-content-root{
+    padding: 1.5rem;
+    position: relative;
+    margin: 0;
+  }
+
+  .code-about-container{
+    display: flex;
+    flex-direction: column;
+    
+    .left-pane{
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
+
+    .code-container{
+      width: 100%;
+    }
+
+    .readme-container{
+      width: 100%;
+    }
+  
+  }
+
+  .code-about-container{
+    position: relative;
+    .code-container{
+      width: 100%;
+    }
+  }
+
+
+  .right-pane{
+    align-self: center;
+    margin: 1rem auto;
+    margin-top: 2rem;
+    padding-left: 2rem;
+  }
+
+
+
+
 }
 
 // utility
 
-.flex{
+.flex {
   display: flex;
 }
 
-.flex-row{
+.flex-row {
   flex-direction: row;
 }
 
-.flex-col{
+.flex-col {
   flex-direction: column;
 }
 
-.items-center{
+.items-center {
   align-items: center;
 }
 
-.justify-center{
+.justify-center {
   justify-content: center;
 }
 
-.justify-between{
+.justify-between {
   justify-content: space-between;
 }
 
-.items-stretch{
+.items-stretch {
   align-items: stretch;
 }
 
-.f1{
+.f1 {
   font-size: 1rem;
 }
 
-.text-xl{
+.text-xl {
   font-size: x-large;
 }
 
-.text-blue{
-  color:blue;
+.text-blue {
+  color: blue;
 }
 
-.text-gray{
-  color:gray;
+.text-gray {
+  color: gray;
 }
 
-.text-black{
-  color:black !important;
+.text-black {
+  color: black !important;
 }
 
-
-.font-bold{
+.font-bold {
   font-weight: bold;
 }
 
-.font-semibold{
+.font-semibold {
   font-weight: 550;
 }
 
-.font-normal{
+.font-normal {
   font-weight: normal;
 }
 
-.cursor-pointer{
+.cursor-pointer {
   cursor: pointer;
 }
-

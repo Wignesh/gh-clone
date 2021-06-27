@@ -9,7 +9,7 @@
     display: flex;
     flex-direction : row;
     flex-wrap: wrap;
-    margin-left : 3rem;
+    margin-left : 6rem;
 }
 
 .repoCards{
@@ -19,6 +19,7 @@
     border-radius: 0.2rem;
     margin : 0.5rem;
     margin-top : 0rem;
+    margin-bottom: 1rem;
     flex-shrink : 0;
     padding: 1rem;
 }
@@ -36,7 +37,30 @@ a:hover{
 }
 
 span{
-    color: #c9d1d9;
+    color: #8b949e;
     font-size: 14px;
     display: inline-block;
+}
+
+#language-color{
+    width: 10px;
+    height:10px;
+    background-color: #b07219;
+    border-radius: 50%;
+    margin-right:5px;
+  }
+
+.languages{
+    font-size:14px;
+    margin-top:auto;
+    margin:5px 0;
+    color: #8b949e;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.lang{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
 }
