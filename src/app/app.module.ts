@@ -49,10 +49,10 @@ import { DashboardNewsFeedComponent } from './core/pages/dashboard/dashboard-new
 import { DashboardNewsFeedSidebarRightComponent } from './core/pages/dashboard/dashboard-news-feed-sidebar-right/dashboard-news-feed-sidebar-right.component';
 import { CodeViewComponent } from './core/pages/repository-info/code-view/code-view.component';
 import { RepoCodeDownloadDropdownComponent } from './core/pages/repository-info/repo-file-navigation/repo-code-download-dropdown/repo-code-download-dropdown.component';
+import { IssuesFilterDropdownComponent } from './core/pages/repository-info/issues/issues-filter-dropdown/issues-filter-dropdown.component';
 import { ResolverDetailsPopupComponent } from './core/pages/repository-info/shared/resolver-details-popup/resolver-details-popup.component';
 import { HttpClientModule } from '@angular/common/http';
 import { WorkInProgressComponent } from './core/pages/shared/work-in-progress/work-in-progress.component';
-import { IssuesFilterDropdownComponent } from './core/pages/repository-info/issues/issues-filter-dropdown/issues-filter-dropdown.component';
 import { CustomPaginatorPipe } from './core/pipes/customPaginator.pipe';
 
 @NgModule({
