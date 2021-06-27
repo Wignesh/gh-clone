@@ -236,3 +236,82 @@ textarea:focus
     padding:3px 12px;
     text-align:center;
 }
+
+
+// @media screen and (max-width: 768px){
+//     .profileblock
+//     {
+//         width: 24%;
+//     }
+//     .resume
+//     {
+//         font-size:16px;
+//     }
+
+//     .descdiv
+//     {
+//         text-align: left;
+//         font-size:    11px;
+//         line-height:    21px;
+//     }
+//     .username
+//     {
+//         font-size:20px;
+//         font-weight:300;
+//         line-height: 24px;
+//     }
+//     .profbtn{
+        
+//         display:flex;
+//         font-size:14px;
+//         line-height:21px;
+//         padding:20px;
+//         padding-left:0;
+//         padding-right: 0;
+//     }
+//     .follows
+//     {
+//         font-size: 11px;
+//     }
+// }
+
+@media only screen and (max-width: 458px){
+    .profile
+    {
+        width: 95%;
+    }
+    .mobiletop
+    {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    .descdiv
+    {
+        display: none;
+    }
+    .imgdiv
+    {
+        width: 20%;
+    }
+    .namediv
+    {
+        width: 80%;
+        margin-left: 20px;
+    }
+    .profhigh{
+        display: none;
+    }
+    .profachimg
+    {
+        display:inline;
+        font-size:14px;
+        line-height:21px;
+        width: 20%;
+        color:hsl(212, 97%, 43%);
+        height: 20%;
+        padding:5px;
+    }
+}

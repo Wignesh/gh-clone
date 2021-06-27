@@ -18,8 +18,34 @@ img {
   width: 72%;
 }
 
-@media screen and (max-width: 458px){
+@media screen and (max-width: 767px) and (min-width:320px){
+  .profile{
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
   .popAndContri{
-    width: 91%;
+    width: 92%;
+  }
+  .profblock{
+    width: 90%;
+    margin-left: 2rem;
+    margin-right: 0rem;
+  }
+}
+
+@media screen and (max-width: 1023px) and (min-width:768px){
+  .profile
+  {
+    display: flex;
+    margin-left: 4rem;
+  }
+  .profblock{
+    width:24%;
+  }
+  .popAndContri
+  {
+    width: 72%;
   }
 }
