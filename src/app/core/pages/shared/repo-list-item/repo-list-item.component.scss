@@ -1,6 +1,6 @@
 .repo-card{
     height:175px;
-    width: 183%;
+    width: 100%;
     border-top: 0.5px solid #21262D;
     border-bottom:0.5px solid #21262D; 
     color:#586069;
@@ -163,3 +163,13 @@ a:hover{
   }
   
 
+  @media only screen and (max-width: 1000px){
+    #repo-list-graph, .readme, #tag{
+      display: none;
+    }
+
+    .repo-card{
+      height: auto;
+    }    
+
+  }

@@ -1,45 +1,50 @@
 .d-flex{
   display: flex;
-}
-
-.d-inline{
-  width: 30%;
-}
-
-
-.repo-list{
-  width: 60%;
-}
-
-.mr-10{
-  margin-right: 70px;
-}
-
-.ml-50{
-  margin-left: 50px;
-}
-#profile{
-  width: 333px;
-  color: #ADBAC7;
-}
-
-.bg-dark{ 
-  background-color:#0D1117;
-}
-
-.color-white{
-  color:white;
-}
-
-.repo-form{
-  width: 120%;
+  justify-items: center;
 }
 
 .repo-list-page{
-  margin: 0 20px 0 50px;
-  margin-right: 5%;
+  color: #c9d1d9;
+  margin: 0 0 0 144px;
+  
+}
+
+#profile{
+  width: 27.5%;
 }
 
 #repo-list{
-  margin-left: 4rem;
+  width: 70%;
+  margin: 0 9rem 0 0;
+  padding:0 0 0 3%;
+}
+
+#repo-form{
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) and (min-width:320px){
+  .repo-list-page
+  {
+    flex-direction: column;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .d-flex{
+    flex-direction: column;
+  }
+  
+
+  #profile{
+    width: 90%;
+    margin-left: 1rem;
+    margin-right: 0rem;
+  }
+  #repo-list
+  {
+    width: 100%;
+  }
 }

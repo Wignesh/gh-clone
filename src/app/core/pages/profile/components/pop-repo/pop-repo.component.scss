@@ -2,6 +2,7 @@
     width : 100%;
     height : auto;
     font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+    margin-left: 0.8rem;
 }
 
 .cards{
@@ -9,7 +10,7 @@
     display: flex;
     flex-direction : row;
     flex-wrap: wrap;
-    margin-left : 6rem;
+    //MARGIN-LEFT
 }
 
 .repoCards{
@@ -22,6 +23,10 @@
     margin-bottom: 1rem;
     flex-shrink : 0;
     padding: 1rem;
+}
+
+.custOuter{
+    width: 83%;
 }
 
 a{
@@ -63,4 +68,25 @@ span{
     display: flex;
     align-items: center;
     margin-top: 1rem;
+}
+
+@media screen and (max-width: 458px){
+    .cards{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }    
+    .repoCards{
+        width: 100%;
+    }
+    .custOuter{
+        width:100%;
+    }
+    .cust{
+        margin-right: 0%;
+    }
+
+    .container{
+        margin-left: 0.3rem;
+    }
 }

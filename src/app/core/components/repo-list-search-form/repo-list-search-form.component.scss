@@ -1,74 +1,19 @@
-.h-65{
-    height:65px;
-    background-color:#0D1117;
-  }
-  
-  #type:after{
-    font-size:20px;
-  }
-  form{
-    width:100%;
-  }
-  .align-items-center{
-    align-items:center;
-  }
-  
-  .d-flex{
-    display:flex;
-  }
-  
-  #sort, #type, #language, #repo-search, #new-button{
-    background-color:#282E33;
-    border-color: #21262D;
-    border-radius: 6px;
-    border-style: solid;
-    border-width: 1px;
-    box-shadow: #000000 0px 1px 0px 0px;
-    color: #C9D1D9;
-    font-family: sans-serif;
-    padding: 5px 12px;
-    height: 32px;
-  }
-  
-  
-  #type{
-    width:10%;
-  }
-  
-  #new-button{
-    width: 10%;
-    background-color:#2EA44F;
-    color:white;
-    font-size: 80%;
-  }
-  
-  #language{
-    width:12%;
-  }
-  
-  #sort{
-    width:10%;
-  }
-  
-  
-  #repo-search{
-    width:45%;
-    color:#21262D;
-    background-color:#0D1117;
-  }
+form > *{
+  display: flex;
+}
 
-  
-  #type, #language, #sort{
-    margin: 0 2px;
-  }
+.main-form{
+  height:65px;
+  align-items: center;
+}
 
-  .mlr-2{
-    margin:0 15px;
-  }
-  
-  .d-inline{
-    display: inline;
-  }
+.main-form > *{
+  display:flex;
+}
+
+*{
+ color:#c9d1d9; 
+}
 
   .new-button-text{
     vertical-align: middle;
@@ -83,3 +28,98 @@
     color: #f0f6fc;
     margin: 0%  ;
   }
+
+  #new-button{
+  display:flex;
+  flex-wrap: nowrap;
+  align-items:center;
+  width:20%;
+  background-color:#2ea44f !important;
+  color:white;
+  font-size: 80%;
+}
+
+
+  #sort, #type, #language, #repo-search, #new-button{
+    background-color:#282E33;
+    border-color: #21262D;
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: #000000 0px 1px 0px 0px;
+    color: #C9D1D9;
+    font-family: sans-serif;
+    padding: 5px 12px;
+    height: 32px;
+  }
+  
+#repo-search{
+  height:32px;
+  width:50%;
+}
+
+.sort-buttons{
+  display:flex;
+  width:100%;
+  margin: 0 5px;
+}
+
+.sort-buttons > *{
+  margin: 0 1px;
+}
+
+
+
+.buttons{
+  width:50%;
+}
+
+#sort, #type{
+  width:32%;
+}
+
+#language{
+  width:35%;
+}
+
+@media only screen and (max-width: 458px){
+  form{
+    width:98%;
+  }
+  .main-form{
+    flex-direction:column;
+    height:auto;
+  }
+  
+  .buttons{
+    flex-direction:column;
+    align-items:center;
+    margin:5px 0;
+    width:100%;
+  }
+  
+  #new-button{
+    margin:5px 0;
+    width:100%;
+  }
+
+  #repo-search{
+    margin: 0%;
+    width: 100%;
+  }
+
+  .sort-buttons{
+    margin: 0;
+  }
+  
+  .new-button-text{
+    margin-right:auto;
+  }
+  
+  svg{
+    margin-left:auto;
+    
+  }
+
+
+}

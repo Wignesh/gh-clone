@@ -1,41 +1,69 @@
-*
-{
-    color:#adbac7;
-}   
-div.container
-{
-    padding-top: 20px;
-    width: 100%;
+.container{
+    width: 83%;
 }
-hr{
-    width : 85%;
-    margin-left : 8%;
-    margin-right : 10%;
+
+.list{
+    display: flex; 
+    justify-content: space-between;
+    width: 83%;
+    margin-left: 8%;
 }
-.left{
-    margin-left : 4%;
-}
-.right{
-    margin-right : 2%;
-}
-.left li, .right li{
-    float : left;
+
+.list li{
     list-style-type: none;
-    padding: 2.5rem 3rem 3rem 0rem;
+    padding-top: 2%;
+    padding-bottom: 3%;
 }
 
-.left li a, .right li a{
+.list li a{
     text-decoration: none;
-    color : #2f91ff;
+    color: #2f91ff;
 }
 
-.right{
-    float : right;
+.list>a>i{
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    color: #30363d;
+    margin-right: 2rem;
+    margin-left: 2rem;
 }
 
-.git i{
-    margin-top : 2rem;
-    font-size : 26px;
-    margin-left : 3rem;
+.list>a>i:hover{
     color: #8b949e;
+    cursor: pointer;
+}
+
+@media screen and (max-width:768px){
+    .list>a{
+        display: none;
+    }
+    .list{
+        width:65%;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        margin: auto;
+        font-size: 14px;
+        justify-content: center;
+    }
+    .list li{
+        padding: 0rem 0.5rem 0.5rem 0.5rem;
+    }
+}
+
+@media screen and (max-width: 458px){
+    .list{
+        width:85%;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        margin: auto;
+        font-size: 12px;
+        justify-content: center;
+    }
+    .list li{
+        padding: 0rem 0.5rem 0.5rem 0.5rem;
+    }
 }
