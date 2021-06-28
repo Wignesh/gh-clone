@@ -9,6 +9,7 @@ import { ProfilePage } from './core/pages/profile/profile.page';
 import { RepositoryContentComponent } from './core/pages/repository-info/repository-content/repository-content.component';
 import { IssuesComponent } from './core/pages/repository-info/issues/issues.component';
 import { PullRequestsComponent } from './core/pages/repository-info/pull-requests/pull-requests.component';
+import { HomeComponent } from './core/pages/home/home.component';
 import { CodeViewComponent } from './core/pages/repository-info/code-view/code-view.component';
 import { AuthGuard } from './core/pages/login/auth.guard';
 import { AccessGuard } from './core/pages/access.guard';
@@ -17,8 +18,11 @@ import { WorkInProgressComponent } from './core/pages/shared/work-in-progress/wo
 const routes: Routes = [
   {
     path: '',
-    component: LoginPage,
-    canActivate: [AccessGuard],
+    component: HomeComponent,
+  },
+  {
+    path: 'home',
+    component: HomeComponent,
   },
   {
     path: 'login',
@@ -50,16 +54,20 @@ const routes: Routes = [
       {
         path: 'actions',
         component: WorkInProgressComponent,
-      }, {
+      },
+      {
         path: 'projects',
         component: WorkInProgressComponent,
-      }, {
+      },
+      {
         path: 'wiki',
         component: WorkInProgressComponent,
-      }, {
+      },
+      {
         path: 'security',
         component: WorkInProgressComponent,
-      }, {
+      },
+      {
         path: 'insights',
         component: WorkInProgressComponent,
       },
@@ -68,10 +76,10 @@ const routes: Routes = [
         component: RepositoryContentComponent,
       },
       {
-        path: "**",
-        component: CodeViewComponent
-      }
-    ]
+        path: '**',
+        component: CodeViewComponent,
+      },
+    ],
   },
   {
     path: 'settings',
@@ -90,4 +98,4 @@ const routes: Routes = [
   exports: [RouterModule],
   providers: [AuthGuard],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

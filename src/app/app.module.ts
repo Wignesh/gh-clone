@@ -55,6 +55,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { WorkInProgressComponent } from './core/pages/shared/work-in-progress/work-in-progress.component';
 import { CustomPaginatorPipe } from './core/pipes/customPaginator.pipe';
 import { Filter } from './core/pipes/filter.pipe';
+import { HomeComponent } from './core/pages/home/home.component';
 
 @NgModule({
   declarations: [
@@ -109,6 +110,7 @@ import { Filter } from './core/pipes/filter.pipe';
 
     CustomPaginatorPipe,
     Filter,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
