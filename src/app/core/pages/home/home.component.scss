@@ -2,6 +2,10 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none !important;
+}
+
 $color-scale-black: #1b1f23;
 $color-scale-white: #fff;
 $color-scale-gray-0: #fafbfc;
