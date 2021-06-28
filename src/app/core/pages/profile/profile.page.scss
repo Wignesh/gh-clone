@@ -8,8 +8,44 @@ img {
 .profile
 {
   display: flex;
+  margin-left: 9rem;
 }
 .profblock{
-  margin-left: 50px;
-  width: 25%;
+  width: 24%;
+}
+
+.popAndContri{
+  width: 72%;
+}
+
+@media screen and (max-width: 767px) and (min-width:320px){
+  .profile{
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .popAndContri{
+    width: 92%;
+  }
+  .profblock{
+    width: 90%;
+    margin-left: 2rem;
+    margin-right: 0rem;
+  }
+}
+
+@media screen and (max-width: 1023px) and (min-width:768px){
+  .profile
+  {
+    display: flex;
+    margin-left: 4rem;
+  }
+  .profblock{
+    width:24%;
+  }
+  .popAndContri
+  {
+    width: 72%;
+  }
 }
