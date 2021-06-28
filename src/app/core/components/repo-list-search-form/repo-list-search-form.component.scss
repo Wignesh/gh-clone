@@ -1,24 +1,45 @@
-.h-65{
-    height:65px;
-    background-color:#0D1117;
-  }
-  
-  #type:after{
-    font-size:20px;
-  }
-  
+form > *{
+  display: flex;
+}
 
-  form{
-    width:100%;
+.main-form{
+  height:65px;
+  align-items: center;
+}
+
+.main-form > *{
+  display:flex;
+}
+
+*{
+ color:#c9d1d9; 
+}
+
+  .new-button-text{
+    vertical-align: middle;
+    display: inline;
+    margin-left: 2px;
   }
-  .align-items-center{
-    align-items:center;
+
+  svg{
+    vertical-align: middle;
+    display: inline;
+    fill: currentColor;
+    color: #f0f6fc;
+    margin: 0%  ;
   }
-  
-  .d-flex{
-    display:flex;
-  }
-  
+
+  #new-button{
+  display:flex;
+  flex-wrap: nowrap;
+  align-items:center;
+  width:20%;
+  background-color:#2ea44f !important;
+  color:white;
+  font-size: 80%;
+}
+
+
   #sort, #type, #language, #repo-search, #new-button{
     background-color:#282E33;
     border-color: #21262D;
@@ -32,56 +53,73 @@
     height: 32px;
   }
   
+#repo-search{
+  height:32px;
+  width:50%;
+}
+
+.sort-buttons{
+  display:flex;
+  width:100%;
+  margin: 0 5px;
+}
+
+.sort-buttons > *{
+  margin: 0 1px;
+}
+
+
+
+.buttons{
+  width:50%;
+}
+
+#sort, #type{
+  width:32%;
+}
+
+#language{
+  width:35%;
+}
+
+@media only screen and (max-width: 458px){
+  form{
+    width:98%;
+  }
+  .main-form{
+    flex-direction:column;
+    height:auto;
+  }
   
-  #type{
-    width:10%;
+  .buttons{
+    flex-direction:column;
+    align-items:center;
+    margin:5px 0;
+    width:100%;
   }
   
   #new-button{
-    width: 10%;
-    background-color:#2EA44F;
-    color:white;
-    font-size: 80%;
+    margin:5px 0;
+    width:100%;
   }
-  
-  #language{
-    width:12%;
-  }
-  
-  #sort{
-    width:10%;
-  }
-  
-  
+
   #repo-search{
-    width:52%;
-    color: #C9D1D9;
-    background-color:#0D1117;
+    margin: 0%;
+    width: 100%;
   }
 
-  
-  #type, #language, #sort{
-    margin: 0 2px;
-  }
-
-  .mlr-2{
-    margin:0 15px;
+  .sort-buttons{
+    margin: 0;
   }
   
-  .d-inline{
-    display: inline;
-  }
-
   .new-button-text{
-    vertical-align: middle;
-    display: inline;
-    margin-left: 2px;
+    margin-right:auto;
+  }
+  
+  svg{
+    margin-left:auto;
+    
   }
 
-  svg{
-    vertical-align: middle;
-    display: inline;
-        fill: currentColor;
-    color: #f0f6fc;
-    margin: 0%  ;
-  }
+
+}

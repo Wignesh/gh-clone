@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit, ViewChild } from '@angular/core';
 
 @Component({
@@ -9,29 +10,35 @@ export class ProfileDescComponent implements OnInit {
 
   @ViewChild('previewprof') previewprofdiv:any;
   @ViewChild('editprof') editprofdiv:any;
-  
-  profile={
-    username:"dhuvaraggnajithraj",
-    profname:"Dhuvaraggn",
-    description:"Studying B.Tech know java, python, django and basic knowledge on working in google cloud platform",
-    company:"B.Tech CSE",
-    location:"trichy india",
-    website:"https://github.com/Dhuvaraggn",
-    twitter:"@Dhuvaraggn",
-    email:"dhuvaraggnajithraj@gmail.com",
-    followers:21,
-    following:30,
-    stars:3
-  }
+  profile:any;
+  // profile={
+  //   username:"dhuvaraggnajithraj",
+  //   profname:"Dhuvaraggn",
+  //   description:"Studying B.Tech know java, python, django and basic knowledge on working in google cloud platform",
+  //   company:"B.Tech CSE",
+  //   location:"trichy india",
+  //   website:"https://github.com/Dhuvaraggn",
+  //   twitter:"@Dhuvaraggn",
+  //   email:"dhuvaraggnajithraj@gmail.com",
+  //   followers:21,
+  //   following:30,
+  //   stars:3
+  // }
   editdescription="";
   editwebsite="";
   editemail="";
   editcompany="";
   edittwitter:any;
   editlocation="";
-  constructor() { }
+  constructor(private http:HttpClient) { 
+    console.log(this.profile)
+  }
 
   ngOnInit(): void {
+    var res=this.http.get("https://my-json-server.typicode.com/Dhuvaraggn/jsonserver/profile")
+    var r:any=[];
+    this.http.get("https://my-json-server.typicode.com/Dhuvaraggn/jsonserver/profile").subscribe(x=>this.profile=x)
+    
   }
 
   editproffunc()

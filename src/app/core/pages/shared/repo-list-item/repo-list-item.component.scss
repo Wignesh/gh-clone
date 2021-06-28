@@ -163,3 +163,13 @@ a:hover{
   }
   
 
+  @media only screen and (max-width: 1000px){
+    #repo-list-graph, .readme, #tag{
+      display: none;
+    }
+
+    .repo-card{
+      height: auto;
+    }    
+
+  }

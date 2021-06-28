@@ -10,7 +10,7 @@
 }
 
 #profile{
-  width: 26%;
+  width: 27.5%;
 }
 
 #repo-list{
@@ -21,4 +21,30 @@
 
 #repo-form{
   width: 100%;
+}
+
+@media screen and (max-width: 767px) and (min-width:320px){
+  .repo-list-page
+  {
+    flex-direction: column;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .d-flex{
+    flex-direction: column;
+  }
+  
+
+  #profile{
+    width: 90%;
+    margin-left: 1rem;
+    margin-right: 0rem;
+  }
+  #repo-list
+  {
+    width: 100%;
+  }
 }
