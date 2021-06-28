@@ -65,7 +65,20 @@
         </svg>
       </div>
     </div>
+
     <app-repo-code-download-dropdown *ngIf="isRootPage"></app-repo-code-download-dropdown>
   </div>
 
+  <!--show only if page is minimized-->
+    <div class="dot-button mobile-display">
+      <div class="icon">
+        <svg aria-label="More options" role="img" viewBox="0 0 16 16" version="1.1" data-view-component="true"
+          height="16" width="16" class="octicon octicon-kebab-horizontal">
+          <path
+            d="M8 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM1.5 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm13 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3z">
+          </path>
+        </svg>
+      </div>
+    </div>
+    
 </div>

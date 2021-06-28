@@ -5,8 +5,6 @@
 
 .file-navigation-header {
   background: #0d1117;
-  //to expand to available width
-  //width: 65vw;
 }
 
 .left-part {
@@ -122,6 +120,18 @@
   }
 }
 
+.mobile-display{
+  display: none;
+}
+
+@media screen and (max-width:768px) {
+    .right-part{display: none;}
+    
+    .mobile-display{
+      display: block;
+    }
+}
+
 // utility
 
 .flex {
@@ -192,5 +202,16 @@
   &:hover {
     background: #30363d;
     border: 1px solid #8b949e;
+  }
+}
+
+
+@media only screen and (max-width:1048px){
+  .branches-metadata{
+    display: none !important;
+  }
+
+  .tags-metadata{
+    display: none !important;
   }
 }

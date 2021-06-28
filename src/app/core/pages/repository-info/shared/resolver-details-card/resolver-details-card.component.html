@@ -5,7 +5,7 @@
         <div class="resolver-details-main" (mouseover)="displayDetails=true" (mouseout)="displayDetails=false">
 
             <ng-template [ngIf]="displayDetails">
-                <div class="chumma">
+                <div class="popup">
                     <app-resolver-details-popup [resolverDetails]="resolverDetails"
                         [ricon]="(icons[rtype])[rresult]?.icon" [riconcolor]="(icons[rtype])[rresult]?.color">
                     </app-resolver-details-popup>
@@ -20,14 +20,10 @@
                     <span class="iconify icon-1" attr.data-icon={{(icons[rtype])[rresult]?.icon}}
                         [style.color]="(icons[rtype])[rresult]?.color" data-inline="false"></span>
                 </div>
-
-                <!--title along with  buttons-->
-                <div class="card-title">{{resolverDetails?.tittle}}</div>
-                <div class="label-cont">
-                    <button class="label" *ngFor="let labelindex of resolverDetails?.labels"
+                <div class="card-title">{{resolverDetails?.tittle}} <button class="label"
+                        *ngFor="let labelindex of resolverDetails?.labels"
                         [style.background-color]="labels[labelindex]?.color"
-                        [style.color]="labels[labelindex]?.tcolor">{{labels[labelindex]?.name}}</button>
-                </div>
+                        [style.color]="labels[labelindex]?.tcolor">{{labels[labelindex]?.name}}</button></div>
 
             </div>
 
@@ -37,15 +33,23 @@
     </div>
 
     <div class="metadata-bar-left">
-        <div *ngIf="resolverDetails?.linked.length!=0" class="comp-1">
-            <span class="iconify" data-icon="octicon:git-pull-request-24" data-inline="false"></span>
-            {{resolverDetails?.linked.length}}
+        <div class="metadata-comp">
+            <div class="linked-pr-data" *ngIf="resolverDetails?.linked.length!=0">
+                <span class="iconify" data-icon="octicon:git-pull-request-24" data-inline="false"></span>
+                {{resolverDetails?.linked.length}}
+            </div>
         </div>
-        <img *ngIf="resolverDetails?.assignee?.profileUrl!=''" class="comp-2"
-            src="{{resolverDetails?.assignee?.profileUrl}}">
-        <div *ngIf="resolverDetails?.comments?.length!=0" class="comp-3">
-            <span class="iconify" data-icon="octicon:comment-16" data-inline="false"></span>
-            {{resolverDetails?.comments?.length}}
+        <div class="metadata-comp ">
+            <img *ngIf="resolverDetails?.assignee?.profileUrl!=''" class="asignee-img "
+                title="{{resolverDetails?.assignee?.name}}" src="{{resolverDetails?.assignee?.profileUrl}}">
+
+        </div>
+
+        <div class="metadata-comp">
+            <div class="comment-data" *ngIf="resolverDetails?.comments?.length!=0">
+                <span class="iconify" data-icon="octicon:comment-16" data-inline="false"></span>
+                {{resolverDetails?.comments?.length}}
+            </div>
         </div>
     </div>
 </div>

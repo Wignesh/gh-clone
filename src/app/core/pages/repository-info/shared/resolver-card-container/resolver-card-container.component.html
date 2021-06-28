@@ -1,3 +1,16 @@
+<div class="responsive-resolver-count">
+    <div class="open-count" [class.active-btn]="isActive('open')" [routerLink]="[]" [queryParams]="{ query: 'open'}">
+        <span class="iconify icon-1" attr.data-icon={{this.icons[this.rtype]?.open?.icon}} data-inline="false"></span>
+        {{openCount}} Open
+    </div>
+    <div class="close-count icon-1" [class.active-btn]="isActive('closed')" [routerLink]="[]"
+        [queryParams]="{ query: 'closed'}">
+        <span class="iconify" attr.data-icon={{this.icons[this.rtype].closed?.icon}} data-inline="false"></span>
+        {{closedCount}}
+        Closed
+    </div>
+</div>
+
 <div class="resolver-container">
     <div class="resolver-toolbar">
         <div class="resolver-count">
@@ -33,11 +46,38 @@
                     data-inline="false"></span> </button>
         </div>
     </div>
+    <ng-template [ngIf]="!validQuery">
+        <div class="invalid-query">
+            <div class="invalid-query-icon">
+                <span class="iconify icon-1" attr.data-icon={{this.icons[this.rtype]?.open?.icon}}
+                    data-inline="false"></span>
+            </div>
+            <div class="invalid-query-header">No results matched your search.</div>
+            <div class="invalid-query-message">You could search <a>all of GitHub </a>or try <a>an advanced search</a>.
+            </div>
+        </div>
+    </ng-template>
     <div class="cards">
-
-        <div *ngFor="let resolverDetails of rList">
+        <div
+            *ngFor="let resolverDetails of rList | filter : queryByAuthor :'postedBy': filterMetaData |custompaginator: currentPage : itemsPerPage">
             <app-resolver-details-card [rtype]="rtype" [resolverDetails]="resolverDetails" [rresult]="rresult">
             </app-resolver-details-card>
         </div>
     </div>
+</div>
+
+<div class="paginator">
+    <button class="paginator-btn" [disabled]="currentPage==1" [routerLink]="[]"
+        [queryParams]="{ query: rresult, pgno : (currentPage-1)}">
+        <span class="spl-char">&#60;</span>
+        Previous</button>
+    <div class="page-box">
+        <div class="pg-no" *ngFor="let in of  counter(), index as i" [class.active-pg]="(i+1)== currentPage"
+            [routerLink]="[]" [queryParams]="{ query: rresult, pgno : (i+1)}">{{i+1}}
+        </div>
+
+    </div>
+    <button class="paginator-btn" [disabled]="currentPage==counter().length || counter().length==0" [routerLink]="[]"
+        [queryParams]="{ query: rresult,pgno : currentPage+1}">Next
+        <span class="spl-char">&#62;</span></button>
 </div>
