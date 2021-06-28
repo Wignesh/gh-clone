@@ -4,7 +4,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 @Component({
   selector: 'app-profile-desc',
   templateUrl: './profile-desc.component.html',
-  styleUrls: ['./prodDesc.scss']
+  styleUrls: ['./profile-desc.component.scss']
 })
 export class ProfileDescComponent implements OnInit {
 
